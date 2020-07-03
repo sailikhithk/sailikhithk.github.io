@@ -252,7 +252,7 @@ section.success a.active {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
-    border-radius: 0.5px;
+    border-radius: 5px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
@@ -281,7 +281,7 @@ section.success a.active {
 
 #portfolio * {
     z-index: 2;
-    border-radius: 0.5px;
+    border-radius: 5px;
 }
 
 @media(min-width:767px) {
@@ -428,7 +428,7 @@ footer .footer-below {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
-    border-radius: 0;
+    border-radius: 5px;
     text-align: center;
     background-clip: border-box;
     -webkit-box-shadow: none;
