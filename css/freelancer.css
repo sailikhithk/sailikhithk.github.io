@@ -252,6 +252,7 @@ section.success a.active {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
+    border-radius: 0.5px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
@@ -267,19 +268,23 @@ section.success a.active {
     text-align: center;
     font-size: 20px;
     color: #fff;
+    border-radius: 0.5px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px;
+    border-radius: 0.5px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
     margin: 0;
+    border-radius: 0.5px;
 }
 
 #portfolio * {
     z-index: 2;
+    border-radius: 0.5px;
 }
 
 @media(min-width:767px) {
