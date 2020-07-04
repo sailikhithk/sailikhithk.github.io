@@ -1,0 +1,38 @@
+
+title: Sai Likhith Kanuparthi
+name: Sai Likhith K
+email: sailikhithcse@gmail.com
+description: Sai Likhith's personal blog and portfolio website | Masters in Computer Science at New York University.
+baseurl: /
+url: http://sailikhith7.github.io
+twitter: sailikhith96
+github:  sailikhith7
+linkedin: sailikhith96
+facebook: sailikhithk
+hackerrank: sailikhithk
+telegram: sailikhithk
+stackoverflow: users/sailikhith7
+instagram: codewithsai
+leetcode: sailikhithk
+
+# Build settings
+highlighter: rouge
+markdown: kramdown
+permalink: /:title.html
+theme: minima
+plugins:
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
