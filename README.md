@@ -8,9 +8,9 @@ How would one know what are you capable of without showcasing your caliber. That
 My portfolio is intended to give a summary of not only things that are mentioned on the Resume but also my behavioural traits. 
  
 
-# Demo
+## Demo
 
-# View Live Demo
+## View Live Demo
 
 ## Features
 
