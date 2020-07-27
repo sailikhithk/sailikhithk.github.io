@@ -71,7 +71,7 @@ function Type() {
 
         clearInterval(_INTERVAL_VAL);
         setTimeout(function () {
-            _INTERVAL_VAL = setInterval(Delete, 40);
+            _INTERVAL_VAL = setInterval(Delete, 60);
         }, 500);
     }
 }
