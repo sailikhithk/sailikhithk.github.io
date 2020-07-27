@@ -39,7 +39,7 @@ $('.navbar-collapse ul li a').click(function() {
 
 // List of sentences
 var _CONTENT = [
-    "I'm a curious guy with a lot of questions about how do things work. Luckily programming answers some of them. I like building products which have practical applications. Favourite quote:'Stay Hungry Stay Foolish' by Steve Jobs"
+    "I'm a curious guy with lot of questions about how do things work. Luckily programming answers some of them. I like building products which have practical applications. My favourite quote is 'Stay Hungry Stay Foolish' by Steve Jobs"
 ];
 
 // Current sentence being processed
@@ -71,8 +71,8 @@ function Type() {
 
         clearInterval(_INTERVAL_VAL);
         setTimeout(function () {
-            _INTERVAL_VAL = setInterval(Delete, 60);
-        }, 500);
+            _INTERVAL_VAL = setInterval(Delete, 50);
+        }, 1000);
     }
 }
 
@@ -98,10 +98,10 @@ function Delete() {
         // Start to display the next sentence after some time
         setTimeout(function () {
             _CURSOR.style.display = 'inline-block';
-            _INTERVAL_VAL = setInterval(Type, 50);
+            _INTERVAL_VAL = setInterval(Type, 100);
         }, 200);
     }
 }
 
 // Start the typing effect on load
-_INTERVAL_VAL = setInterval(Type, 50);
+_INTERVAL_VAL = setInterval(Type, 100);
