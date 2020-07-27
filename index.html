@@ -8,6 +8,7 @@
     <meta name="description" content="The portfolio of Sai Likhith - Full Stack Software Engineer Intern at Stemaway. Studying at the New york University for masters in Computer science">
     <meta name="author" content="Sai Likhith Kanuparthi">
     <meta name="keywords" content="Google foo-bar, Oracle certified, Udacity project expert, personal portfolio, homepage, NYU, hackNYU, New York, engineering, New York University, technology, google, interview, microsoft, facebook, fb, growth engineer, java, startups, programming, python, django, coding, intern, autocaption, draw platformer, hackathon">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/foundation-icons/foundation-icons.css">
     <link rel="icon" href ="img/rakshinshu.jpg" type = "image/x-icon">
@@ -40,6 +41,10 @@
 </head>
 
 <body id="page-top" class="index">
+    <!-- Loader-->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -52,15 +57,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Sai Likhith Kanuparthi</a>
+                <a class="navbar-brand" href="#page-top">Sai Likhith.K</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
                     <li class="page-scroll">
                         <a href="#about">About Me</a>
                     </li>
@@ -76,9 +78,12 @@
                     <li class="page-scroll">
                         <a href="#portfolio">Projects</a>
                     </li>
-
-
-
+                    <li class="page-scroll">
+                        <a href="#certificates">Certificates</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="https://www.medium.com/@sailikhith" target="_blank">Medium</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -97,9 +102,8 @@
                         <hr class="star-light">
                         <span class="skills">Project lead, Full stack intern at STEM-away. Based in New York.</span>
                         <br>
-                        <div>
-
-                        <p>I'm a curious guy with a lot of questions in mind. Luckily programming answers some of them. I like building products which have practical applications. My favourite quote is "Stay Hungry Stay Foolish" by Steve Jobs </p> </div>
+                    <div id="text"></div>.<div id="cursor"></div>
+                    </div>
                     </div>
                     </div>
                     <br>
@@ -130,7 +134,7 @@
                         <p>Internationally accredited recognition for Java proficiency</p>
                     </div>
                     <div class="col-sm-4 portfolio-item">
-                        <a href="https://classroom.udacity.com/me" target="_blank" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://classroom.udacity.com/me' target="_blank"";>
+                        <a href="https://classroom.udacity.com/me" target="_blank" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://classroom.udacity.com/me'; target="_blank"">
 
                            <img src="img/sai.jpg" class="img-responsive" alt="Udacity Project Expert" style="width:100%;height:300px">
 
@@ -140,7 +144,7 @@
                     <p>This is given for people who are able to accomplish 5 projects in a span of 2 months and get them officially reviewed and accepted.</p>
                     </div>
                     <div class="col-sm-4 portfolio-item">
-                        <a href="https://foobar.withgoogle.com/" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://foobar.withgoogle.com/" target="_blank">
+                        <a href="https://foobar.withgoogle.com/" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://foobar.withgoogle.com/;" target="_blank">
                             <div class="caption">
 
                             </div>
@@ -271,7 +275,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="https://github.com/sailikhithk/Machine-Learning-Eng-Nanodegree-Udacity/tree/master/Plagiarism%20Detection" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://github.com/SaiLikhith7/Machine-Learning-Eng-Nanodegree-Udacity/tree/master/Plagiarism%20Detection';">
+                    <a href="https://github.com/sailikhithk/Machine-Learning-Eng-Nanodegree-Udacity/tree/master/Plagiarism%20Detection" target="_blank" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://github.com/SaiLikhith7/Machine-Learning-Eng-Nanodegree-Udacity/tree/master/Plagiarism%20Detection';target="_blank"">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -284,7 +288,7 @@
                     <p>Machine Learning Plagiarism Detection project with accuracy cross validation</p>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="https://github.com/sailikhithk/covid19-by-sailikhithk" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://github.com/SaiLikhith7/covid19-by-sailikhithk';">
+                    <a href="https://github.com/sailikhithk/covid19-by-sailikhithk" target="_blank" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://github.com/SaiLikhith7/covid19-by-sailikhithk';target="_blank"">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -298,7 +302,7 @@
                 <p>Website built to showcase not only statistics but also analytics built out of coronav virus effect on entire globe. <i>Written in CSS, Javascript, Type script </i></p>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="https://github.com/sailikhithk/The-Eye-HackNYU-2020" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://github.com/SaiLikhith7/HackNYU-2020';">
+                    <a href="https://github.com/sailikhithk/The-Eye-HackNYU-2020" target="_blank" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://github.com/SaiLikhith7/HackNYU-2020';target="_blank"">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -314,7 +318,7 @@
 
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="https://github.com/sailikhithk/NYC_Open_Data-Map-Reduce-and-Pyspark" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://github.com/SaiLikhith7/NYC_Open_Data-Map-Reduce-and-Pyspark';">
+                    <a href="https://github.com/sailikhithk/NYC_Open_Data-Map-Reduce-and-Pyspark" class="portfolio-link" target="_blank" data-toggle="modal" onclick="window.location.href = 'https://github.com/SaiLikhith7/NYC_Open_Data-Map-Reduce-and-Pyspark';target="_blank"">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -327,7 +331,7 @@
                     <p>This project has the Map Reduce for NYC Open Data, written in Pyspark</p>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="https://github.com/sailikhithk/CSGY-6513-Big-Data-Project-Analysis-of-NYC-Open-Data" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://github.com/SaiLikhith7/CSGY-6513-Big-Data-Project-Analysis-of-NYC-Open-Data';">
+                    <a href="https://github.com/sailikhithk/CSGY-6513-Big-Data-Project-Analysis-of-NYC-Open-Data" target="_blank" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://github.com/SaiLikhith7/CSGY-6513-Big-Data-Project-Analysis-of-NYC-Open-Data';target="_blank"">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -341,7 +345,7 @@
                     <p>Academic project on NYC Taxi Data profiling and analysis of datasets</p>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="https://github.com/sailikhithk/Google-Hashcode-2020-qualification-round" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://github.com/SaiLikhith7/Google-Hashcode-2020-qualification-round';">
+                    <a href="https://github.com/sailikhithk/Google-Hashcode-2020-qualification-round" target="_blank" class="portfolio-link" data-toggle="modal" onclick="window.location.href = 'https://github.com/SaiLikhith7/Google-Hashcode-2020-qualification-round' ;target="_blank"" >
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -420,7 +424,9 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
-
+    <script src="js/typed.js"></script>
+    
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </body>
 
 </html>
