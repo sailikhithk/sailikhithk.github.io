@@ -39,7 +39,7 @@ $('.navbar-collapse ul li a').click(function() {
 
 // List of sentences
 var _CONTENT = [
-    "I'm a curious guy with a lot of questions about how do things work. Luckily programming answers some of them. I like building products which have practical applications. Favourite quote is 'Stay Hungry Stay Foolish':Steve Jobs"
+    "I'm a curious guy with a lot of questions about how do things work. Luckily programming answers some of them. I like building products which have practical applications. Favourite quote: 'Stay Hungry Stay Foolish' by Steve Jobs"
 ];
 
 // Current sentence being processed
