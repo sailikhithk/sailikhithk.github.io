@@ -71,8 +71,8 @@ function Type() {
 
         clearInterval(_INTERVAL_VAL);
         setTimeout(function () {
-            _INTERVAL_VAL = setInterval(Delete, 50);
-        }, 1000);
+            _INTERVAL_VAL = setInterval(Delete, 40);
+        }, 500);
     }
 }
 
@@ -98,10 +98,10 @@ function Delete() {
         // Start to display the next sentence after some time
         setTimeout(function () {
             _CURSOR.style.display = 'inline-block';
-            _INTERVAL_VAL = setInterval(Type, 100);
+            _INTERVAL_VAL = setInterval(Type, 50);
         }, 200);
     }
 }
 
 // Start the typing effect on load
-_INTERVAL_VAL = setInterval(Type, 100);
+_INTERVAL_VAL = setInterval(Type, 50);
