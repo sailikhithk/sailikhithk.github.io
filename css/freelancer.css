@@ -551,10 +551,12 @@ footer .footer-below {
 }
 
 @keyframes blink {
-	from, to { 
-		background-color: transparent 
+	from, to {
+		background-color: transparent
 	}
-	50% { 
-		background-color: orange; 
+	50% {
+		background-color: orange;
 	}
 }
+
+.container2 {    display: flex;    overflow-x: auto;}
