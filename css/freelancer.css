@@ -539,7 +539,7 @@ footer .footer-below {
 	display: inline-block;
 	vertical-align: middle;
     letter-spacing: 2px;
-    font-size: 40px;
+    font-size: 30px;
 }
 #cursor {
 	display: inline-block;
@@ -551,10 +551,10 @@ footer .footer-below {
 }
 
 @keyframes blink {
-	from, to { 
-		background-color: transparent 
+	from, to {
+		background-color: transparent
 	}
-	50% { 
-		background-color: orange; 
+	50% {
+		background-color: orange;
 	}
 }
