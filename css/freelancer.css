@@ -535,12 +535,17 @@ footer .footer-below {
 	font-weight: 500;
 }
 
+
+
 #text {
 	display: inline-block;
 	vertical-align: middle;
     letter-spacing: 2px;
     font-size: 40px;
 }
+
+.container2 {    display: flex;    overflow-x: auto;}
+
 #cursor {
 	display: inline-block;
 	vertical-align: middle;
@@ -550,6 +555,8 @@ footer .footer-below {
 	animation: blink .75s step-end infinite;
 }
 
+
+
 @keyframes blink {
 	from, to {
 		background-color: transparent
@@ -558,5 +565,3 @@ footer .footer-below {
 		background-color: orange;
 	}
 }
-
-.container2 {    display: flex;    overflow-x: auto;}
