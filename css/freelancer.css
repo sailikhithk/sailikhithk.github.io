@@ -544,7 +544,7 @@ footer .footer-below {
     font-size: 40px;
 }
 
-.container2 {    display: flex;    overflow-x: auto;}
+.container2 {    display: flex; border-radius: 5px;  overflow-x: auto;}
 
 #cursor {
 	display: inline-block;
