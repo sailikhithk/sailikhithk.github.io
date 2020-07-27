@@ -314,6 +314,7 @@ section.success a.active {
     padding-bottom: .5em;
     border-bottom: 1px solid #eee;
 }
+
 .floating-label-form-group input,
 .floating-label-form-group textarea {
     z-index: 1;
