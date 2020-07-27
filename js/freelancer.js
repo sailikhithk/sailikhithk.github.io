@@ -39,13 +39,13 @@ $('.navbar-collapse ul li a').click(function() {
 
 // List of sentences
 var _CONTENT = [
-    "I'm a curious guy with a lot of questions in mind. Luckily programming answers some of them. I like building products which have practical applications. My favourite quote is 'Stay Hungry Stay Foolish' by Steve Jobs"
+    "I'm a curious guy with a lot of questions about how things work. Luckily programming answers some of them. I like building products which have practical applications. My favourite quote is 'Stay Hungry Stay Foolish' by Steve Jobs"
 ];
 
 // Current sentence being processed
 var _PART = 0;
 
-// Character number of the current sentence being processed 
+// Character number of the current sentence being processed
 var _PART_INDEX = 0;
 
 // Holds the handle returned from setInterval
@@ -54,7 +54,7 @@ var _INTERVAL_VAL;
 // Element that holds the text
 var _ELEMENT = document.querySelector("#text");
 
-// Cursor element 
+// Cursor element
 var _CURSOR = document.querySelector("#cursor");
 
 // Implements typing effect
