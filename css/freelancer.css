@@ -533,6 +533,8 @@ footer .footer-below {
 	color: #bbd2ff;
 	font-family: "Maven pro", sans-serif;
 	font-weight: 500;
+  margin=0;
+  padding=0;
 }
 
 
