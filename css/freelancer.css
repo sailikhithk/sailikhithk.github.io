@@ -532,16 +532,16 @@ footer .footer-below {
 	color: #bbd2ff;
 	font-family: "Maven pro", sans-serif;
 	font-weight: 500;
-  margin:0;
-  padding:0;
-  align-content: flex-start;
+  	margin:0;
+  	padding:0;
+  	align-content: flex-start;
 }
 
 
 .skill-list ul li {
   margin:0;
   padding:0;
-  color: #fff;
+  color: #bbd2ff;
 
 }
 
