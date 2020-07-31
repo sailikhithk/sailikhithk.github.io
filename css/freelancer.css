@@ -529,12 +529,12 @@ footer .footer-below {
 }
 
 .skillset-topics ul li {
-	color: #fff;
+	color: #bbd2ff;
 	font-family: "Maven pro", sans-serif;
 	font-weight: 500;
   margin:0;
   padding:0;
-  align-items: flex-start;
+  align-content: flex-start;
 }
 
 
