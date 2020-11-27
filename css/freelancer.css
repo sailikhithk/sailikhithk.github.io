@@ -603,6 +603,12 @@ footer .footer-below {
   font-size: 24px;
 }
 
+#text2 {
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
 .container2 {
   display: flex;
   border-radius: 5px;
