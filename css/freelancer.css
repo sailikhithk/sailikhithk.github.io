@@ -171,7 +171,7 @@ header img {
   display: block;
   margin: 0 auto 20px;
 }
-
+/*
 header .intro-text .name {
   display: block;
   text-transform: uppercase;
@@ -199,6 +199,7 @@ header .intro-text .skills {
     font-size: 1.75em;
   }
 }
+*/
 
 @media (min-width: 768px) {
   .navbar-fixed-top {
