@@ -13,7 +13,7 @@ const EARTH_RADIUS_KM = 6371; // km
 const TIME_STEP = 3 * 1000; // per frame
 
 export default function GlobeSatellites() {
-  const globeEl = useRef<any>();
+  const globeEl = useRef<any>(null);
   const [satData, setSatData] = useState<any[]>();
   const [time, setTime] = useState(new Date());
 
