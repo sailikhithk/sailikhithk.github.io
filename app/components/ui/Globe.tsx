@@ -100,7 +100,7 @@ export default function GlobeSatellites() {
         alignItems: "center",
         justifyContent: "center",
         cursor: "grab",
-        transform: "scale(1.5)",
+        transform: "scale(1.05)",
       }}
     >
       <Globe
