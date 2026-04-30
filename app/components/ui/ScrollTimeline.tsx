@@ -73,7 +73,10 @@ export function ScrollTimeline({ jobs }: { jobs: Job[] }) {
               display: "flex",
               flexDirection: "column",
               alignItems: "flex-start",
-              minWidth: "160px",
+              // Fixed label width keeps all content cards aligned across rows.
+              width: "145px",
+              minWidth: "145px",
+              maxWidth: "145px",
               flexShrink: 0,
             }}
           >
@@ -97,6 +100,8 @@ export function ScrollTimeline({ jobs }: { jobs: Job[] }) {
                 fontSize: "1rem",
                 fontFamily: "var(--font-montserrat), sans-serif",
                 lineHeight: 1.2,
+                maxWidth: "135px",
+                whiteSpace: "normal",
               }}
             >
               {job.company}
