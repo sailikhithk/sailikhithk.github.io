@@ -345,14 +345,15 @@ interface CareerStat { value: string; label: string; }
 
 ## Content Data
 
-### Experience (5 companies)
+### Experience (6 companies)
 | Company | Role | Period |
 |---|---|---|
-| Airbnb | Sr. SWE — ML Infrastructure | Jun 2025 – Present |
-| Eli Lilly | Sr. SWE (via ThriveOn) | Sept 2024 – Jun 2025 |
-| Southwest Airlines | Sr. SWE (via ThriveOn) | Jan 2023 – Aug 2024 |
-| Shell PLC | Sr. Python Developer (via ThriveOn) | Jan 2021 – Nov 2022 |
-| Oracle India | Data Engineer | Sept 2017 – Jul 2019 |
+| Airbnb | Sr. SWE — Gen AI Development Experience | Sep 2024 – Present |
+| Eli Lilly | Senior Backend / Full-Stack Engineer — DMS | Feb 2024 – Aug 2024 |
+| Southwest Airlines | Senior Backend / Full-Stack Application Engineer | Jan 2023 – Aug 2024 |
+| Shell PLC | Senior Python Developer / Data Scientist | Jun 2021 – Dec 2022 |
+| Oracle India | Backend Developer / Data Engineer | Aug 2017 – Jul 2019 |
+| BSNL | Python Developer | Dec 2016 – Apr 2017 |
 
 ### Projects (9)
 Claude Code Ecosystem · AI Interview Copilots · Redpen (Airbnb) · BPI Virtual Analyst (Airbnb) · Dose Management System (Eli Lilly) · RomeoAI · ML Subsurface Pipeline (Shell) · COVID-19 Dashboard · ERP Analytics (Oracle)

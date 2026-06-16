@@ -22,7 +22,7 @@ const degrees = [
     height: 200,
     imgHeight: "140px",
     degree: "B.Tech in Electronics & Communication Engineering",
-    detail: "GPA 4.0 · May 2013",
+    detail: "Aug 2013 -- May 2017",
     institution:
       "Jawaharlal Nehru Technological University, Andhra Pradesh, India",
     courses:
