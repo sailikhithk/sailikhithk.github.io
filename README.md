@@ -350,7 +350,7 @@ interface CareerStat { value: string; label: string; }
 |---|---|---|
 | Airbnb | Sr. SWE — Gen AI Development Experience | Sep 2024 – Present |
 | Eli Lilly | Senior Backend / Full-Stack Engineer — DMS | Feb 2024 – Aug 2024 |
-| Southwest Airlines | Senior Backend / Full-Stack Application Engineer | Jan 2023 – Aug 2024 |
+| Southwest Airlines | Senior Backend / Full-Stack Application Engineer | Jan 2023 – Jan 2024 |
 | Shell PLC | Senior Python Developer / Data Scientist | Jun 2021 – Dec 2022 |
 | Oracle India | Backend Developer / Data Engineer | Aug 2017 – Jul 2019 |
 | BSNL | Python Developer | Dec 2016 – Apr 2017 |

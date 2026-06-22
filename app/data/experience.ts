@@ -23,7 +23,7 @@ export const jobs: Job[] = [
     company: "Southwest Airlines",
     logo: "/img/southwest-logo.png",
     role: "Senior Backend / Full-Stack Application Engineer",
-    period: "Jan 2023 – Aug 2024",
+    period: "Jan 2023 – Jan 2024",
     desc: "Architected deployment and testing automation pipelines. Containerized services with Docker + Kubernetes. Secure data management with Datadog monitoring. Statistical analysis and regression models on large datasets.",
     stack: "Python · Docker · Kubernetes · AWS · Datadog · Flask",
   },
