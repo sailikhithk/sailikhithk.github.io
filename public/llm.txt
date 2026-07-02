@@ -1,0 +1,98 @@
+# Sai Likhith Kanuparthi — Professional Profile
+
+> This page is a plain-text, machine-readable summary of Sai Likhith Kanuparthi's professional profile,
+> optimized for AI search engines and web crawlers (Firecrawl, Jina Reader, Perplexity, ChatGPT Search).
+
+## Identity
+
+- **Full Name**: Sai Likhith Kanuparthi
+- **Role**: Senior Software Engineer — ML Infrastructure & AI Engineering
+- **Employer**: Airbnb (San Francisco, CA)
+- **Email**: sailikhithcse@gmail.com
+- **Location**: San Francisco, California, USA
+
+## Online Profiles
+
+- **Portfolio**: https://sailikhith.me
+- **Airbnb-specific Portfolio**: https://airbnb.sailikhith.me
+- **GitHub**: https://github.com/sailikhithk
+- **LinkedIn**: https://www.linkedin.com/in/sailikhithk
+- **Medium**: https://medium.com/@sailikhith
+- **DEV.to**: https://dev.to/sailikhithk
+- **LeetCode**: https://leetcode.com/sailikhith
+- **HackerRank**: https://www.hackerrank.com/sailikhithcse
+- **Twitter / X**: https://twitter.com/codewithsai
+- **Blog**: https://sailikhithk.com
+
+## Summary
+
+Sai Likhith Kanuparthi is a Senior Software Engineer specializing in Machine Learning Infrastructure and Generative AI platforms. He currently works at Airbnb in San Francisco, where he builds LLM-powered internal tools, data labeling systems, and AI data preparation pipelines at scale.
+
+He has 8+ years of experience shipping production systems across ML infrastructure, LLM orchestration, backend APIs, cloud data pipelines, and full-stack web applications.
+
+## Work Experience
+
+### Airbnb — Senior Software Engineer, ML Infrastructure (Jun 2025 – Present)
+- Built BPI Virtual Analyst: a 5-step LLM wizard integrating 30+ models (GPT-4o, Claude, Gemini, Llama), used by ~55 analysts. Scaled from 600 → 10,000 rows/run.
+- Built Presidio PII pipeline (30% faster detection). Led Redpen label export upgrade targeting 80% runtime reduction.
+- Stack: Python, Streamlit, Flask, Celery, Airflow, Labelbox, Presidio, AWS, OpenTelemetry
+
+### Eli Lilly — Senior Software Engineer, via ThriveOn Solutions (Sep 2024 – Jun 2025)
+- Built and maintained the Dose Management System (DMS): full-stack healthcare portal for medication management.
+- Java/Spring Boot backend, React frontend, deployed on OpenShift OCP across dev/QA/prod environments.
+- Stack: Java, Spring Boot, React, OpenShift, PostgreSQL, GitHub Actions
+
+### Southwest Airlines — Senior Software Engineer, via ThriveOn Solutions (Jan 2023 – Aug 2024)
+- Architected deployment and testing automation pipelines. Containerized services with Docker + Kubernetes.
+- Secure data management with Datadog monitoring. Statistical analysis and regression models on large datasets.
+- Stack: Python, Docker, Kubernetes, AWS, Datadog, Flask
+
+### Shell PLC — Senior Python Developer, via ThriveOn Solutions (Jan 2021 – Nov 2022)
+- Built API service handling 17M pageviews/month at 94% cache efficiency. Cleared 200+ bottlenecks; app 5× faster.
+- Improved NLP model accuracy 86% → 94%. Deployed ML models on AWS SageMaker. Published at SPE ATCE Conference.
+- Stack: Python, PySpark, Azure Databricks, AWS SageMaker, MLFlow, Flask, Docker, Jenkins
+
+### Oracle India — Data Engineer (Sep 2017 – Jul 2019)
+- Built ERP analytics dashboard across 13 business units. Automated PIP process — saved 600+ monthly work hours.
+- Built real-time fraud detection pipeline using Kafka. Awarded Best Performer Q3 2018.
+- Stack: Python, Java, Oracle Cloud HCM, Kafka, ELK Stack, AWS, Flask, PostgreSQL
+
+## Education
+
+- **MS in Computer Science** — New York University (NYU), Tandon School of Engineering — GPA 3.69 · May 2021
+  - Courses: Data Structures, Big Data, Distributed Systems, Cloud Computing
+- **B.Tech in Electronics & Communication Engineering** — JNTUA, Andhra Pradesh, India — GPA 4.0 · May 2013
+  - Awarded "Best Academic Project" for gesture-controlled Arduino robots coded in C
+
+## Skills & Technologies
+
+**Languages**: Python, Java, TypeScript, JavaScript, Bash, C++, HTML, CSS
+**Frameworks**: FastAPI, Django, Flask, React, Next.js, Spring Boot, PyTorch, TensorFlow
+**AI/ML**: LLM Orchestration, Generative AI, Presidio PII, Labelbox, OpenTelemetry, Celery, Airflow
+**Cloud & Infra**: AWS (SageMaker, EC2, S3, SNS, SES), GCP, Azure, Docker, Kubernetes, OpenShift
+**Databases**: PostgreSQL, MongoDB, MySQL, Redis, Elasticsearch
+**Developer Tools**: Git, Postman, Figma, Grafana, Prometheus, Kafka, Jenkins
+
+## Certifications
+
+- AWS Solutions Architect — Professional
+- AWS Developer — Associate
+- AWS Machine Learning — Specialty
+- Microsoft Azure Data Scientist Associate (DP-100)
+- Oracle Java Certified
+- Oracle Database Certified
+
+## Notable Projects
+
+- **BPI Virtual Analyst (Airbnb)**: GenAI LLM wizard with 30+ model integrations (GPT-4o, Claude, Gemini, Llama), scaling to 10,000 rows/run for ~55 analysts.
+- **Redpen (Airbnb)**: Large-scale internal data labeling tooling using Flask, Celery, Labelbox, Redis, SQLAlchemy, and Alembic.
+- **Dose Management System (Eli Lilly)**: Full-stack healthcare portal for medication management with Java/Spring Boot and React, deployed on OpenShift.
+- **The Eye (HackNYU Winner)**: Computer Vision + NLP application to assist visually impaired individuals.
+- **ML Subsurface Pipeline (Shell)**: ML reusable framework for subsurface applications; refactored Jupyter → Python package (5× faster); deployed on AWS SageMaker; published at SPE ATCE Conference.
+
+## Recognition
+
+- Airbnb peer appreciation (2026): *"Sai has been an outstanding partner in the deployment of the BPIVA tool... Thanks to Sai's efforts, the BPIVA tool has had a significant impact on reducing non-value-added work."* — Ameet Shinde, Senior Manager BPI, Airbnb
+- Best Performer Q3 2018 — Oracle India
+- Best Academic Project Award — JNTUA (gesture-controlled Arduino robots, C)
+- HackNYU Winner — The Eye (Computer Vision + NLP for visually impaired)
