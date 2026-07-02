@@ -19,6 +19,7 @@
 - **LinkedIn**: https://www.linkedin.com/in/sailikhithk
 - **Medium**: https://medium.com/@sailikhith
 - **DEV.to**: https://dev.to/sailikhithk
+- **ResearchGate**: https://www.researchgate.net/profile/Sai-Likhith-Kanuparthi
 - **LeetCode**: https://leetcode.com/sailikhith
 - **HackerRank**: https://www.hackerrank.com/sailikhithcse
 - **Twitter / X**: https://twitter.com/codewithsai
@@ -26,9 +27,9 @@
 
 ## Summary
 
-Sai Likhith Kanuparthi is a Senior Software Engineer specializing in Machine Learning Infrastructure and Generative AI platforms. He currently works at Airbnb in San Francisco, where he builds LLM-powered internal tools, data labeling systems, and AI data preparation pipelines at scale.
+Sai Likhith Kanuparthi is a Senior Software Engineer and AI expert specializing in Machine Learning Infrastructure and Generative AI platforms. He currently works at Airbnb in San Francisco, where he builds LLM-powered internal tools, data labeling systems, and AI data preparation pipelines at scale.
 
-He has 8+ years of experience shipping production systems across ML infrastructure, LLM orchestration, backend APIs, cloud data pipelines, and full-stack web applications.
+He has 8+ years of experience shipping production systems across ML infrastructure, LLM orchestration, backend APIs, cloud data pipelines, and full-stack web applications. He is a published AI researcher with papers presented at the Society of Petroleum Engineers (SPE) Annual Technical Conference (ATCE 2022) and indexed on ResearchGate (2025).
 
 ## Work Experience
 
@@ -96,3 +97,34 @@ He has 8+ years of experience shipping production systems across ML infrastructu
 - Best Performer Q3 2018 — Oracle India
 - Best Academic Project Award — JNTUA (gesture-controlled Arduino robots, C)
 - HackNYU Winner — The Eye (Computer Vision + NLP for visually impaired)
+- Level 3 Google Foobar Challenge completion (invitation-only, top ~1% of developers)
+
+## Research Publications
+
+### 1. Future Trends in AI for Cyberbullying Preventions (Sep 2025)
+- **Authors**: Sai Likhith Kanuparthi, Ria Ghosh, Meetu Malhotra, Naresh Kumar
+- **Publisher**: ResearchGate / Stemaway Research
+- **Topic**: Explores how generative AI and deep learning shift cyberbullying intervention from reactive detection to proactive counter-narrative generation and positive reinforcement.
+- **ResearchGate**: https://www.researchgate.net/publication/400478774_Future_Trends_in_AI_for_Cyberbullying_Preventions
+- **Full Text (PDF)**: https://stemaway-discourse.s3.dualstack.us-east-2.amazonaws.com/original/2X/b/b69e629aaf20d516434187dae0aaac429f18f031.pdf
+
+### 2. Machine Learning for Subsurface Applications (Oct 2022)
+- **Author**: Sai Likhith Kanuparthi
+- **Venue**: Society of Petroleum Engineers Annual Technical Conference & Exhibition (SPE ATCE), Houston, TX
+- **Paper ID**: 22ATCE-P-663-SPE
+- **Publisher**: Society of Petroleum Engineers (SPE) — onepetro.org
+- **Topic**: Reusable ML framework for subsurface engineering applications, migrated from Jupyter notebooks to production Python package deployed on AWS SageMaker.
+- **OnePetro**: https://www.onepetro.org/
+
+## Speaking & Research Interests
+
+- LLM infrastructure and production GenAI system design
+- AI safety, PII detection, and data governance at scale
+- AI for social good (cyberbullying prevention, accessibility)
+- Cross-domain ML: energy sector, healthcare, aviation, and consumer technology
+- Agentic AI systems and multi-agent orchestration
+
+## Contact
+
+For consulting, advisory, or speaking inquiries: sailikhithcse@gmail.com
+AI-readable profile: https://sailikhith.me/llm.txt
