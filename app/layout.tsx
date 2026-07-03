@@ -68,7 +68,8 @@ export default function RootLayout({
                 "https://medium.com/sailikhithkanuparthi",
                 "https://dev.to/sailikhithk",
                 "https://leetcode.com/sailikhith",
-                "https://www.hackerrank.com/sailikhithcse"
+                "https://www.hackerrank.com/sailikhithcse",
+                "https://www.researchgate.net/profile/Sai-Likhith-Kanuparthi"
               ],
               "jobTitle": "Senior Software Engineer",
               "worksFor": {

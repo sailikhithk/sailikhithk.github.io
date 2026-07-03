@@ -29,7 +29,7 @@
 
 Sai Likhith Kanuparthi is a Senior Software Engineer and AI expert specializing in Machine Learning Infrastructure and Generative AI platforms. He currently works at Airbnb in San Francisco, where he builds LLM-powered internal tools, data labeling systems, and AI data preparation pipelines at scale.
 
-He has 8+ years of experience shipping production systems across ML infrastructure, LLM orchestration, backend APIs, cloud data pipelines, and full-stack web applications. He is a published AI researcher with papers presented at the Society of Petroleum Engineers (SPE) Annual Technical Conference (ATCE 2022) and indexed on ResearchGate (2025).
+He has 8+ years of experience shipping production systems across ML infrastructure, LLM orchestration, backend APIs, cloud data pipelines, and full-stack web applications. He is a published AI researcher with papers presented at the Society of Petroleum Engineers (SPE) Abu Dhabi International Petroleum Exhibition and Conference (ADIPEC 2022) and indexed on ResearchGate (2025).
 
 ## Work Experience
 
@@ -89,7 +89,7 @@ He has 8+ years of experience shipping production systems across ML infrastructu
 - **Redpen (Airbnb)**: Large-scale internal data labeling tooling using Flask, Celery, Labelbox, Redis, SQLAlchemy, and Alembic.
 - **Dose Management System (Eli Lilly)**: Full-stack healthcare portal for medication management with Java/Spring Boot and React, deployed on OpenShift.
 - **The Eye (HackNYU Winner)**: Computer Vision + NLP application to assist visually impaired individuals.
-- **ML Subsurface Pipeline (Shell)**: ML reusable framework for subsurface applications; refactored Jupyter → Python package (5× faster); deployed on AWS SageMaker; published at SPE ATCE Conference.
+- **ML Subsurface Pipeline (Shell)**: ML reusable framework for subsurface applications; refactored Jupyter → Python package (5× faster); deployed on AWS SageMaker; published at SPE ADIPEC Conference.
 
 ## Recognition
 
@@ -112,13 +112,14 @@ He has 8+ years of experience shipping production systems across ML infrastructu
 
 ### Conference Papers
 
-#### Machine Learning for Subsurface Applications (Oct 2022)
-- **Author**: Sai Likhith Kanuparthi
-- **Venue**: Society of Petroleum Engineers Annual Technical Conference & Exhibition (SPE ATCE), Houston, TX
-- **Paper ID**: 22ATCE-P-663-SPE
+#### Full-Stack Machine Learning Development Framework for Energy Industry Applications (Oct 2022)
+- **Authors**: Jie Chen, Changqing Yao, Pandu R. Devarakota, Mohamed Sidahmed, Zexuan Dong, Sai Kanuparthi, Jia Wei
+- **Venue**: Society of Petroleum Engineers (SPE) Abu Dhabi International Petroleum Exhibition and Conference (ADIPEC), Abu Dhabi, UAE
+- **Paper ID**: SPE-210986-MS
+- **DOI**: https://doi.org/10.2118/210986-MS
 - **Publisher**: Society of Petroleum Engineers (SPE) — onepetro.org
-- **Topic**: Reusable ML framework for subsurface engineering applications, migrated from Jupyter notebooks to production Python package deployed on AWS SageMaker.
-- **OnePetro**: https://www.onepetro.org/
+- **Topic**: Reusable, platform-independent ML framework for energy applications supporting local, Docker, and HPC environments to transition from PoC to productization.
+- **OnePetro**: https://www.onepetro.org/conference-paper/SPE-210986-MS
 
 ### Research Articles
 
