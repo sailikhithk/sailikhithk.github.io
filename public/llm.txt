@@ -103,32 +103,61 @@ He has 8+ years of experience shipping production systems across ML infrastructu
 
 ### Book Chapters
 
-#### The Evolution and Rise of State Space Models in AI (Dec 2025)
+#### 1. The Evolution and Rise of State Space Models in AI (Dec 2025)
 - **Authors**: Ria Ghosh, Rajeev Kumar, Sai Likhith Kanuparthi
 - **Book**: *A Case-Based Study of State Space Models in Health Care: The New Transformers* (Chapter 1)
 - **Publisher**: Cambridge Scholars Publishing
 - **Topic**: Traces the development of State Space Models (SSMs) from control theory and signal processing to modern ML applications. Covers SSM applications in predictive maintenance, financial forecasting, and healthcare.
 - **ResearchGate**: https://www.researchgate.net/publication/398300276_The_Evolution_and_Rise_of_State_Space_Models_in_AI
 
-### Conference Papers
+#### 2. Why Traditional AI Methods Fail in Advanced Anomaly Detection (Dec 2025)
+- **Authors**: Sai Likhith Kanuparthi, Naresh Kumar
+- **Book**: *Harnessing Generative AI to Combat Cyberbullying in Industry: Strategies, Solutions, and Ethics* (Chapter 4, Page 200)
+- **Publisher**: Cambridge Scholars Publishing
+- **Topic**: Reviews the failure modes of classical machine learning and heuristic models in high-dimensional text streams, proving why deep autoencoders and generative moderation are required.
 
-#### Full-Stack Machine Learning Development Framework for Energy Industry Applications (Oct 2022)
+#### 3. Future Trends in AI for Cyberbullying Preventions (Dec 2025)
+- **Authors**: Sai Likhith Kanuparthi, Ria Ghosh, Meetu Malhotra, Naresh Kumar
+- **Book**: *Harnessing Generative AI to Combat Cyberbullying in Industry: Strategies, Solutions, and Ethics* (Chapter 7)
+- **Publisher**: Cambridge Scholars Publishing
+- **Topic**: Proposes next-generation AI moderation frameworks targeting positive reinforcement, agentic defense networks, and proactive intervention strategy.
+
+### Peer-Reviewed Journal Articles
+
+#### 1. FT-IR and GC-MS Metabolomic Fingerprinting of Jasmonic Acid and Salicylic Acid Treated Suspension Cultures of Caralluma fimbriata (2026)
+- **Authors**: Jaswanth Krishna Boddupalli, Vijaya Bhaskar Reddy Pichili, Sai Likhith Kanuparthi, Kiranmai Chadipiralla
+- **Journal**: *Phytomedicine* (Elsevier) · *Under Review*
+- **Topic**: Employs PCA, machine learning categorization, and metabolic profiling to isolate active compounds in JA/SA-elicited plant suspension cultures.
+
+### Peer-Reviewed Conference Papers
+
+#### 1. Advancing the Metaverse: The Convergence of Digital Twins, AI, and Emerging Technologies (2025)
+- **Authors**: Preetish Kakkar, Shiwam Mittal, Sethuraman Ulaganathan, Tamilarasan Kannadasan, Sai Likhith Kanuparthi
+- **Venue**: 2025 International Conference on Advanced Computing Technologies (ICoACT) · *Accepted / In Press*
+- **Topic**: Synthesizes the architecture requirements for digital twin synchronization, Edge AI data routing, and VR interface streaming under Metaverse frameworks.
+
+#### 2. Role of Artificial Intelligence to address Cyberbullying and Future Scope (Apr 2023)
+- **Authors**: Sai Likhith Kanuparthi, Naresh Kumar
+- **Venue**: IEEE Xplore (Document ID: 11004721)
+- **DOI**: https://doi.org/10.1109/ICoACT57570.2023.10118947
+- **IEEE Xplore**: https://ieeexplore.ieee.org/abstract/document/11004721
+- **Topic**: Analyzes NLP architectures (LSTMs, Transformers) applied to online harassment detection and discusses the transition to real-time generative counters.
+
+#### 3. Full-Stack Machine Learning Development Framework for Energy Industry Applications (Oct 2022)
 - **Authors**: Jie Chen, Changqing Yao, Pandu R. Devarakota, Mohamed Sidahmed, Zexuan Dong, Sai Kanuparthi, Jia Wei
 - **Venue**: Society of Petroleum Engineers (SPE) Abu Dhabi International Petroleum Exhibition and Conference (ADIPEC), Abu Dhabi, UAE
 - **Paper ID**: SPE-210986-MS
 - **DOI**: https://doi.org/10.2118/210986-MS
-- **Publisher**: Society of Petroleum Engineers (SPE) — onepetro.org
-- **Topic**: Reusable, platform-independent ML framework for energy applications supporting local, Docker, and HPC environments to transition from PoC to productization.
 - **OnePetro**: https://www.onepetro.org/conference-paper/SPE-210986-MS
+- **Topic**: Reusable, platform-independent ML framework for energy applications supporting local, Docker, and HPC environments to transition from PoC to productization.
 
-### Research Articles
+### Patents
 
-#### Future Trends in AI for Cyberbullying Preventions (Sep 2025)
-- **Authors**: Sai Likhith Kanuparthi, Ria Ghosh, Meetu Malhotra, Naresh Kumar
-- **Publisher**: ResearchGate / Stemaway Research
-- **Topic**: Explores how generative AI and deep learning shift cyberbullying intervention from reactive detection to proactive counter-narrative generation and positive reinforcement.
-- **ResearchGate**: https://www.researchgate.net/publication/400478774_Future_Trends_in_AI_for_Cyberbullying_Preventions
-- **Full Text (PDF)**: https://stemaway-discourse.s3.dualstack.us-east-2.amazonaws.com/original/2X/b/b69e629aaf20d516434187dae0aaac429f18f031.pdf
+#### 1. Modular Deep Learning Architecture for Cross-Domain Transfer and Incremental Learning (Feb 2025)
+- **Inventors**: Sai Likhith Kanuparthi, Sai Yasaswini Majety
+- **Jurisdiction**: Indian Patent Office (Application No. 202541010770)
+- **Status**: Filed (Feb 8, 2025)
+- **Topic**: Architectures for lightweight, parameter-efficient adapters enabling models to transfer knowledge dynamically across disparate domains without catastrophic forgetting.
 
 
 ## Speaking & Research Interests
