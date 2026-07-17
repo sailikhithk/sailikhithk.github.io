@@ -3,18 +3,28 @@ import { motion } from "framer-motion";
 import SectionHeading from "@/app/components/ui/SectionHeading";
 import { publications, type Publication } from "@/app/data";
 
+const typeIcon: Record<Publication["type"], string> = {
+  patent: "fa-lightbulb-o",
+  conference: "fa-microphone",
+  ieee: "fa-certificate",
+  "book-chapter": "fa-book",
+  journal: "fa-newspaper-o",
+};
+
 const typeLabel: Record<Publication["type"], string> = {
+  patent: "Patent",
+  conference: "Conference Paper",
+  ieee: "IEEE Publication",
   "book-chapter": "Book Chapter",
   journal: "Journal Article",
-  conference: "Conference Paper",
-  patent: "Patent",
 };
 
 const typeColor: Record<Publication["type"], string> = {
+  patent: "#9b59b6",
+  conference: "#e67e22",
+  ieee: "#3498db",
   "book-chapter": "#18BC9C",
   journal: "#3498db",
-  conference: "#e67e22",
-  patent: "#9b59b6",
 };
 
 export default function Publications() {
@@ -35,30 +45,35 @@ export default function Publications() {
               style={{
                 padding: "1.75rem 2rem",
                 border: "1px solid var(--card-border)",
+                borderLeft: `4px solid ${pub.badgeColor || typeColor[pub.type]}`,
               }}
             >
+              {/* Top row: icon + type + badge */}
               <div
                 style={{
                   display: "flex",
                   alignItems: "center",
                   gap: "0.75rem",
-                  marginBottom: "0.75rem",
+                  marginBottom: "0.85rem",
                   flexWrap: "wrap",
                 }}
               >
                 <span
                   style={{
-                    background: `${typeColor[pub.type]}22`,
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "0.4rem",
                     color: typeColor[pub.type],
-                    border: `1px solid ${typeColor[pub.type]}55`,
-                    borderRadius: "4px",
-                    padding: "0.2rem 0.6rem",
-                    fontSize: "0.7rem",
+                    fontSize: "0.72rem",
                     fontWeight: 700,
                     textTransform: "uppercase",
                     letterSpacing: "0.05em",
                   }}
                 >
+                  <i
+                    className={`fa ${typeIcon[pub.type]}`}
+                    style={{ fontSize: "0.85rem" }}
+                  />
                   {typeLabel[pub.type]}
                 </span>
                 <span
@@ -70,19 +85,27 @@ export default function Publications() {
                 >
                   {pub.year}
                 </span>
-                {pub.publisher && (
+                {pub.badge && (
                   <span
                     style={{
-                      color: "#888",
-                      fontSize: "0.75rem",
-                      fontStyle: "italic",
+                      background: `${pub.badgeColor}22`,
+                      color: pub.badgeColor,
+                      border: `1px solid ${pub.badgeColor}55`,
+                      borderRadius: "4px",
+                      padding: "0.2rem 0.6rem",
+                      fontSize: "0.68rem",
+                      fontWeight: 700,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.05em",
+                      marginLeft: "auto",
                     }}
                   >
-                    {pub.publisher}
+                    {pub.badge}
                   </span>
                 )}
               </div>
 
+              {/* Title */}
               <h3
                 style={{
                   color: "var(--text)",
@@ -96,6 +119,7 @@ export default function Publications() {
                 {pub.title}
               </h3>
 
+              {/* Venue */}
               <p
                 style={{
                   color: "var(--teal)",
@@ -107,6 +131,7 @@ export default function Publications() {
                 {pub.venue}
               </p>
 
+              {/* Authors */}
               <p
                 style={{
                   color: "#999",
@@ -118,17 +143,68 @@ export default function Publications() {
                 {pub.authors}
               </p>
 
+              {/* Topic */}
               <p
                 style={{
                   color: "var(--muted)",
                   fontSize: "0.85rem",
                   lineHeight: 1.6,
-                  margin: "0 0 0.85rem",
+                  margin: "0 0 1rem",
                 }}
               >
                 {pub.topic}
               </p>
 
+              {/* Impact stats */}
+              {pub.impact && pub.impact.length > 0 && (
+                <div
+                  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    gap: "0.5rem",
+                    marginBottom: "0.85rem",
+                  }}
+                >
+                  {pub.impact.map((stat, j) => (
+                    <div
+                      key={j}
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        padding: "0.5rem 0.75rem",
+                        background: "rgba(255,255,255,0.04)",
+                        border: "1px solid rgba(255,255,255,0.08)",
+                        borderRadius: "6px",
+                        minWidth: "120px",
+                      }}
+                    >
+                      <span
+                        style={{
+                          color: "#888",
+                          fontSize: "0.65rem",
+                          fontWeight: 600,
+                          textTransform: "uppercase",
+                          letterSpacing: "0.04em",
+                          marginBottom: "0.15rem",
+                        }}
+                      >
+                        {stat.label}
+                      </span>
+                      <span
+                        style={{
+                          color: "var(--text)",
+                          fontSize: "0.78rem",
+                          fontWeight: 600,
+                        }}
+                      >
+                        {stat.value}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Links */}
               {pub.links.length > 0 && (
                 <div
                   style={{
