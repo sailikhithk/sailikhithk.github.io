@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import SectionHeading from "@/app/components/ui/SectionHeading";
 import { publications, type Publication } from "@/app/data";
 
@@ -43,11 +44,42 @@ export default function Publications() {
               transition={{ duration: 0.4, delay: 0.05 * i }}
               className="card-glass"
               style={{
-                padding: "1.75rem 2rem",
+                padding: "1.5rem",
                 border: "1px solid var(--card-border)",
                 borderLeft: `4px solid ${pub.badgeColor || typeColor[pub.type]}`,
+                display: "flex",
+                gap: "1.25rem",
+                alignItems: "flex-start",
               }}
             >
+              {/* Thumbnail */}
+              {pub.thumbnail && (
+                <div
+                  style={{
+                    flexShrink: 0,
+                    width: "120px",
+                    height: "160px",
+                    borderRadius: "6px",
+                    overflow: "hidden",
+                    border: "1px solid rgba(255,255,255,0.1)",
+                    background: "rgba(0,0,0,0.3)",
+                    position: "relative",
+                  }}
+                >
+                  <Image
+                    src={pub.thumbnail}
+                    alt={pub.title}
+                    fill
+                    style={{
+                      objectFit: "cover",
+                    }}
+                    sizes="120px"
+                  />
+                </div>
+              )}
+
+              {/* Content */}
+              <div style={{ flex: 1, minWidth: 0 }}>
               {/* Top row: icon + type + badge */}
               <div
                 style={{
@@ -252,6 +284,7 @@ export default function Publications() {
                   ))}
                 </div>
               )}
+              </div>
             </motion.div>
           ))}
         </div>

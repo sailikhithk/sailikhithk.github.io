@@ -9,6 +9,7 @@ export interface Publication {
   impact?: { label: string; value: string }[];
   badge?: string;
   badgeColor?: string;
+  thumbnail?: string;
   links: { label: string; url: string }[];
 }
 
@@ -24,6 +25,7 @@ export const publications: Publication[] = [
       "Architectures for lightweight, parameter-efficient adapters enabling models to transfer knowledge dynamically across disparate domains without catastrophic forgetting. Aligns with frontier modular DL research (Google Modular Deep Learning survey, Microsoft US10235994B2).",
     badge: "FILED",
     badgeColor: "#9b59b6",
+    thumbnail: "/img/publications/patent.png",
     impact: [
       { label: "Status", value: "Filed Feb 8, 2025" },
       { label: "Jurisdiction", value: "Indian Patent Office" },
@@ -44,6 +46,7 @@ export const publications: Publication[] = [
       "Reusable, platform-independent ML framework for energy applications supporting local, Docker, and HPC environments. Co-authored with Shell's top ML researchers (lead author h-index 69, 21,611 citations). Demonstrated cost + turnaround time savings in production.",
     badge: "6 CITATIONS",
     badgeColor: "#e67e22",
+    thumbnail: "/img/publications/shell-adipec.png",
     impact: [
       { label: "Citations", value: "6" },
       { label: "Lead Author h-index", value: "69 (Jie Chen, Shell)" },
@@ -62,6 +65,7 @@ export const publications: Publication[] = [
       "Analyzes NLP architectures (LSTMs, Transformers) applied to online harassment detection and discusses the transition to real-time generative counters. Indexed in IEEE Xplore with DOI.",
     badge: "IEEE INDEXED",
     badgeColor: "#3498db",
+    thumbnail: "/img/publications/ieee-cyberbullying.png",
     impact: [
       { label: "Index", value: "IEEE Xplore" },
       { label: "DOI", value: "10.1109/ICoACT57570.2023.10118947" },
@@ -90,6 +94,7 @@ export const publications: Publication[] = [
       "Traces the development of State Space Models (SSMs) from control theory and signal processing to modern ML applications. Covers SSM applications in predictive maintenance, financial forecasting, and healthcare. Opening chapter of a Cambridge Scholars book.",
     badge: "CH. 1",
     badgeColor: "#18BC9C",
+    thumbnail: "/img/publications/ssm-book.png",
     impact: [
       { label: "Publisher", value: "Cambridge Scholars" },
       { label: "Chapter", value: "1 (Opening)" },
@@ -114,6 +119,7 @@ export const publications: Publication[] = [
       "Proposes next-generation AI moderation frameworks targeting positive reinforcement, agentic defense networks, and proactive intervention. Published in a 468-page edited volume on Generative AI for online safety.",
     badge: "468-PAGE BOOK",
     badgeColor: "#18BC9C",
+    thumbnail: "/img/publications/cyberbullying-book.png",
     impact: [
       { label: "ISBN", value: "978-1-0364-5866-9" },
       { label: "Pages", value: "468" },
@@ -142,6 +148,7 @@ export const publications: Publication[] = [
       "Reviews the failure modes of classical machine learning and heuristic models in high-dimensional text streams, proving why deep autoencoders and generative moderation are required.",
     badge: "CH. 4",
     badgeColor: "#18BC9C",
+    thumbnail: "/img/publications/anomaly-detection.png",
     impact: [
       { label: "Publisher", value: "Cambridge Scholars" },
       { label: "Chapter", value: "4 (p. 200)" },
@@ -166,6 +173,7 @@ export const publications: Publication[] = [
       "Synthesizes the architecture requirements for digital twin synchronization, Edge AI data routing, and VR interface streaming under Metaverse frameworks.",
     badge: "ACCEPTED",
     badgeColor: "#e67e22",
+    thumbnail: "/img/publications/metaverse.png",
     impact: [
       { label: "Status", value: "Accepted / In Press" },
       { label: "Venue", value: "ICoACT 2025" },
@@ -186,6 +194,7 @@ export const publications: Publication[] = [
       "Employs PCA, machine learning categorization, and metabolic profiling to isolate active compounds in JA/SA-elicited plant suspension cultures. Submitted to Elsevier's top phytotherapy journal (IF ~6.0).",
     badge: "UNDER REVIEW",
     badgeColor: "#3498db",
+    thumbnail: "/img/publications/phytomedicine.png",
     impact: [
       { label: "Journal", value: "Phytomedicine (Elsevier)" },
       { label: "Impact Factor", value: "~6.0" },
