@@ -48,36 +48,10 @@ export default function Publications() {
                 border: "1px solid var(--card-border)",
                 borderLeft: `4px solid ${pub.badgeColor || typeColor[pub.type]}`,
                 display: "flex",
-                gap: "1.25rem",
+                gap: "1.5rem",
                 alignItems: "flex-start",
               }}
             >
-              {/* Thumbnail */}
-              {pub.thumbnail && (
-                <div
-                  style={{
-                    flexShrink: 0,
-                    width: "120px",
-                    height: "160px",
-                    borderRadius: "6px",
-                    overflow: "hidden",
-                    border: "1px solid rgba(255,255,255,0.1)",
-                    background: "rgba(0,0,0,0.3)",
-                    position: "relative",
-                  }}
-                >
-                  <Image
-                    src={pub.thumbnail}
-                    alt={pub.title}
-                    fill
-                    style={{
-                      objectFit: "cover",
-                    }}
-                    sizes="120px"
-                  />
-                </div>
-              )}
-
               {/* Content */}
               <div style={{ flex: 1, minWidth: 0 }}>
               {/* Top row: icon + type + badge */}
@@ -285,6 +259,33 @@ export default function Publications() {
                 </div>
               )}
               </div>
+
+              {/* Thumbnail (right side, larger) */}
+              {pub.thumbnail && (
+                <div
+                  style={{
+                    flexShrink: 0,
+                    width: "200px",
+                    height: "260px",
+                    borderRadius: "8px",
+                    overflow: "hidden",
+                    border: "1px solid rgba(255,255,255,0.12)",
+                    background: "rgba(0,0,0,0.3)",
+                    position: "relative",
+                    boxShadow: "0 4px 16px rgba(0,0,0,0.4)",
+                  }}
+                >
+                  <Image
+                    src={pub.thumbnail}
+                    alt={pub.title}
+                    fill
+                    style={{
+                      objectFit: "cover",
+                    }}
+                    sizes="200px"
+                  />
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
