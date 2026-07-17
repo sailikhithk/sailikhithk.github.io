@@ -16,28 +16,74 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Sai Likhith Kanuparthi",
+  metadataBase: new URL("https://sailikhith.me"),
+  title: {
+    default: "Sai Likhith Kanuparthi — Senior Software Engineer, ML Infrastructure & AI Engineering",
+    template: "%s — Sai Likhith Kanuparthi",
+  },
   description:
-    "Sr. Software Engineer, ML Infrastructure & AI Engineering at Airbnb. Building GenAI platforms and data labeling infrastructure at scale.",
+    "Sai Likhith Kanuparthi is a Senior Software Engineer specializing in ML Infrastructure and AI Engineering at Airbnb. Building GenAI platforms, data labeling infrastructure, and agentic memory systems at scale. NYU MS Computer Science.",
   keywords: [
     "Sai Likhith Kanuparthi",
-    "Airbnb",
-    "ML Infrastructure",
-    "GenAI",
-    "Software Engineer",
-    "Python",
-    "LLM",
-    "AI",
-    "portfolio",
+    "Sai Likhith",
+    "sailikhithk",
+    "sailikhith",
+    "Sai Kanuparthi",
+    "Airbnb Software Engineer",
+    "ML Infrastructure Engineer",
+    "AI Engineering",
+    "GenAI Platform",
+    "LLM Infrastructure",
+    "Agentic Memory",
+    "Data Labeling Infrastructure",
+    "Senior Software Engineer",
+    "NYU Computer Science",
+    "Python Backend Engineer",
+    "Distributed Systems Engineer",
+    "Eli Lilly Dose Management System",
+    "Southwest Airlines Engineer",
+    "Shell Data Scientist",
+    "Oracle ERP Analytics",
   ],
-  authors: [{ name: "Sai Likhith Kanuparthi" }],
+  authors: [{ name: "Sai Likhith Kanuparthi", url: "https://sailikhith.me" }],
+  creator: "Sai Likhith Kanuparthi",
+  publisher: "Sai Likhith Kanuparthi",
+  alternates: {
+    canonical: "https://sailikhith.me",
+  },
   openGraph: {
-    title: "Sai Likhith Kanuparthi",
-    description: "Sr. SWE ML Infrastructure at Airbnb",
+    title: "Sai Likhith Kanuparthi — Senior Software Engineer, ML Infrastructure & AI Engineering",
+    description: "Sr. Software Engineer at Airbnb building GenAI platforms and data labeling infrastructure. NYU MS Computer Science. Ex-Eli Lilly, Southwest, Shell, Oracle.",
     url: "https://sailikhith.me",
     siteName: "Sai Likhith Kanuparthi",
-    type: "website",
+    type: "profile",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Sai Likhith Kanuparthi — Senior Software Engineer, ML Infrastructure & AI Engineering",
+      },
+    ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sai Likhith Kanuparthi — Senior Software Engineer @ Airbnb",
+    description: "ML Infrastructure & AI Engineering. Building GenAI platforms and agentic memory systems at scale. NYU MS CS.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  category: "technology",
 };
 
 export default function RootLayout({
@@ -59,8 +105,45 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Sai Likhith Kanuparthi",
+              "alternateName": ["Sai Likhith", "sailikhithk", "Sai Kanuparthi"],
               "url": "https://sailikhith.me",
               "image": "https://sailikhith.me/img/circle-cropped.png",
+              "email": "mailto:sailikhithcse@gmail.com",
+              "jobTitle": "Senior Software Engineer — ML Infrastructure & AI Engineering",
+              "description": "Senior Software Engineer specializing in ML Infrastructure, GenAI platforms, and agentic memory systems. Currently at Airbnb.",
+              "nationality": {
+                "@type": "Country",
+                "name": "United States"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "San Francisco",
+                "addressRegion": "CA",
+                "addressCountry": "United States"
+              },
+              "knowsAbout": [
+                "ML Infrastructure",
+                "AI Engineering",
+                "GenAI Platform Engineering",
+                "LLM Infrastructure",
+                "Agentic Memory Systems",
+                "Data Labeling Infrastructure",
+                "Distributed Systems",
+                "Python",
+                "TypeScript",
+                "React",
+                "Next.js",
+                "PostgreSQL",
+                "Kafka",
+                "Redis",
+                "Kubernetes",
+                "Terraform",
+                "AWS",
+                "GCP",
+                "Vercel",
+                "Docker"
+              ],
+              "knowsLanguage": ["English", "Telugu", "Hindi"],
               "sameAs": [
                 "https://www.linkedin.com/in/sailikhithk",
                 "https://github.com/sailikhithk",
@@ -69,17 +152,53 @@ export default function RootLayout({
                 "https://dev.to/sailikhithk",
                 "https://leetcode.com/sailikhith",
                 "https://www.hackerrank.com/sailikhithcse",
-                "https://www.researchgate.net/profile/Sai-Likhith-Kanuparthi"
+                "https://www.researchgate.net/profile/Sai-Likhith-Kanuparthi",
+                "https://sailikhith.me",
+                "https://airbnb.sailikhith.me"
               ],
-              "jobTitle": "Senior Software Engineer",
               "worksFor": {
                 "@type": "Organization",
                 "name": "Airbnb"
               },
-              "alumniOf": {
-                "@type": "EducationalOrganization",
-                "name": "New York University"
-              }
+              "alumniOf": [
+                {
+                  "@type": "EducationalOrganization",
+                  "name": "New York University",
+                  "department": "Computer Science"
+                },
+                {
+                  "@type": "EducationalOrganization",
+                  "name": "JNTUA",
+                  "department": "Electronics and Communication Engineering"
+                }
+              ],
+              "workExperience": [
+                {
+                  "@type": "Organization",
+                  "name": "Airbnb",
+                  "description": "Senior ML / AI Infrastructure Engineer — GenAI Platform"
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Eli Lilly",
+                  "description": "Senior Backend / Full-Stack Engineer — Dose Management System"
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Southwest Airlines",
+                  "description": "Senior Backend / Full Stack Application Engineer"
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Shell",
+                  "description": "Senior Python Backend / Data Scientist"
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Oracle",
+                  "description": "Backend Developer / Data Engineer"
+                }
+              ]
             })
           }}
         />
