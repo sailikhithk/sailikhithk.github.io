@@ -10,3 +10,5 @@ export { publications } from "./publications";
 export type { Publication } from "./publications";
 export { certifications } from "./certifications";
 export type { Certification } from "./certifications";
+export { degrees } from "./education";
+export type { Degree, EducationHighlight } from "./education";
