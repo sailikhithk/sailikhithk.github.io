@@ -18,9 +18,9 @@ export default function Home() {
       <AboutAndTechStack />
       <Recognition />
       <Experience />
-      <Education />
       <Publications />
       <Certifications />
+      <Education />
       <Projects />
       <Contact />
       <Footer />
