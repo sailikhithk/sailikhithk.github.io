@@ -1,8 +1,7 @@
 "use client";
-import { AnimatePresence, motion } from "framer-motion";
-import { useEffect } from "react";
 import Image from "next/image";
 import type { Degree } from "@/app/data";
+import { Modal } from "./Modal";
 
 interface EducationModalProps {
   degree: Degree | null;
@@ -10,151 +9,139 @@ interface EducationModalProps {
 }
 
 export function EducationModal({ degree, onClose }: EducationModalProps) {
-  useEffect(() => {
-    if (!degree) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-    document.addEventListener("keydown", onKey);
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.removeEventListener("keydown", onKey);
-      document.body.style.overflow = "";
-    };
-  }, [degree, onClose]);
-
   return (
-    <AnimatePresence>
+    <Modal open={!!degree} onClose={onClose}>
       {degree && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.2 }}
-          onClick={onClose}
-          style={{
-            position: "fixed",
-            inset: 0,
-            background: "rgba(0,0,0,0.75)",
-            backdropFilter: "blur(4px)",
-            zIndex: 100,
-            display: "flex",
-            alignItems: "flex-start",
-            justifyContent: "center",
-            padding: "5vh 1rem 2rem",
-            overflowY: "auto",
-          }}
-        >
-          <motion.div
-            initial={{ opacity: 0, y: 30, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.98 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            onClick={(e) => e.stopPropagation()}
-            className="card-glass"
+        <>
+          {/* Header */}
+          <div
             style={{
-              maxWidth: "780px",
-              width: "100%",
-              padding: "2rem",
-              position: "relative",
-              border: "1px solid rgba(24,188,156,0.25)",
-              boxShadow: "0 12px 48px rgba(0,0,0,0.6)",
+              display: "flex",
+              gap: "1.25rem",
+              alignItems: "flex-start",
+              marginBottom: "1.5rem",
+              flexWrap: "wrap",
+              paddingRight: "2.5rem",
             }}
           >
-            {/* Close button */}
-            <button
-              onClick={onClose}
-              aria-label="Close"
+            <Image
+              src={degree.logo}
+              alt={degree.shortName}
+              width={80}
+              height={80}
               style={{
-                position: "absolute",
-                top: "1rem",
-                right: "1rem",
-                background: "rgba(255,255,255,0.08)",
-                border: "1px solid rgba(255,255,255,0.15)",
-                borderRadius: "50%",
-                width: "36px",
-                height: "36px",
-                color: "var(--muted)",
-                fontSize: "1.1rem",
-                cursor: "pointer",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                zIndex: 2,
+                objectFit: "contain",
+                borderRadius: "8px",
+                flexShrink: 0,
+              }}
+            />
+            <div style={{ flex: 1, minWidth: "200px" }}>
+              <h3
+                style={{
+                  color: "var(--text)",
+                  fontFamily: "var(--font-montserrat), sans-serif",
+                  fontSize: "1.3rem",
+                  fontWeight: 700,
+                  margin: "0 0 0.35rem",
+                  lineHeight: 1.2,
+                }}
+              >
+                {degree.degree}
+              </h3>
+              <p
+                style={{
+                  color: "var(--teal)",
+                  fontSize: "0.9rem",
+                  fontWeight: 600,
+                  margin: "0 0 0.25rem",
+                }}
+              >
+                {degree.institution}
+              </p>
+              <p
+                style={{
+                  color: "var(--muted)",
+                  fontSize: "0.8rem",
+                  margin: 0,
+                }}
+              >
+                {degree.period} · {degree.location} · GPA {degree.gpa}
+              </p>
+            </div>
+          </div>
+
+          {/* Overview */}
+          <p
+            style={{
+              color: "#ddd",
+              fontSize: "0.95rem",
+              lineHeight: 1.7,
+              margin: "0 0 1.5rem",
+            }}
+          >
+            {degree.overview}
+          </p>
+
+          {/* Highlights */}
+          <div style={{ marginBottom: "1.5rem" }}>
+            <h4
+              style={{
+                color: "var(--teal)",
+                fontSize: "0.78rem",
+                fontWeight: 700,
+                textTransform: "uppercase",
+                letterSpacing: "0.06em",
+                margin: "0 0 0.85rem",
               }}
             >
-              ✕
-            </button>
-
-            {/* Header */}
+              Key Highlights
+            </h4>
             <div
               style={{
-                display: "flex",
-                gap: "1.25rem",
-                alignItems: "flex-start",
-                marginBottom: "1.5rem",
-                flexWrap: "wrap",
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: "0.85rem",
               }}
             >
-              <Image
-                src={degree.logo}
-                alt={degree.shortName}
-                width={80}
-                height={80}
-                style={{
-                  objectFit: "contain",
-                  borderRadius: "8px",
-                  flexShrink: 0,
-                }}
-              />
-              <div style={{ flex: 1, minWidth: "200px" }}>
-                <h3
+              {degree.highlights.map((h, i) => (
+                <div
+                  key={i}
                   style={{
-                    color: "var(--text)",
-                    fontFamily: "var(--font-montserrat), sans-serif",
-                    fontSize: "1.3rem",
-                    fontWeight: 700,
-                    margin: "0 0 0.35rem",
-                    lineHeight: 1.2,
+                    padding: "0.85rem 1rem",
+                    background: "rgba(24,188,156,0.06)",
+                    border: "1px solid rgba(24,188,156,0.15)",
+                    borderRadius: "8px",
                   }}
                 >
-                  {degree.degree}
-                </h3>
-                <p
-                  style={{
-                    color: "var(--teal)",
-                    fontSize: "0.9rem",
-                    fontWeight: 600,
-                    margin: "0 0 0.25rem",
-                  }}
-                >
-                  {degree.institution}
-                </p>
-                <p
-                  style={{
-                    color: "var(--muted)",
-                    fontSize: "0.8rem",
-                    margin: 0,
-                  }}
-                >
-                  {degree.period} · {degree.location} · GPA {degree.gpa}
-                </p>
-              </div>
+                  <p
+                    style={{
+                      color: "var(--teal)",
+                      fontSize: "0.75rem",
+                      fontWeight: 700,
+                      margin: "0 0 0.3rem",
+                      textTransform: "uppercase",
+                      letterSpacing: "0.04em",
+                    }}
+                  >
+                    {h.label}
+                  </p>
+                  <p
+                    style={{
+                      color: "var(--muted)",
+                      fontSize: "0.82rem",
+                      lineHeight: 1.5,
+                      margin: 0,
+                    }}
+                  >
+                    {h.detail}
+                  </p>
+                </div>
+              ))}
             </div>
+          </div>
 
-            {/* Overview */}
-            <p
-              style={{
-                color: "#ddd",
-                fontSize: "0.95rem",
-                lineHeight: 1.7,
-                margin: "0 0 1.5rem",
-              }}
-            >
-              {degree.overview}
-            </p>
-
-            {/* Highlights */}
+          {/* Projects */}
+          {degree.projects.length > 0 && (
             <div style={{ marginBottom: "1.5rem" }}>
               <h4
                 style={{
@@ -163,206 +150,146 @@ export function EducationModal({ degree, onClose }: EducationModalProps) {
                   fontWeight: 700,
                   textTransform: "uppercase",
                   letterSpacing: "0.06em",
-                  margin: "0 0 0.85rem",
+                  margin: "0 0 0.6rem",
                 }}
               >
-                Key Highlights
+                Notable Projects
+              </h4>
+              <ul
+                style={{
+                  listStyle: "none",
+                  padding: 0,
+                  margin: 0,
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "0.5rem",
+                }}
+              >
+                {degree.projects.map((p, i) => (
+                  <li
+                    key={i}
+                    style={{
+                      color: "var(--muted)",
+                      fontSize: "0.85rem",
+                      lineHeight: 1.5,
+                      paddingLeft: "1.25rem",
+                      position: "relative",
+                    }}
+                  >
+                    <span
+                      style={{
+                        position: "absolute",
+                        left: 0,
+                        top: "0.35rem",
+                        width: "6px",
+                        height: "6px",
+                        borderRadius: "50%",
+                        background: "var(--teal)",
+                      }}
+                    />
+                    {p}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Coursework */}
+          {degree.coursework.length > 0 && (
+            <div style={{ marginBottom: "1.5rem" }}>
+              <h4
+                style={{
+                  color: "var(--teal)",
+                  fontSize: "0.78rem",
+                  fontWeight: 700,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.06em",
+                  margin: "0 0 0.6rem",
+                }}
+              >
+                Coursework
               </h4>
               <div
                 style={{
-                  display: "grid",
-                  gridTemplateColumns: "1fr 1fr",
-                  gap: "0.85rem",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "0.5rem",
                 }}
               >
-                {degree.highlights.map((h, i) => (
-                  <div
+                {degree.coursework.map((c, i) => (
+                  <span
                     key={i}
                     style={{
-                      padding: "0.85rem 1rem",
-                      background: "rgba(24,188,156,0.06)",
-                      border: "1px solid rgba(24,188,156,0.15)",
-                      borderRadius: "8px",
+                      color: "var(--muted)",
+                      fontSize: "0.78rem",
+                      background: "rgba(255,255,255,0.05)",
+                      border: "1px solid rgba(255,255,255,0.1)",
+                      borderRadius: "4px",
+                      padding: "0.3rem 0.65rem",
                     }}
                   >
-                    <p
-                      style={{
-                        color: "var(--teal)",
-                        fontSize: "0.75rem",
-                        fontWeight: 700,
-                        margin: "0 0 0.3rem",
-                        textTransform: "uppercase",
-                        letterSpacing: "0.04em",
-                      }}
-                    >
-                      {h.label}
-                    </p>
-                    <p
-                      style={{
-                        color: "var(--muted)",
-                        fontSize: "0.82rem",
-                        lineHeight: 1.5,
-                        margin: 0,
-                      }}
-                    >
-                      {h.detail}
-                    </p>
-                  </div>
+                    {c}
+                  </span>
                 ))}
               </div>
             </div>
+          )}
 
-            {/* Projects */}
-            {degree.projects.length > 0 && (
-              <div style={{ marginBottom: "1.5rem" }}>
-                <h4
-                  style={{
-                    color: "var(--teal)",
-                    fontSize: "0.78rem",
-                    fontWeight: 700,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.06em",
-                    margin: "0 0 0.6rem",
-                  }}
-                >
-                  Notable Projects
-                </h4>
-                <ul
-                  style={{
-                    listStyle: "none",
-                    padding: 0,
-                    margin: 0,
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "0.5rem",
-                  }}
-                >
-                  {degree.projects.map((p, i) => (
-                    <li
-                      key={i}
-                      style={{
-                        color: "var(--muted)",
-                        fontSize: "0.85rem",
-                        lineHeight: 1.5,
-                        paddingLeft: "1.25rem",
-                        position: "relative",
-                      }}
-                    >
-                      <span
-                        style={{
-                          position: "absolute",
-                          left: 0,
-                          top: "0.35rem",
-                          width: "6px",
-                          height: "6px",
-                          borderRadius: "50%",
-                          background: "var(--teal)",
-                        }}
-                      />
-                      {p}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {/* Coursework */}
-            {degree.coursework.length > 0 && (
-              <div style={{ marginBottom: "1.5rem" }}>
-                <h4
-                  style={{
-                    color: "var(--teal)",
-                    fontSize: "0.78rem",
-                    fontWeight: 700,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.06em",
-                    margin: "0 0 0.6rem",
-                  }}
-                >
-                  Coursework
-                </h4>
-                <div
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: "0.5rem",
-                  }}
-                >
-                  {degree.coursework.map((c, i) => (
+          {/* Achievements */}
+          {degree.achievements.length > 0 && (
+            <div>
+              <h4
+                style={{
+                  color: "var(--teal)",
+                  fontSize: "0.78rem",
+                  fontWeight: 700,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.06em",
+                  margin: "0 0 0.6rem",
+                }}
+              >
+                Achievements
+              </h4>
+              <ul
+                style={{
+                  listStyle: "none",
+                  padding: 0,
+                  margin: 0,
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "0.4rem",
+                }}
+              >
+                {degree.achievements.map((a, i) => (
+                  <li
+                    key={i}
+                    style={{
+                      color: "var(--muted)",
+                      fontSize: "0.85rem",
+                      lineHeight: 1.5,
+                      paddingLeft: "1.25rem",
+                      position: "relative",
+                    }}
+                  >
                     <span
-                      key={i}
                       style={{
-                        color: "var(--muted)",
-                        fontSize: "0.78rem",
-                        background: "rgba(255,255,255,0.05)",
-                        border: "1px solid rgba(255,255,255,0.1)",
-                        borderRadius: "4px",
-                        padding: "0.3rem 0.65rem",
+                        position: "absolute",
+                        left: 0,
+                        top: "0.35rem",
+                        color: "var(--teal)",
+                        fontSize: "0.8rem",
                       }}
                     >
-                      {c}
+                      ★
                     </span>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Achievements */}
-            {degree.achievements.length > 0 && (
-              <div>
-                <h4
-                  style={{
-                    color: "var(--teal)",
-                    fontSize: "0.78rem",
-                    fontWeight: 700,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.06em",
-                    margin: "0 0 0.6rem",
-                  }}
-                >
-                  Achievements
-                </h4>
-                <ul
-                  style={{
-                    listStyle: "none",
-                    padding: 0,
-                    margin: 0,
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "0.4rem",
-                  }}
-                >
-                  {degree.achievements.map((a, i) => (
-                    <li
-                      key={i}
-                      style={{
-                        color: "var(--muted)",
-                        fontSize: "0.85rem",
-                        lineHeight: 1.5,
-                        paddingLeft: "1.25rem",
-                        position: "relative",
-                      }}
-                    >
-                      <span
-                        style={{
-                          position: "absolute",
-                          left: 0,
-                          top: "0.35rem",
-                          color: "var(--teal)",
-                          fontSize: "0.8rem",
-                        }}
-                      >
-                        ★
-                      </span>
-                      {a}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </motion.div>
-        </motion.div>
+                    {a}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </>
       )}
-    </AnimatePresence>
+    </Modal>
   );
 }
