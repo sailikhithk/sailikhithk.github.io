@@ -99,6 +99,8 @@ export function ScrollTimeline({ jobs }: { jobs: Job[] }) {
                 fontSize: "1rem",
                 fontFamily: "var(--font-montserrat), sans-serif",
                 lineHeight: 1.2,
+                maxWidth: "120px",
+                display: "inline-block",
               }}
             >
               {job.company}
