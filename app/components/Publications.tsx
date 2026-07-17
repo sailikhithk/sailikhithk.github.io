@@ -270,7 +270,7 @@ export default function Publications() {
                     borderRadius: "8px",
                     overflow: "hidden",
                     border: "1px solid rgba(255,255,255,0.12)",
-                    background: "rgba(0,0,0,0.3)",
+                    background: "#f4f4f2",
                     position: "relative",
                     boxShadow: "0 4px 16px rgba(0,0,0,0.4)",
                   }}
@@ -280,7 +280,7 @@ export default function Publications() {
                     alt={pub.title}
                     fill
                     style={{
-                      objectFit: "cover",
+                      objectFit: "contain",
                     }}
                     sizes="200px"
                   />
