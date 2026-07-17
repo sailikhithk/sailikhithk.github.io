@@ -2,11 +2,13 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import type { Job } from "@/app/types";
+import { JobModal } from "./JobModal";
 
 export function ScrollTimeline({ jobs }: { jobs: Job[] }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const lineRef = useRef<HTMLDivElement>(null);
   const [lineHeight, setLineHeight] = useState(0);
+  const [activeJob, setActiveJob] = useState<Job | null>(null);
 
   useEffect(() => {
     if (lineRef.current) {
@@ -73,10 +75,7 @@ export function ScrollTimeline({ jobs }: { jobs: Job[] }) {
               display: "flex",
               flexDirection: "column",
               alignItems: "flex-start",
-              // Fixed label width keeps all content cards aligned across rows.
-              width: "145px",
-              minWidth: "145px",
-              maxWidth: "145px",
+              minWidth: "160px",
               flexShrink: 0,
             }}
           >
@@ -100,8 +99,6 @@ export function ScrollTimeline({ jobs }: { jobs: Job[] }) {
                 fontSize: "1rem",
                 fontFamily: "var(--font-montserrat), sans-serif",
                 lineHeight: 1.2,
-                maxWidth: "135px",
-                whiteSpace: "normal",
               }}
             >
               {job.company}
@@ -138,7 +135,31 @@ export function ScrollTimeline({ jobs }: { jobs: Job[] }) {
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.4, delay: 0.05 }}
             className="card-glass"
-            style={{ flex: 1 }}
+            onClick={() => setActiveJob(job)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                setActiveJob(job);
+              }
+            }}
+            style={{
+              flex: 1,
+              cursor: "pointer",
+              transition: "border-color 0.2s, transform 0.2s, box-shadow 0.2s",
+              border: "1px solid var(--card-border)",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = "rgba(24,188,156,0.5)";
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow = "0 8px 32px rgba(24,188,156,0.12)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = "var(--card-border)";
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = "0 4px 24px rgba(0,0,0,0.3)";
+            }}
           >
             <p
               style={{
@@ -165,14 +186,32 @@ export function ScrollTimeline({ jobs }: { jobs: Job[] }) {
                 color: "#666",
                 fontSize: "0.78rem",
                 fontStyle: "italic",
-                margin: 0,
+                margin: "0 0 0.85rem",
               }}
             >
               {job.stack}
             </p>
+            <p
+              style={{
+                color: "var(--teal)",
+                fontSize: "0.74rem",
+                fontWeight: 600,
+                margin: 0,
+                textTransform: "uppercase",
+                letterSpacing: "0.06em",
+                display: "flex",
+                alignItems: "center",
+                gap: "0.4rem",
+              }}
+            >
+              <i className="fa fa-plus-circle" style={{ fontSize: "0.8rem" }} />
+              View details
+            </p>
           </motion.div>
         </div>
       ))}
+
+      <JobModal job={activeJob} onClose={() => setActiveJob(null)} />
     </div>
   );
 }

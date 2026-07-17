@@ -1,10 +1,21 @@
+export interface JobHighlight {
+  label: string;
+  detail: string;
+}
+
 export interface Job {
   company: string;
   logo: string | null;
   role: string;
   period: string;
+  location: string;
   desc: string;
   stack: string;
+  overview: string;
+  highlights: JobHighlight[];
+  metrics: string[];
+  recognition?: string[];
+  stackList: string[];
 }
 
 export interface Project {
