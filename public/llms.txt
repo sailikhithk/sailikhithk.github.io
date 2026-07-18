@@ -1,0 +1,130 @@
+# Sai Likhith Kanuparthi
+
+> Senior Software Engineer — ML Infrastructure & AI Engineering at Airbnb. Building GenAI platforms, data labeling infrastructure, and agentic memory systems at scale. NYU MS Computer Science. 8+ years shipping production systems across ML infrastructure, LLM orchestration, backend APIs, cloud data pipelines, and full-stack web applications.
+
+## Identity
+
+- Full Name: Sai Likhith Kanuparthi
+- Role: Senior Software Engineer — ML Infrastructure & AI Engineering
+- Employer: Airbnb (San Francisco, CA)
+- Email: sailikhithcse@gmail.com
+- Location: San Francisco, California, USA
+- Portfolio: https://sailikhith.me
+- Airbnb Portfolio: https://airbnb.sailikhith.me
+- GitHub: https://github.com/sailikhithk
+- LinkedIn: https://www.linkedin.com/in/sailikhithk
+- Medium: https://medium.com/@sailikhith
+- DEV.to: https://dev.to/sailikhithk
+- ResearchGate: https://www.researchgate.net/profile/Sai-Likhith-Kanuparthi
+- LeetCode: https://leetcode.com/sailikhith
+- HackerRank: https://www.hackerrank.com/sailikhithcse
+- Twitter / X: https://twitter.com/codewithsai
+
+## Work Experience
+
+### Airbnb — Senior Software Engineer, ML Infrastructure (Sep 2024 – Present)
+- Built BPI Virtual Analyst: 5-step LLM wizard integrating 30+ models (GPT-4o, Claude, Gemini, Llama), used by ~55 analysts. Scaled from 600 → 10,000 rows/run.
+- Built Presidio PII pipeline (30% faster detection). Led Redpen label export upgrade targeting 80% runtime reduction.
+- Stack: Python, Streamlit, Flask, Celery, Airflow, Labelbox, Presidio, AWS, OpenTelemetry
+
+### Eli Lilly — Senior Backend / Full-Stack Engineer (Feb 2024 – Aug 2024)
+- Dose Management System for clinical trials. SAP migration. 21 CFR Part 11 compliance.
+- Stack: Java, Spring Boot, React, SAP, PostgreSQL, Azure
+
+### Southwest Airlines — Senior Backend / Full Stack Application Engineer (Jan 2023 – Jan 2024)
+- Flight dispatch system handling 4M requests/min. Distributed lock for flight assignment.
+- Stack: Java, Spring Boot, Kafka, Redis, Kubernetes, AWS
+
+### Shell — Senior Python Backend / Data Scientist (Jun 2021 – Dec 2022)
+- NLP platform processing 17M pageviews/month. Accuracy 86% → 94%. ML framework published at SPE ADIPEC 2022.
+- Stack: Python, TensorFlow, Kubernetes, AWS SageMaker, Docker
+
+### Oracle — Backend Developer / Data Engineer (Aug 2017 – Jul 2019)
+- ERP analytics across P2P + O2C for 13 business units. Workflow automation.
+- Stack: Java, Oracle DB, PL/SQL, Kafka, Spring Boot
+
+## Education
+
+- **MS Computer Science** — New York University (Aug 2019 – May 2021), GPA 3.69
+- **B.Tech Electronics & Communication Engineering** — JNTUA (Aug 2013 – May 2017), GPA 4.0
+
+## Patents
+
+### Modular Deep Learning Architecture for Cross-Domain Transfer and Incremental Learning
+- Application No: 202541026299
+- Status: Published (INA)
+- Filed: March 21, 2025
+- Published: March 27, 2025 (Publication No. 13/2025)
+- Inventors: Sai Likhith Kanuparthi, Sai Yasaswini Majety
+- Jurisdiction: Indian Patent Office
+- IPC: G06N 3/08, G06N 3/045, G06N 3/096, G06N 3/084, G06N 20/00
+- Field: Modular Deep Learning / Continual Learning / Cross-Domain Transfer
+
+## Publications
+
+### Full-Stack Machine Learning Development Framework for Energy Industry Applications
+- Venue: SPE ADIPEC 2022 (Abu Dhabi) — SPE-210986-MS
+- Publisher: Society of Petroleum Engineers
+- Year: 2022
+- Citations: 6
+- Lead author h-index: 69 (Jie Chen, Shell)
+- DOI: https://doi.org/10.2118/210986-MS
+
+### Role of Artificial Intelligence to address Cyberbullying and Future Scope
+- Venue: IEEE Xplore (ICoACT 2023) — Document ID: 11004721
+- Publisher: IEEE
+- Year: 2023
+- DOI: https://doi.org/10.1109/ICoACT57570.2023.10118947
+
+### The Evolution and Rise of State Space Models in AI (Book Chapter, Ch. 1)
+- Book: A Case-Based Study of State Space Models in Health Care: The New Transformers
+- Publisher: Cambridge Scholars Publishing
+- Year: 2025
+
+### Future Trends in AI for Cyberbullying Preventions (Book Chapter, Ch. 7)
+- Book: Harnessing Generative AI to Combat Cyberbullying in Industry — ISBN 978-1-0364-5866-9
+- Publisher: Cambridge Scholars Publishing
+- Year: 2025
+- Pages: 468
+
+### Why Traditional AI Methods Fail in Advanced Anomaly Detection (Book Chapter, Ch. 4)
+- Book: Harnessing Generative AI to Combat Cyberbullying in Industry — ISBN 978-1-0364-5866-9
+- Publisher: Cambridge Scholars Publishing
+- Year: 2025
+
+### Advancing the Metaverse: The Convergence of Digital Twins, AI, and Emerging Technologies
+- Venue: 2025 International Conference on Advanced Computing Technologies (ICoACT) — Accepted
+- Year: 2025
+
+### FT-IR and GC-MS Metabolomic Fingerprinting of Caralluma fimbriata
+- Venue: Phytomedicine (Elsevier) — Under Review
+- Year: 2026
+- Impact Factor: ~6.0
+
+## Technical Skills
+
+- **Languages**: Python, TypeScript, Java, SQL, Go
+- **ML/AI**: TensorFlow, PyTorch, Hugging Face, LangChain, OpenAI, Anthropic, LLM orchestration
+- **Backend**: Flask, FastAPI, Spring Boot, Celery, Airflow, Kafka, Redis
+- **Frontend**: React, Next.js, Streamlit, TypeScript
+- **Data**: PostgreSQL, Oracle DB, MongoDB, Elasticsearch, Pandas, scikit-learn
+- **Cloud/DevOps**: AWS (SageMaker, S3, Lambda, ECS), GCP, Kubernetes, Docker, Terraform, Vercel
+- **Observability**: OpenTelemetry, Grafana, Prometheus
+- **Data Labeling**: Labelbox, Presidio, Redpen
+
+## Key Projects
+
+- **BPI Virtual Analyst (Airbnb)**: 5-step LLM wizard, 30+ models, ~55 analysts, 600→10K rows/run
+- **Presidio PII Pipeline (Airbnb)**: 30% faster PII detection
+- **Redpen Label Export (Airbnb)**: 80% runtime reduction target
+- **Dose Management System (Eli Lilly)**: Clinical trials, SAP migration, 21 CFR Part 11
+- **Flight Dispatch System (Southwest)**: 4M req/min, distributed lock
+- **NLP Platform (Shell)**: 17M pageviews/month, 86%→94% accuracy
+- **ERP Analytics (Oracle)**: P2P + O2C, 13 business units
+
+## Optional
+
+- [Portfolio](https://sailikhith.me)
+- [Airbnb Portfolio](https://airbnb.sailikhith.me)
+- [Plain-text profile (llm.txt)](https://sailikhith.me/llm.txt)
+- [Sitemap](https://sailikhith.me/sitemap.xml)

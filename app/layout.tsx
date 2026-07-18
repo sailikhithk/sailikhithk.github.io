@@ -94,6 +94,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${montserrat.variable} ${lato.variable}`}>
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/img/circle-cropped.png" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <meta name="theme-color" content="#18BC9C" />
+        <meta name="author" content="Sai Likhith Kanuparthi" />
+        <meta name="google-site-verification" content="" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -199,6 +205,23 @@ export default function RootLayout({
                   "description": "Backend Developer / Data Engineer"
                 }
               ]
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Sai Likhith Kanuparthi",
+              "url": "https://sailikhith.me",
+              "description": "Senior Software Engineer specializing in ML Infrastructure, GenAI platforms, and agentic memory systems. Currently at Airbnb.",
+              "author": {
+                "@type": "Person",
+                "name": "Sai Likhith Kanuparthi",
+                "url": "https://sailikhith.me"
+              }
             })
           }}
         />

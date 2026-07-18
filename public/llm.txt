@@ -153,10 +153,13 @@ He has 8+ years of experience shipping production systems across ML infrastructu
 
 ### Patents
 
-#### 1. Modular Deep Learning Architecture for Cross-Domain Transfer and Incremental Learning (Feb 2025)
+#### 1. Modular Deep Learning Architecture for Cross-Domain Transfer and Incremental Learning (Mar 2025)
 - **Inventors**: Sai Likhith Kanuparthi, Sai Yasaswini Majety
-- **Jurisdiction**: Indian Patent Office (Application No. 202541010770)
-- **Status**: Filed (Feb 8, 2025)
+- **Jurisdiction**: Indian Patent Office (Application No. 202541026299)
+- **Status**: Published (INA)
+- **Filed**: March 21, 2025
+- **Published**: March 27, 2025 (Publication No. 13/2025)
+- **IPC**: G06N 3/08, G06N 3/045, G06N 3/096, G06N 3/084, G06N 20/00
 - **Topic**: Architectures for lightweight, parameter-efficient adapters enabling models to transfer knowledge dynamically across disparate domains without catastrophic forgetting.
 
 

@@ -25,5 +25,6 @@ Allow: /
 
 # Human-readable plain-text profile for LLM ingestion
 # https://sailikhith.me/llm.txt
+# https://sailikhith.me/llms.txt (llms.txt standard)
 
 Sitemap: https://sailikhith.me/sitemap.xml
