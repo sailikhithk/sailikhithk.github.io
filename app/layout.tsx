@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Lato } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { publications } from "@/app/data";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -223,6 +224,41 @@ export default function RootLayout({
                 "url": "https://sailikhith.me"
               }
             })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              publications.map((pub) => ({
+                "@context": "https://schema.org",
+                "@type":
+                  pub.type === "patent"
+                    ? "CreativeWork"
+                    : pub.type === "journal" || pub.type === "ieee"
+                      ? "ScholarlyArticle"
+                      : pub.type === "book-chapter"
+                        ? "Chapter"
+                        : "ScholarlyArticle",
+                name: pub.title,
+                author: pub.authors
+                  .split(",")
+                  .map((a) => ({
+                    "@type": "Person",
+                    name: a.trim(),
+                  })),
+                datePublished: pub.year,
+                publisher: pub.publisher
+                  ? { "@type": "Organization", name: pub.publisher }
+                  : undefined,
+                isPartOf:
+                  pub.type === "book-chapter"
+                    ? { "@type": "Book", name: pub.venue }
+                    : undefined,
+                url: pub.links[0]?.url,
+                keywords: pub.topic.split(/[,.]/).map((k) => k.trim()).slice(0, 5),
+              }))
+            )
           }}
         />
       </head>
