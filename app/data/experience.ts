@@ -4,7 +4,7 @@ export const jobs: Job[] = [
   {
     company: "Airbnb",
     logo: "/img/airbnb-logo.png",
-    role: "Sr. Software Engineer — ML Infrastructure",
+    role: "Senior Software Engineer, ML Infrastructure & AI Engineering",
     period: "Sep 2024 – Present",
     location: "San Francisco, CA (Remote)",
     desc: "Built BPI Virtual Analyst — a 5-step LLM wizard integrating 30+ models (GPT-4o, Claude, Gemini, Llama) used by ~55 analysts. Scaled from 600 → 10,000 rows/run. Built Presidio PII pipeline (30% faster). Led Redpen label export upgrade targeting 80% runtime reduction.",
@@ -91,7 +91,7 @@ export const jobs: Job[] = [
   {
     company: "Eli Lilly",
     logo: "/img/lilly-logo.png",
-    role: "Sr. Software Engineer (via ThriveOn Solutions)",
+    role: "Lead Senior Software Engineer (Contractor) — Dose Management Platform",
     period: "Feb 2024 – Aug 2024",
     location: "Philadelphia, PA (Remote)",
     desc: "Built and maintained the Dose Management System (DMS) — full-stack healthcare portal for medication management. Java/Spring Boot backend, React frontend, deployed on OpenShift OCP across dev/QA/prod environments.",
@@ -168,7 +168,7 @@ export const jobs: Job[] = [
   {
     company: "Southwest Airlines",
     logo: "/img/southwest-logo.png",
-    role: "Sr. Software Engineer (via ThriveOn Solutions)",
+    role: "Senior Software Engineer (Contractor) — Backend & Data Platform",
     period: "Jan 2023 – Jan 2024",
     location: "Dallas, TX (Remote)",
     desc: "Architected deployment and testing automation pipelines. Containerized services with Docker + Kubernetes. Secure data management with Datadog monitoring. Statistical analysis and regression models on large datasets.",
@@ -226,13 +226,13 @@ export const jobs: Job[] = [
   {
     company: "Shell PLC",
     logo: "/img/shell-logo.png",
-    role: "Sr. Python Developer (via ThriveOn Solutions)",
+    role: "Senior Software Engineer (Contractor) — Backend & Data Science",
     period: "Jun 2021 – Dec 2022",
     location: "Houston, TX (Remote)",
-    desc: "Built API service handling 17M pageviews/month at 94% cache efficiency. Cleared 200+ bottlenecks; app 5× faster after refactor. Improved NLP accuracy 86% → 94%. Deployed ML models on AWS SageMaker. Published at SPE ATCE Conference.",
+    desc: "Built API service handling 17M pageviews/month at 94% cache efficiency. Cleared 200+ bottlenecks; app 5× faster after refactor. Improved NLP accuracy 86% → 94%. Deployed ML models on AWS SageMaker. Published at SPE ADIPEC 2022 Conference.",
     stack: "Python · PySpark · Azure Databricks · AWS SageMaker · MLFlow · Flask · Docker · Jenkins",
     overview:
-      "Built and operated a high-throughput API-driven publishing service and deployed classical-ML models in production. Published research at the SPE ATCE 2022 Conference.",
+      "Built and operated a high-throughput API-driven publishing service and deployed classical-ML models in production. Published research at SPE ADIPEC 2022 (SPE-210986-MS).",
     highlights: [
       {
         label: "API-driven publishing service",
@@ -252,7 +252,7 @@ export const jobs: Job[] = [
       {
         label: "NLP text classification",
         detail:
-          "Developed an NLP text-classification system for drilling-loss events. Improved accuracy from 86% to 94% via wildcard-regex feature engineering. Published the research at the SPE ATCE 2022 Conference.",
+          "Developed an NLP text-classification system for drilling-loss events. Improved accuracy from 86% to 94% via wildcard-regex feature engineering. Published the research at SPE ADIPEC 2022 (SPE-210986-MS).",
       },
       {
         label: "Geophysics ML",
@@ -268,7 +268,7 @@ export const jobs: Job[] = [
       "32% tech-debt reduction",
     ],
     recognition: [
-      "Published research at SPE ATCE 2022 Conference (paper 22ATCE-P-663-SPE, DOI 10.2118/210272-MS)",
+      "Published research at SPE ADIPEC 2022 (paper SPE-210986-MS, DOI 10.2118/210986-MS)",
     ],
     stackList: [
       "Python",
@@ -293,7 +293,7 @@ export const jobs: Job[] = [
   {
     company: "Oracle India",
     logo: "/img/oracle-logo.png",
-    role: "Data Engineer",
+    role: "Software Engineer, ERP Analytics & Data Engineering",
     period: "Aug 2017 – Jul 2019",
     location: "Bangalore, India",
     desc: "Built ERP analytics dashboard across 13 business units; boosted client activity by 20%. Automated PIP process — saved 600+ monthly work hours. Built real-time fraud detection pipeline using Kafka. Best Performer Q3 2018.",

@@ -1,11 +1,11 @@
 # Sai Likhith Kanuparthi
 
-> Senior Software Engineer — ML Infrastructure & AI Engineering at Airbnb. Building GenAI platforms, data labeling infrastructure, and agentic memory systems at scale. NYU MS Computer Science. 8+ years shipping production systems across ML infrastructure, LLM orchestration, backend APIs, cloud data pipelines, and full-stack web applications.
+> Senior Software Engineer, ML Infrastructure & AI Engineering at Airbnb. Building GenAI platforms, data labeling infrastructure, and agentic memory systems at scale. NYU MS Computer Science. 7+ years shipping production systems across ML infrastructure, LLM orchestration, backend APIs, cloud data pipelines, and full-stack web applications.
 
 ## Identity
 
 - Full Name: Sai Likhith Kanuparthi
-- Role: Senior Software Engineer — ML Infrastructure & AI Engineering
+- Role: Senior Software Engineer, ML Infrastructure & AI Engineering
 - Employer: Airbnb (San Francisco, CA)
 - Email: sailikhithcse@gmail.com
 - Location: San Francisco, California, USA
@@ -22,24 +22,24 @@
 
 ## Work Experience
 
-### Airbnb — Senior Software Engineer, ML Infrastructure (Sep 2024 – Present)
+### Airbnb — Senior Software Engineer, ML Infrastructure & AI Engineering (Sep 2024 – Present)
 - Built BPI Virtual Analyst: 5-step LLM wizard integrating 30+ models (GPT-4o, Claude, Gemini, Llama), used by ~55 analysts. Scaled from 600 → 10,000 rows/run.
 - Built Presidio PII pipeline (30% faster detection). Led Redpen label export upgrade targeting 80% runtime reduction.
 - Stack: Python, Streamlit, Flask, Celery, Airflow, Labelbox, Presidio, AWS, OpenTelemetry
 
-### Eli Lilly — Senior Backend / Full-Stack Engineer (Feb 2024 – Aug 2024)
+### Eli Lilly — Lead Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11) (Feb 2024 – Aug 2024)
 - Dose Management System for clinical trials. SAP migration. 21 CFR Part 11 compliance.
 - Stack: Java, Spring Boot, React, SAP, PostgreSQL, Azure
 
-### Southwest Airlines — Senior Backend / Full Stack Application Engineer (Jan 2023 – Jan 2024)
+### Southwest Airlines — Senior Software Engineer (Contractor) — Backend & Data Platform (Jan 2023 – Jan 2024)
 - Flight dispatch system handling 4M requests/min. Distributed lock for flight assignment.
 - Stack: Java, Spring Boot, Kafka, Redis, Kubernetes, AWS
 
-### Shell — Senior Python Backend / Data Scientist (Jun 2021 – Dec 2022)
+### Shell — Senior Software Engineer (Contractor) — Backend & Data Science (Jun 2021 – Dec 2022)
 - NLP platform processing 17M pageviews/month. Accuracy 86% → 94%. ML framework published at SPE ADIPEC 2022.
 - Stack: Python, TensorFlow, Kubernetes, AWS SageMaker, Docker
 
-### Oracle — Backend Developer / Data Engineer (Aug 2017 – Jul 2019)
+### Oracle — Software Engineer, ERP Analytics & Data Engineering (Aug 2017 – Jul 2019)
 - ERP analytics across P2P + O2C for 13 business units. Workflow automation.
 - Stack: Java, Oracle DB, PL/SQL, Kafka, Spring Boot
 

@@ -1,6 +1,6 @@
 # sailikhithk-portfolio-v2
 
-Personal portfolio of **Sai Likhith Kanuparthi** — Sr. Software Engineer, ML Infrastructure & AI Engineering at Airbnb.
+Personal portfolio of **Sai Likhith Kanuparthi** — Senior Software Engineer, ML Infrastructure & AI Engineering at Airbnb.
 
 > Live: `https://sailikhithk.github.io` · Deployed on Vercel
 
@@ -348,18 +348,18 @@ interface CareerStat { value: string; label: string; }
 ### Experience (6 companies)
 | Company | Role | Period |
 |---|---|---|
-| Airbnb | Sr. SWE — Gen AI Development Experience | Sep 2024 – Present |
-| Eli Lilly | Senior Backend / Full-Stack Engineer — DMS | Feb 2024 – Aug 2024 |
-| Southwest Airlines | Senior Backend / Full-Stack Application Engineer | Jan 2023 – Jan 2024 |
-| Shell PLC | Senior Python Developer / Data Scientist | Jun 2021 – Dec 2022 |
-| Oracle India | Backend Developer / Data Engineer | Aug 2017 – Jul 2019 |
+| Airbnb | Senior Software Engineer, ML Infrastructure & AI Engineering (GenAI Platform) | Sep 2024 – Present |
+| Eli Lilly | Lead Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11) | Feb 2024 – Aug 2024 |
+| Southwest Airlines | Senior Software Engineer (Contractor) — Backend & Data Platform | Jan 2023 – Jan 2024 |
+| Shell PLC | Senior Software Engineer (Contractor) — Backend & Data Science | Jun 2021 – Dec 2022 |
+| Oracle India | Software Engineer, ERP Analytics & Data Engineering | Aug 2017 – Jul 2019 |
 | BSNL | Python Developer | Dec 2016 – Apr 2017 |
 
 ### Projects (9)
 Claude Code Ecosystem · AI Interview Copilots · Redpen (Airbnb) · BPI Virtual Analyst (Airbnb) · Dose Management System (Eli Lilly) · RomeoAI · ML Subsurface Pipeline (Shell) · COVID-19 Dashboard · ERP Analytics (Oracle)
 
 ### Career Stats
-`8+` Years Experience · `10K` Rows/Run at Airbnb · `30+` LLM Models Integrated · `17M` Pageviews/Month (Shell)
+`7+` Years Experience · `10K` Rows/Run at Airbnb · `30+` LLM Models Integrated · `17M` Pageviews/Month (Shell)
 
 ### Skills on Keyboard (24 keys)
 JavaScript · TypeScript · React · Next.js · Tailwind · Node.js · Express · PostgreSQL · MongoDB · Git · GitHub · Kubernetes/OCP · NPM · Firebase · WordPress · Linux · Docker · Nginx · AWS · Google Cloud · Python · Vercel · Java/Spring Boot · HTML5 · CSS3

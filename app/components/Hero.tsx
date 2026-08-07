@@ -4,11 +4,11 @@ import Image from "next/image";
 import { FlipWords } from "@/app/components/ui/FlipWords";
 
 const ROLES = [
-  "Sr. Software Engineer · Airbnb",
+  "Senior Software Engineer · Airbnb",
   "ML Infrastructure & GenAI Platforms",
   "LLM Orchestration & Data Pipelines",
   "Full-Stack · Python · TypeScript",
-  "8+ Years in Production Systems",
+  "7+ Years in Production Systems",
 ];
 
 const socialLinks = [
@@ -103,7 +103,7 @@ export default function Hero() {
             }}
           >
             Building GenAI platforms and data labeling infrastructure at Airbnb
-            scale. 8+ years shipping production systems across LLM
+            scale. 7+ years shipping production systems across LLM
             orchestration, backend APIs, cloud pipelines, and full-stack
             applications.
           </p>

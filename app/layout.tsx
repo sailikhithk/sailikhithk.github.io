@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Sai Likhith Kanuparthi — Senior Software Engineer, ML Infrastructure & AI Engineering",
-    description: "Sr. Software Engineer at Airbnb building GenAI platforms and data labeling infrastructure. NYU MS Computer Science. Ex-Eli Lilly, Southwest, Shell, Oracle.",
+    description: "Senior Software Engineer at Airbnb building GenAI platforms and data labeling infrastructure. NYU MS Computer Science. Ex-Eli Lilly, Southwest, Shell, Oracle.",
     url: "https://sailikhith.me",
     siteName: "Sai Likhith Kanuparthi",
     type: "profile",
@@ -183,27 +183,27 @@ export default function RootLayout({
                 {
                   "@type": "Organization",
                   "name": "Airbnb",
-                  "description": "Senior ML / AI Infrastructure Engineer — GenAI Platform"
+                  "description": "Senior Software Engineer, ML Infrastructure & AI Engineering (GenAI Platform)"
                 },
                 {
                   "@type": "Organization",
                   "name": "Eli Lilly",
-                  "description": "Senior Backend / Full-Stack Engineer — Dose Management System"
+                  "description": "Lead Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11)"
                 },
                 {
                   "@type": "Organization",
                   "name": "Southwest Airlines",
-                  "description": "Senior Backend / Full Stack Application Engineer"
+                  "description": "Senior Software Engineer (Contractor) — Backend & Data Platform"
                 },
                 {
                   "@type": "Organization",
                   "name": "Shell",
-                  "description": "Senior Python Backend / Data Scientist"
+                  "description": "Senior Software Engineer (Contractor) — Backend & Data Science"
                 },
                 {
                   "@type": "Organization",
                   "name": "Oracle",
-                  "description": "Backend Developer / Data Engineer"
+                  "description": "Software Engineer, ERP Analytics & Data Engineering"
                 }
               ]
             })

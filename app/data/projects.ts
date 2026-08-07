@@ -64,7 +64,7 @@ export const projects: Project[] = [
   {
     name: "ML Subsurface Pipeline (Shell PLC)",
     description:
-      "ML reusable framework for subsurface applications. Refactored Jupyter → Python package (5× faster). Deployed on AWS SageMaker. Published at SPE ATCE Conference.",
+      "ML reusable framework for subsurface applications. Refactored Jupyter → Python package (5× faster). Deployed on AWS SageMaker. Published at SPE ADIPEC 2022.",
     tags: [
       { name: "python", color: "#18BC9C" },
       { name: "pyspark", color: "#aaa" },
