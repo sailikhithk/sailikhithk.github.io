@@ -97,7 +97,7 @@ export const jobs: Job[] = [
     desc: "Built and maintained the Dose Management System (DMS) — full-stack healthcare portal for medication management. Java/Spring Boot backend, React frontend, deployed on OpenShift OCP across dev/QA/prod environments.",
     stack: "Java · Spring Boot · React · OpenShift · PostgreSQL · GitHub Actions",
     overview:
-      "Owned the platform routing AMYVID (florbetapir F-18), Lilly's amyloid PET imaging agent for Alzheimer's diagnosis, through the PETNET Solutions distribution network under a 10-hour administration window from F-18 isotope decay (110-minute half-life). Wore four hats end-to-end: backend, data, frontend, workflow. 99.9% uptime for 6 months.",
+      "Led a lean team of senior developers as developer lead (owned PR reviews, design-doc sign-off, release orchestration, onboarding KT sessions). Owned the platform routing AMYVID (florbetapir F-18), Lilly's amyloid PET imaging agent for Alzheimer's diagnosis, through the PETNET Solutions distribution network under a 10-hour administration window from F-18 isotope decay (110-minute half-life). Wore four hats end-to-end: backend, data, frontend, workflow. 99.9% uptime for 6 months.",
     highlights: [
       {
         label: "Backend architecture (Spring Boot 3.2)",

@@ -28,6 +28,7 @@
 - Stack: Python, Streamlit, Flask, Celery, Airflow, Labelbox, Presidio, AWS, OpenTelemetry
 
 ### Eli Lilly — Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11) (Feb 2024 – Aug 2024)
+- Led a lean team of senior developers as developer lead (PR reviews, design-doc sign-off, release orchestration, onboarding KT). Owned AMYVID (florbetapir F-18) routing through PETNET under 10-hour decay window. 99.9% uptime for 6 months.
 - Dose Management System for clinical trials. SAP migration. 21 CFR Part 11 compliance.
 - Stack: Java, Spring Boot, React, SAP, PostgreSQL, Azure
 

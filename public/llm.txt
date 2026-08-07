@@ -39,6 +39,8 @@ He has 7+ years of experience shipping production systems across ML infrastructu
 - Stack: Python, Streamlit, Flask, Celery, Airflow, Labelbox, Presidio, AWS, OpenTelemetry
 
 ### Eli Lilly — Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11) (Feb 2024 – Aug 2024)
+- Led a lean team of senior developers as developer lead: owned PR reviews, design-doc sign-off, release orchestration, onboarding KT sessions.
+- Owned the platform routing AMYVID (florbetapir F-18) through PETNET Solutions under a 10-hour administration window from F-18 isotope decay. 99.9% uptime for 6 months.
 - Built and maintained the Dose Management System (DMS): full-stack healthcare portal for medication management.
 - Java/Spring Boot backend, React frontend, deployed on OpenShift OCP across dev/QA/prod environments.
 - Stack: Java, Spring Boot, React, OpenShift, PostgreSQL, GitHub Actions
