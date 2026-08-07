@@ -38,7 +38,7 @@ He has 7+ years of experience shipping production systems across ML infrastructu
 - Built Presidio PII pipeline (30% faster detection). Led Redpen label export upgrade targeting 80% runtime reduction.
 - Stack: Python, Streamlit, Flask, Celery, Airflow, Labelbox, Presidio, AWS, OpenTelemetry
 
-### Eli Lilly — Lead Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11) (Feb 2024 – Aug 2024)
+### Eli Lilly — Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11) (Feb 2024 – Aug 2024)
 - Built and maintained the Dose Management System (DMS): full-stack healthcare portal for medication management.
 - Java/Spring Boot backend, React frontend, deployed on OpenShift OCP across dev/QA/prod environments.
 - Stack: Java, Spring Boot, React, OpenShift, PostgreSQL, GitHub Actions

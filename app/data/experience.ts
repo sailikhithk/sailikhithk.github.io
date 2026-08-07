@@ -91,7 +91,7 @@ export const jobs: Job[] = [
   {
     company: "Eli Lilly",
     logo: "/img/lilly-logo.png",
-    role: "Lead Senior Software Engineer (Contractor) — Dose Management Platform",
+    role: "Senior Software Engineer (Contractor) — Dose Management Platform",
     period: "Feb 2024 – Aug 2024",
     location: "Philadelphia, PA (Remote)",
     desc: "Built and maintained the Dose Management System (DMS) — full-stack healthcare portal for medication management. Java/Spring Boot backend, React frontend, deployed on OpenShift OCP across dev/QA/prod environments.",

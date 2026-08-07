@@ -188,7 +188,7 @@ export default function RootLayout({
                 {
                   "@type": "Organization",
                   "name": "Eli Lilly",
-                  "description": "Lead Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11)"
+                  "description": "Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11)"
                 },
                 {
                   "@type": "Organization",

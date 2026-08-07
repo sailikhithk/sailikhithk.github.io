@@ -349,7 +349,7 @@ interface CareerStat { value: string; label: string; }
 | Company | Role | Period |
 |---|---|---|
 | Airbnb | Senior Software Engineer, ML Infrastructure & AI Engineering (GenAI Platform) | Sep 2024 – Present |
-| Eli Lilly | Lead Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11) | Feb 2024 – Aug 2024 |
+| Eli Lilly | Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11) | Feb 2024 – Aug 2024 |
 | Southwest Airlines | Senior Software Engineer (Contractor) — Backend & Data Platform | Jan 2023 – Jan 2024 |
 | Shell PLC | Senior Software Engineer (Contractor) — Backend & Data Science | Jun 2021 – Dec 2022 |
 | Oracle India | Software Engineer, ERP Analytics & Data Engineering | Aug 2017 – Jul 2019 |
