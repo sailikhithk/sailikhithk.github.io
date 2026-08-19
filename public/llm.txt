@@ -93,6 +93,23 @@ He has 7+ years of experience shipping production systems across ML infrastructu
 - **The Eye (HackNYU Winner)**: Computer Vision + NLP application to assist visually impaired individuals.
 - **ML Subsurface Pipeline (Shell)**: ML reusable framework for subsurface applications; refactored Jupyter → Python package (5× faster); deployed on AWS SageMaker; published at SPE ADIPEC Conference.
 
+## Open Source Contributions
+
+Contributing upstream to the LLM tooling I use in production at Airbnb. 8 PRs across 5 repos in August 2026.
+
+| Date | Repo | PR | Title | Status |
+|------|------|-----|-------|--------|
+| 2026-08-17 | Shubhamsaboo/awesome-llm-apps | [#1101](https://github.com/Shubhamsaboo/awesome-llm-apps/pull/1101) | fix: remove deprecated pathlib backport and migrate PyPDF2 to pypdf | MERGED |
+| 2026-08-18 | explodinggradients/ragas | [#2959](https://github.com/vibrantlabsai/ragas/pull/2959) | fix(metrics): ContextPrecision returns exactly 1.0 for perfect ranking | Open |
+| 2026-08-15 | vibrantlabsai/ragas | [#2954](https://github.com/vibrantlabsai/ragas/pull/2954) | fix: strip deprecated top_p for Anthropic provider in InstructorLLM | Open |
+| 2026-08-08 | langchain-ai/langchain | [#39351](https://github.com/langchain-ai/langchain/pull/39351) | fix(perplexity): capture num_search_queries in usage_metadata for cost tracking | Closed, reopening |
+| 2026-08-07 | livekit/agents | [#6754](https://github.com/livekit/agents/pull/6754) | feat(evals): add ReliabilityObserver for external reliability scoring | Open |
+| 2026-08 | BerriAI/litellm | [#37236](https://github.com/BerriAI/litellm/pull/37236) | fix(batches): bill cancelled/failed batches stamped terminal by a client poll | Open |
+| 2026-08 | BerriAI/litellm | [#37238](https://github.com/BerriAI/litellm/pull/37238) | fix(guardrails): merge model-level guardrails into litellm_metadata for /v1/messages | Open |
+| 2026-08 | BerriAI/litellm | [#36981](https://github.com/BerriAI/litellm/pull/36981) | fix(vertex_ai): convert messages to contents in gemini count_tokens | Open |
+
+Focus areas: LLM cost tracking, eval metrics, provider compatibility, guardrails. Maps directly to my day job building FacadeDriver (30+ LLM orchestration) and eval harnesses (23+ agent versions, 1,690 ground-truth samples) at Airbnb.
+
 ## Recognition
 
 - Airbnb peer appreciation (2026): *"Sai has been an outstanding partner in the deployment of the BPIVA tool... Thanks to Sai's efforts, the BPIVA tool has had a significant impact on reducing non-value-added work."* — Ameet Shinde, Senior Manager BPI, Airbnb
