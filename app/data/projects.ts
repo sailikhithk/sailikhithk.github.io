@@ -73,4 +73,18 @@ export const projects: Project[] = [
     ],
     image: "/img/images.jpg",
   },
+  {
+    name: "Synthetic AI Image Detector (SAI)",
+    description:
+      "Open-source multi-signal detector for AI-generated images. Three signals (frequency-domain DCT, wavelet reconstruction error, PRNU noise residual) with temperature calibration, epistemic + aleatoric uncertainty, and refusal verdicts. Evaluated on GenImage benchmark: BigGAN AUROC 0.94, ADM AUROC 0.66, cross-generator generalization experiment. Built for journalists, fact-checkers, and national-security analysts.",
+    tags: [
+      { name: "python", color: "#18BC9C" },
+      { name: "deepfake-detection", color: "#18BC9C" },
+      { name: "image-forensics", color: "#aaa" },
+      { name: "calibration", color: "#18BC9C" },
+      { name: "national-security", color: "#aaa" },
+    ],
+    image: "/img/images.jpg",
+    github: "https://github.com/sailikhithk/Synthetic-AI-Image-Detector",
+  },
 ];
