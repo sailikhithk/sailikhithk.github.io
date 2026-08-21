@@ -3,26 +3,26 @@ import type { AboutCard, CareerStat, Skill } from "@/app/types";
 export const cards: AboutCard[] = [
   {
     icon: "fa-code",
-    title: "ML Infrastructure & GenAI",
-    desc: "Building LLM-powered tools at Airbnb — 30+ model integrations, PII pipelines, data labeling platforms serving ML teams org-wide.",
+    title: "AI Infrastructure & LLM Serving",
+    desc: "Own end-to-end architecture of BPI Virtual Analyst at Airbnb - 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver, PII pipelines, data labeling platforms serving 55+ analysts across 4 partner engineering teams.",
   },
   {
     icon: "fa-cloud",
-    title: "Cloud & Platform Engineering",
-    desc: "AWS, GCP, Docker, Kubernetes, Airflow, OpenShift — production systems at Airbnb, Shell, Southwest Airlines, and Eli Lilly.",
+    title: "Streaming & Distributed Observability",
+    desc: "Kafka 4M req/min, OpenTelemetry, Loki, Datadog, Grafana, Docker, Kubernetes, Airflow, OpenShift - production systems at Airbnb, Shell, Southwest Airlines, and Eli Lilly.",
   },
   {
     icon: "fa-trophy",
     title: "Certifications & Recognition",
-    desc: "AWS Solutions Architect, AWS Developer, GCP Data Engineer, Oracle Java & Database certified. Multiple Airbnb peer appreciations (2026).",
+    desc: "AWS Solutions Architect Professional, AWS Developer, AWS ML Specialty, GCP Data Engineer, Azure Data Scientist, Oracle Java & Database certified. Multiple Airbnb peer appreciations (2026).",
   },
 ];
 
 export const stats: CareerStat[] = [
   { value: "8+", label: "Years Experience" },
-  { value: "10K", label: "Rows/Run at Airbnb" },
-  { value: "30+", label: "LLM Models Integrated" },
-  { value: "17M", label: "Pageviews/Month (Shell)" },
+  { value: "4M", label: "Req/min (Kafka @ Southwest)" },
+  { value: "30+", label: "LLM Models Orchestrated" },
+  { value: "55+", label: "Analysts Served @ Airbnb" },
 ];
 
 export const SKILLS: Record<string, Skill> = {
@@ -32,7 +32,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#f0db4f",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     shortDescription:
-      "Core scripting — Flask APIs, Streamlit callbacks, frontend logic at Airbnb and Shell.",
+      "Core scripting - Flask APIs, Streamlit callbacks, frontend logic at Airbnb and Shell.",
   },
   ts: {
     name: "ts",
@@ -40,7 +40,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#007acc",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
     shortDescription:
-      "Typed React frontends and Next.js apps — DMS frontend at Eli Lilly, this portfolio.",
+      "Typed React frontends and Next.js apps - DMS frontend at Eli Lilly, this portfolio.",
   },
   react: {
     name: "react",
@@ -48,7 +48,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#61dafb",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     shortDescription:
-      "React 18 SPAs — DMS frontend at Eli Lilly, hooks, React Query, component libraries.",
+      "React 18 SPAs - DMS frontend at Eli Lilly, hooks, React Query, component libraries.",
   },
   nextjs: {
     name: "nextjs",
@@ -56,7 +56,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#ffffff",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     shortDescription:
-      "App Router, Server Components — this portfolio is Next.js 16.",
+      "App Router, Server Components - this portfolio is Next.js 16.",
   },
   tailwind: {
     name: "tailwind",
@@ -72,7 +72,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#6cc24a",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     shortDescription:
-      "Backend APIs and tooling — paired with Express for REST service layers.",
+      "Backend APIs and tooling - paired with Express for REST service layers.",
   },
   express: {
     name: "express",
@@ -80,7 +80,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#dddddd",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
     shortDescription:
-      "REST microservices and middleware layers — API backends at Shell and Oracle.",
+      "REST microservices and middleware layers - API backends at Shell and Oracle.",
   },
   postgres: {
     name: "postgres",
@@ -88,7 +88,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#336791",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     shortDescription:
-      "Postgres 16 at Eli Lilly DMS — schema design, Flyway migrations, audit triggers.",
+      "Postgres 16 at Eli Lilly DMS - schema design, Flyway migrations, audit triggers.",
   },
   mongodb: {
     name: "mongodb",
@@ -104,7 +104,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#f1502f",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     shortDescription:
-      "Version control across every project — branching strategies, cherry-picks, PR workflows.",
+      "Version control across every project - branching strategies, cherry-picks, PR workflows.",
   },
   github: {
     name: "github",
@@ -120,7 +120,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#326ce5",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
     shortDescription:
-      "OCP OpenShift at Eli Lilly DMS — production deployments across dev/QA/prod.",
+      "OCP OpenShift at Eli Lilly DMS - production deployments across dev/QA/prod.",
   },
   npm: {
     name: "npm",
@@ -128,7 +128,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#cc3534",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
     shortDescription:
-      "Package management for Node/React projects — dependency auditing, scripts.",
+      "Package management for Node/React projects - dependency auditing, scripts.",
   },
   firebase: {
     name: "firebase",
@@ -152,7 +152,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#f5c518",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
     shortDescription:
-      "Ubuntu/CentOS servers — shell scripting, service management, cron jobs.",
+      "Ubuntu/CentOS servers - shell scripting, service management, cron jobs.",
   },
   docker: {
     name: "docker",
@@ -168,7 +168,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#009900",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
     shortDescription:
-      "Reverse proxy and load balancing — API gateway configuration at Shell PLC.",
+      "Reverse proxy and load balancing - API gateway configuration at Shell PLC.",
   },
   aws: {
     name: "aws",
@@ -176,7 +176,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#ff9900",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
     shortDescription:
-      "SageMaker, S3, SNS, SES, EC2 — certified Solutions Architect & Developer.",
+      "SageMaker, S3, SNS, SES, EC2 - certified Solutions Architect & Developer.",
   },
   gcp: {
     name: "gcp",
@@ -184,7 +184,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#4285f4",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
     shortDescription:
-      "Certified GCP Professional Data Engineer — BigQuery, Dataflow, Cloud Storage.",
+      "Certified GCP Professional Data Engineer - BigQuery, Dataflow, Cloud Storage.",
   },
   vim: {
     name: "vim",
@@ -192,7 +192,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#3572A5",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     shortDescription:
-      "Primary language at Airbnb — LLM pipelines, PySpark, Flask APIs, Presidio PII.",
+      "Primary language at Airbnb - LLM pipelines, PySpark, Flask APIs, Presidio PII.",
   },
   vercel: {
     name: "vercel",
@@ -200,7 +200,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#eeeeee",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
     shortDescription:
-      "Zero-config deployments for Next.js apps — this portfolio deploys here.",
+      "Zero-config deployments for Next.js apps - this portfolio deploys here.",
   },
   vue: {
     name: "vue",
@@ -208,7 +208,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#6db33f",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
     shortDescription:
-      "Spring Boot 3.2 at Eli Lilly DMS — REST APIs, JPA, Flyway migrations.",
+      "Spring Boot 3.2 at Eli Lilly DMS - REST APIs, JPA, Flyway migrations.",
   },
   html: {
     name: "html",
@@ -216,7 +216,7 @@ export const SKILLS: Record<string, Skill> = {
     color: "#e34c26",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     shortDescription:
-      "Semantic HTML — accessible, SEO-optimised markup across all frontend projects.",
+      "Semantic HTML - accessible, SEO-optimised markup across all frontend projects.",
   },
   css: {
     name: "css",
@@ -224,6 +224,6 @@ export const SKILLS: Record<string, Skill> = {
     color: "#264de4",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     shortDescription:
-      "Vanilla CSS and animations — this portfolio uses inline styles for full control.",
+      "Vanilla CSS and animations - this portfolio uses inline styles for full control.",
   },
 };

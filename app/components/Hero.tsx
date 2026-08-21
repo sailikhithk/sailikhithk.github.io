@@ -4,11 +4,11 @@ import Image from "next/image";
 import { FlipWords } from "@/app/components/ui/FlipWords";
 
 const ROLES = [
-  "Senior Software Engineer · Airbnb",
-  "ML Infrastructure & GenAI Platforms",
-  "LLM Orchestration & Data Pipelines",
-  "Full-Stack · Python · TypeScript",
-  "7+ Years in Production Systems",
+  "Senior AI Infrastructure & Systems Engineer",
+  "LLM Serving Runtimes & Distributed Observability",
+  "Enterprise Agentic Platforms @ Airbnb",
+  "Kafka 4M req/min | OTel | vLLM | Bedrock",
+  "8+ Years in Production AI Systems",
 ];
 
 const socialLinks = [
@@ -102,10 +102,12 @@ export default function Hero() {
               color: "#ddd",
             }}
           >
-            Building GenAI platforms and data labeling infrastructure at Airbnb
-            scale. 7+ years shipping production systems across LLM
-            orchestration, backend APIs, cloud pipelines, and full-stack
-            applications.
+            I own end-to-end architecture of BPI Virtual Analyst at Airbnb - a
+            multi-model GenAI orchestration platform abstracting 30+ foundation
+            models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind
+            FacadeDriver. 8+ years shipping production AI systems across LLM
+            serving, Kafka streaming, distributed observability, and cloud
+            infrastructure.
           </p>
         </motion.div>
 

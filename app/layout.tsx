@@ -19,28 +19,32 @@ const lato = Lato({
 export const metadata: Metadata = {
   metadataBase: new URL("https://sailikhith.me"),
   title: {
-    default: "Sai Likhith Kanuparthi — Senior Software Engineer, ML Infrastructure & AI Engineering",
-    template: "%s — Sai Likhith Kanuparthi",
+    default: "Sai Likhith Kanuparthi - Senior AI Infrastructure & Systems Engineer",
+    template: "%s - Sai Likhith Kanuparthi",
   },
   description:
-    "Sai Likhith Kanuparthi is a Senior Software Engineer specializing in ML Infrastructure and AI Engineering at Airbnb. Building GenAI platforms, data labeling infrastructure, and agentic memory systems at scale. NYU MS Computer Science.",
+    "Senior AI Infrastructure & Systems Engineer at Airbnb. I own end-to-end architecture of BPI Virtual Analyst, a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver. Kafka 4M req/min, OTel observability, 8+ years shipping production AI systems. NYU MS Computer Science.",
   keywords: [
     "Sai Likhith Kanuparthi",
     "Sai Likhith",
     "sailikhithk",
     "sailikhith",
     "Sai Kanuparthi",
-    "Airbnb Software Engineer",
-    "ML Infrastructure Engineer",
-    "AI Engineering",
-    "GenAI Platform",
+    "Airbnb AI Infrastructure Engineer",
+    "Senior AI Infrastructure Engineer",
+    "LLM Serving",
     "LLM Infrastructure",
+    "GenAI Platform",
+    "Kafka Streaming",
+    "OpenTelemetry",
+    "vLLM",
+    "AWS Bedrock",
+    "FacadeDriver",
+    "MLOps",
+    "Distributed Systems Engineer",
     "Agentic Memory",
     "Data Labeling Infrastructure",
-    "Senior Software Engineer",
     "NYU Computer Science",
-    "Python Backend Engineer",
-    "Distributed Systems Engineer",
     "Eli Lilly Dose Management System",
     "Southwest Airlines Engineer",
     "Shell Data Scientist",
@@ -53,8 +57,8 @@ export const metadata: Metadata = {
     canonical: "https://sailikhith.me",
   },
   openGraph: {
-    title: "Sai Likhith Kanuparthi — Senior Software Engineer, ML Infrastructure & AI Engineering",
-    description: "Senior Software Engineer at Airbnb building GenAI platforms and data labeling infrastructure. NYU MS Computer Science. Ex-Eli Lilly, Southwest, Shell, Oracle.",
+    title: "Sai Likhith Kanuparthi - Senior AI Infrastructure & Systems Engineer",
+    description: "Senior AI Infrastructure & Systems Engineer at Airbnb. Owns end-to-end architecture of BPI Virtual Analyst (30+ foundation models, FacadeDriver). Kafka 4M req/min, OTel, vLLM. NYU MS CS. Ex-Eli Lilly, Southwest, Shell, Oracle.",
     url: "https://sailikhith.me",
     siteName: "Sai Likhith Kanuparthi",
     type: "profile",
@@ -64,15 +68,16 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Sai Likhith Kanuparthi — Senior Software Engineer, ML Infrastructure & AI Engineering",
+        alt: "Sai Likhith Kanuparthi - Senior AI Infrastructure & Systems Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sai Likhith Kanuparthi — Senior Software Engineer @ Airbnb",
-    description: "ML Infrastructure & AI Engineering. Building GenAI platforms and agentic memory systems at scale. NYU MS CS.",
+    title: "Sai Likhith Kanuparthi - Senior AI Infrastructure & Systems Engineer @ Airbnb",
+    description: "Owns BPI Virtual Analyst (30+ foundation models, FacadeDriver). Kafka 4M req/min, OTel, vLLM. NYU MS CS.",
     images: ["/og-image.png"],
+    creator: "@codewithsai",
   },
   robots: {
     index: true,
@@ -116,8 +121,8 @@ export default function RootLayout({
               "url": "https://sailikhith.me",
               "image": "https://sailikhith.me/img/circle-cropped.png",
               "email": "mailto:sailikhithcse@gmail.com",
-              "jobTitle": "Senior Software Engineer — ML Infrastructure & AI Engineering",
-              "description": "Senior Software Engineer specializing in ML Infrastructure, GenAI platforms, and agentic memory systems. Currently at Airbnb.",
+              "jobTitle": "Senior AI Infrastructure & Systems Engineer",
+              "description": "Senior AI Infrastructure & Systems Engineer at Airbnb. Owns end-to-end architecture of BPI Virtual Analyst, a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver. Kafka 4M req/min, OTel observability.",
               "nationality": {
                 "@type": "Country",
                 "name": "United States"
@@ -129,13 +134,20 @@ export default function RootLayout({
                 "addressCountry": "United States"
               },
               "knowsAbout": [
-                "ML Infrastructure",
-                "AI Engineering",
-                "GenAI Platform Engineering",
+                "AI Infrastructure",
+                "LLM Serving",
                 "LLM Infrastructure",
+                "GenAI Platform Engineering",
+                "Kafka Streaming",
+                "OpenTelemetry",
+                "Distributed Observability",
+                "AWS Bedrock",
+                "vLLM",
+                "FacadeDriver",
                 "Agentic Memory Systems",
                 "Data Labeling Infrastructure",
                 "Distributed Systems",
+                "MLOps",
                 "Python",
                 "TypeScript",
                 "React",
@@ -183,22 +195,22 @@ export default function RootLayout({
                 {
                   "@type": "Organization",
                   "name": "Airbnb",
-                  "description": "Senior Software Engineer, ML Infrastructure & AI Engineering (GenAI Platform)"
+                  "description": "Senior AI Infrastructure & Systems Engineer (GenAI Platform - BPI Virtual Analyst, FacadeDriver, 30+ LLM orchestration)"
                 },
                 {
                   "@type": "Organization",
                   "name": "Eli Lilly",
-                  "description": "Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11)"
+                  "description": "Senior Software Engineer (Contractor) - Dose Management Platform (21 CFR Part 11)"
                 },
                 {
                   "@type": "Organization",
                   "name": "Southwest Airlines",
-                  "description": "Senior Software Engineer (Contractor) — Backend & Data Platform"
+                  "description": "Senior Software Engineer (Contractor) - Backend & Data Platform"
                 },
                 {
                   "@type": "Organization",
                   "name": "Shell",
-                  "description": "Senior Software Engineer (Contractor) — Backend & Data Science"
+                  "description": "Senior Software Engineer (Contractor) - Backend & Data Science"
                 },
                 {
                   "@type": "Organization",
@@ -217,7 +229,7 @@ export default function RootLayout({
               "@type": "WebSite",
               "name": "Sai Likhith Kanuparthi",
               "url": "https://sailikhith.me",
-              "description": "Senior Software Engineer specializing in ML Infrastructure, GenAI platforms, and agentic memory systems. Currently at Airbnb.",
+              "description": "Senior AI Infrastructure & Systems Engineer at Airbnb. Owns end-to-end architecture of BPI Virtual Analyst, a multi-model GenAI orchestration platform abstracting 30+ foundation models behind FacadeDriver.",
               "author": {
                 "@type": "Person",
                 "name": "Sai Likhith Kanuparthi",

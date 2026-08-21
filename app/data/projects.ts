@@ -13,7 +13,7 @@ export const projects: Project[] = [
   {
     name: "Redpen (Airbnb)",
     description:
-      "Large-scale internal tooling using Flask, Celery, Labelbox, and Redis. Engineered robust data pipelines with SQLAlchemy and Alembic for model evaluation workflows.",
+      "Owned Airbnb's data-labeling platform UI. Flask, Celery, Labelbox, Redis. Architected robust data pipelines with SQLAlchemy and Alembic for model evaluation workflows. Serves CS Labs, Luxe Labelbox, and AirCover HALO teams.",
     tags: [
       { name: "flask", color: "#18BC9C" },
       { name: "celery", color: "#aaa" },
@@ -26,7 +26,7 @@ export const projects: Project[] = [
   {
     name: "BPI Virtual Analyst (Airbnb)",
     description:
-      "GenAI 5-step LLM wizard integrating 30+ models. Scaled to 10,000 rows/run for ~55 analysts. Presidio PII pipeline, AI clustering, Insight Miner.",
+      "Owned end-to-end architecture of a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver. Scaled to 10,000 rows/run for 55+ analysts. Presidio PII pipeline, AI clustering, Insight Miner.",
     tags: [
       { name: "python", color: "#18BC9C" },
       { name: "streamlit", color: "#18BC9C" },
@@ -39,7 +39,7 @@ export const projects: Project[] = [
   {
     name: "Dose Management System (Eli Lilly)",
     description:
-      "Full-stack healthcare portal for medication management. Java/Spring Boot backend, React frontend, deployed on OpenShift OCP across clinical environments.",
+      "Owned backend architecture for a full-stack healthcare portal handling radioactive isotope distribution under 10-hour decay SLA. Java/Spring Boot backend, React frontend, deployed on OpenShift OCP across clinical environments. 99.9% uptime for 6 months.",
     tags: [
       { name: "java", color: "#18BC9C" },
       { name: "spring-boot", color: "#18BC9C" },
@@ -64,7 +64,7 @@ export const projects: Project[] = [
   {
     name: "ML Subsurface Pipeline (Shell PLC)",
     description:
-      "ML reusable framework for subsurface applications. Refactored Jupyter → Python package (5× faster). Deployed on AWS SageMaker. Published at SPE ADIPEC 2022.",
+      "Owned ML reusable framework for subsurface applications. Refactored Jupyter to Python package (5x faster). Deployed on AWS SageMaker. Published at SPE ADIPEC 2022 (SPE-210986-MS).",
     tags: [
       { name: "python", color: "#18BC9C" },
       { name: "pyspark", color: "#aaa" },

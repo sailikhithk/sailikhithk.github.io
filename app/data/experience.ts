@@ -4,13 +4,13 @@ export const jobs: Job[] = [
   {
     company: "Airbnb",
     logo: "/img/airbnb-logo.png",
-    role: "Senior Software Engineer, ML Infrastructure & AI Engineering",
-    period: "Sep 2024 – Present",
+    role: "Senior AI Infrastructure & Systems Engineer",
+    period: "Sep 2024 - Present",
     location: "San Francisco, CA (Remote)",
-    desc: "Built BPI Virtual Analyst — a 5-step LLM wizard integrating 30+ models (GPT-4o, Claude, Gemini, Llama) used by ~55 analysts. Scaled from 600 → 10,000 rows/run. Built Presidio PII pipeline (30% faster). Led Redpen label export upgrade targeting 80% runtime reduction.",
+    desc: "Owned end-to-end architecture of BPI Virtual Analyst - a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver, serving 55+ analysts. Scaled from 600 to 10,000 rows/run (40MB uploads, PII-safe). Architected Presidio PII pipeline (30% faster). Led Redpen label export upgrade targeting 80% runtime reduction.",
     stack: "Python · Streamlit · Flask · Celery · Airflow · Labelbox · Presidio · AWS · OTEL",
     overview:
-      "Senior ML / AI Infrastructure Engineer on the GenAI Platform team. Owns BPI Virtual Analyst and Redpen UI end-to-end, co-develops Redpen backend. Builds production GenAI platforms serving 55+ analysts across the Business Process Insight (BPI) Virtual Analyst and Redpen data-labeling systems.",
+      "Senior AI Infrastructure & Systems Engineer on the GenAI Platform team. Owns BPI Virtual Analyst and Redpen UI end-to-end, co-develops Redpen backend. Architects production GenAI platforms serving 55+ analysts across the Business Process Insight (BPI) Virtual Analyst and Redpen data-labeling systems.",
     highlights: [
       {
         label: "BPI Virtual Analyst (sole owner)",
@@ -91,10 +91,10 @@ export const jobs: Job[] = [
   {
     company: "Eli Lilly",
     logo: "/img/lilly-logo.png",
-    role: "Senior Software Engineer (Contractor) — Dose Management Platform",
-    period: "Feb 2024 – Aug 2024",
+    role: "Senior Software Engineer (Contractor) - Dose Management Platform",
+    period: "Feb 2024 - Aug 2024",
     location: "Philadelphia, PA (Remote)",
-    desc: "Built and maintained the Dose Management System (DMS) — full-stack healthcare portal for medication management. Java/Spring Boot backend, React frontend, deployed on OpenShift OCP across dev/QA/prod environments.",
+    desc: "Built and maintained the Dose Management System (DMS) - full-stack healthcare portal for medication management. Java/Spring Boot backend, React frontend, deployed on OpenShift OCP across dev/QA/prod environments.",
     stack: "Java · Spring Boot · React · OpenShift · PostgreSQL · GitHub Actions",
     overview:
       "Led a lean team of senior developers as developer lead (owned PR reviews, design-doc sign-off, release orchestration, onboarding KT sessions). Owned the platform routing AMYVID (florbetapir F-18), Lilly's amyloid PET imaging agent for Alzheimer's diagnosis, through the PETNET Solutions distribution network under a 10-hour administration window from F-18 isotope decay (110-minute half-life). Wore four hats end-to-end: backend, data, frontend, workflow. 99.9% uptime for 6 months.",
@@ -168,10 +168,10 @@ export const jobs: Job[] = [
   {
     company: "Southwest Airlines",
     logo: "/img/southwest-logo.png",
-    role: "Senior Software Engineer (Contractor) — Backend & Data Platform",
-    period: "Jan 2023 – Jan 2024",
+    role: "Senior Software Engineer (Contractor) - Backend & Data Platform",
+    period: "Jan 2023 - Jan 2024",
     location: "Dallas, TX (Remote)",
-    desc: "Architected deployment and testing automation pipelines. Containerized services with Docker + Kubernetes. Secure data management with Datadog monitoring. Statistical analysis and regression models on large datasets.",
+    desc: "Owned architecture and production operation of Kafka pipelines sustaining 4M req/min for real-time flight tracking. Containerized services with Docker + Kubernetes. Cut on-call MTTR from 45 to 12 minutes (73% reduction). Statistical analysis and regression models on large datasets.",
     stack: "Python · Docker · Kubernetes · AWS · Datadog · Flask",
     overview:
       "Architected real-time flight-tracking pipelines on Kafka and RabbitMQ for booking and notification routing across multiple consumer services. Raised engineering quality bar to 95% test coverage and cut on-call MTTR from 45 to 12 minutes.",
@@ -226,10 +226,10 @@ export const jobs: Job[] = [
   {
     company: "Shell PLC",
     logo: "/img/shell-logo.png",
-    role: "Senior Software Engineer (Contractor) — Backend & Data Science",
-    period: "Jun 2021 – Dec 2022",
+    role: "Senior Software Engineer (Contractor) - Backend & Data Science",
+    period: "Jun 2021 - Dec 2022",
     location: "Houston, TX (Remote)",
-    desc: "Built API service handling 17M pageviews/month at 94% cache efficiency. Cleared 200+ bottlenecks; app 5× faster after refactor. Improved NLP accuracy 86% → 94%. Deployed ML models on AWS SageMaker. Published at SPE ADIPEC 2022 Conference.",
+    desc: "Owned API service handling 17M pageviews/month at 94% cache efficiency. Cleared 200+ bottlenecks; app 5x faster after refactor. Improved NLP accuracy 86% to 94%. Deployed ML models on AWS SageMaker. Published at SPE ADIPEC 2022 Conference (SPE-210986-MS).",
     stack: "Python · PySpark · Azure Databricks · AWS SageMaker · MLFlow · Flask · Docker · Jenkins",
     overview:
       "Built and operated a high-throughput API-driven publishing service and deployed classical-ML models in production. Published research at SPE ADIPEC 2022 (SPE-210986-MS).",
@@ -294,9 +294,9 @@ export const jobs: Job[] = [
     company: "Oracle India",
     logo: "/img/oracle-logo.png",
     role: "Software Engineer, ERP Analytics & Data Engineering",
-    period: "Aug 2017 – Jul 2019",
+    period: "Aug 2017 - Jul 2019",
     location: "Bangalore, India",
-    desc: "Built ERP analytics dashboard across 13 business units; boosted client activity by 20%. Automated PIP process — saved 600+ monthly work hours. Built real-time fraud detection pipeline using Kafka. Best Performer Q3 2018.",
+    desc: "Built ERP analytics dashboard across 13 business units; boosted client activity by 20%. Automated PIP process - saved 600+ monthly work hours. Architected real-time fraud detection pipeline using Kafka. Best Performer Q3 2018.",
     stack: "Python · Java · Oracle Cloud HCM · Kafka · ELK Stack · AWS · Flask · PostgreSQL",
     overview:
       "First backend role out of B.Tech. Built enterprise ERP analytics and real-time fraud-detection infrastructure for Oracle's internal business systems serving 13 business units.",

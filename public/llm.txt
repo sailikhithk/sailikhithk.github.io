@@ -1,4 +1,4 @@
-# Sai Likhith Kanuparthi — Professional Profile
+# Sai Likhith Kanuparthi - Professional Profile
 
 > This page is a plain-text, machine-readable summary of Sai Likhith Kanuparthi's professional profile,
 > optimized for AI search engines and web crawlers (Firecrawl, Jina Reader, Perplexity, ChatGPT Search).
@@ -6,7 +6,7 @@
 ## Identity
 
 - **Full Name**: Sai Likhith Kanuparthi
-- **Role**: Senior Software Engineer — ML Infrastructure & AI Engineering
+- **Role**: Senior AI Infrastructure & Systems Engineer
 - **Employer**: Airbnb (San Francisco, CA)
 - **Email**: sailikhithcse@gmail.com
 - **Location**: San Francisco, California, USA
@@ -16,6 +16,7 @@
 - **Portfolio**: https://sailikhith.me
 - **Airbnb-specific Portfolio**: https://airbnb.sailikhith.me
 - **GitHub**: https://github.com/sailikhithk
+- **GitHub Profile README**: https://github.com/sailikhithk/sailikhithk
 - **LinkedIn**: https://www.linkedin.com/in/sailikhithk
 - **Medium**: https://medium.com/@sailikhith
 - **DEV.to**: https://dev.to/sailikhithk
@@ -24,74 +25,82 @@
 - **HackerRank**: https://www.hackerrank.com/sailikhithcse
 - **Twitter / X**: https://twitter.com/codewithsai
 - **Blog**: https://sailikhithk.com
+- **AI-Readable Profile**: https://sailikhith.me/llm.txt
+- **LLMs.txt Standard**: https://sailikhith.me/llms.txt
 
 ## Summary
 
-Sai Likhith Kanuparthi is a Senior Software Engineer and AI expert specializing in Machine Learning Infrastructure and Generative AI platforms. He currently works at Airbnb in San Francisco, where he builds LLM-powered internal tools, data labeling systems, and AI data preparation pipelines at scale.
+Sai Likhith Kanuparthi is a Senior AI Infrastructure & Systems Engineer at Airbnb in San Francisco. He owns end-to-end architecture of BPI Virtual Analyst, a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver with routing, retry, fallback, and graceful degradation. The platform serves 55+ analysts across 4 partner engineering teams, processing 10K rows per run and 40MB uploads with PII-safe inference.
 
-He has 7+ years of experience shipping production systems across ML infrastructure, LLM orchestration, backend APIs, cloud data pipelines, and full-stack web applications. He is a published AI researcher with papers presented at the Society of Petroleum Engineers (SPE) Abu Dhabi International Petroleum Exhibition and Conference (ADIPEC 2022) and indexed on ResearchGate (2025).
+He has 8+ years of experience shipping production AI systems across LLM serving, Kafka streaming (4M req/min at Southwest Airlines), distributed observability (OpenTelemetry, Loki, Datadog, Grafana), backend APIs, cloud data pipelines, and full-stack applications. He is a published AI researcher with papers at SPE ADIPEC 2022 (SPE-210986-MS), IEEE Xplore, and Cambridge Scholars Publishing (2 book chapters, 2025).
 
 ## Work Experience
 
-### Airbnb — Senior Software Engineer, ML Infrastructure & AI Engineering (Sep 2024 – Present)
-- Built BPI Virtual Analyst: a 5-step LLM wizard integrating 30+ models (GPT-4o, Claude, Gemini, Llama), used by ~55 analysts. Scaled from 600 → 10,000 rows/run.
-- Built Presidio PII pipeline (30% faster detection). Led Redpen label export upgrade targeting 80% runtime reduction.
-- Stack: Python, Streamlit, Flask, Celery, Airflow, Labelbox, Presidio, AWS, OpenTelemetry
+### Airbnb - Senior AI Infrastructure & Systems Engineer (Sep 2024 - Present)
+- Owned end-to-end architecture of BPI Virtual Analyst: a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver, serving 55+ analysts across 4 partner engineering teams.
+- Scaled batching and streaming pipelines from 600 to 10,000 rows per run (40MB uploads, PII-safe).
+- Architected Presidio PII pipeline (30% faster detection across 12 entity types). Led Redpen label export upgrade targeting 80% runtime reduction.
+- Built reproducible eval harness: 23+ agent versions against 1,690 versioned ground-truth samples with dual-model A/B and flip-analysis.
+- Stack: Python, Streamlit, Flask, Celery, Airflow, Labelbox, Presidio, AWS, GCP, OpenTelemetry, Datadog, vLLM, AWS Bedrock, Azure OpenAI, Vertex Gemini
 
-### Eli Lilly — Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11) (Feb 2024 – Aug 2024)
+### Eli Lilly - Senior Software Engineer (Contractor) - Dose Management Platform (21 CFR Part 11) (Feb 2024 - Aug 2024)
 - Led a lean team of senior developers as developer lead: owned PR reviews, design-doc sign-off, release orchestration, onboarding KT sessions.
 - Owned the platform routing AMYVID (florbetapir F-18) through PETNET Solutions under a 10-hour administration window from F-18 isotope decay. 99.9% uptime for 6 months.
-- Built and maintained the Dose Management System (DMS): full-stack healthcare portal for medication management.
+- Owned backend architecture for Dose Management System (DMS): full-stack healthcare portal for medication management.
 - Java/Spring Boot backend, React frontend, deployed on OpenShift OCP across dev/QA/prod environments.
 - Stack: Java, Spring Boot, React, OpenShift, PostgreSQL, GitHub Actions
 
-### Southwest Airlines — Senior Software Engineer (Contractor) — Backend & Data Platform (Jan 2023 – Jan 2024)
-- Architected deployment and testing automation pipelines. Containerized services with Docker + Kubernetes.
-- Secure data management with Datadog monitoring. Statistical analysis and regression models on large datasets.
-- Stack: Python, Docker, Kubernetes, AWS, Datadog, Flask
+### Southwest Airlines - Senior Software Engineer (Contractor) - Backend & Data Platform (Jan 2023 - Jan 2024)
+- Owned architecture and production operation of Kafka pipelines sustaining 4M req/min for real-time flight tracking.
+- Containerized services with Docker + Kubernetes. Cut on-call MTTR from 45 to 12 minutes (73% reduction).
+- Raised unit-test coverage to 95% via test-first methodology. Elasticsearch across booking and ops datasets.
+- Stack: Python, Java, Flask, Kafka, RabbitMQ, Elasticsearch, Docker, Kubernetes, AWS, Datadog
 
-### Shell PLC — Senior Software Engineer (Contractor) — Backend & Data Science (Jun 2021 – Dec 2022)
-- Built API service handling 17M pageviews/month at 94% cache efficiency. Cleared 200+ bottlenecks; app 5× faster.
-- Improved NLP model accuracy 86% → 94%. Deployed ML models on AWS SageMaker. Published at SPE ADIPEC 2022 (SPE-210986-MS).
+### Shell PLC - Senior Software Engineer (Contractor) - Backend & Data Science (Jun 2021 - Dec 2022)
+- Owned API service handling 17M pageviews/month at 94% cache efficiency. Cleared 200+ bottlenecks; app 5x faster.
+- Improved NLP model accuracy 86% to 94%. Deployed ML models on AWS SageMaker. Published at SPE ADIPEC 2022 (SPE-210986-MS).
 - Stack: Python, PySpark, Azure Databricks, AWS SageMaker, MLFlow, Flask, Docker, Jenkins
 
-### Oracle India — Software Engineer, ERP Analytics & Data Engineering (Aug 2017 – Jul 2019)
-- Built ERP analytics dashboard across 13 business units. Automated PIP process — saved 600+ monthly work hours.
-- Built real-time fraud detection pipeline using Kafka. Awarded Best Performer Q3 2018.
+### Oracle India - Software Engineer, ERP Analytics & Data Engineering (Aug 2017 - Jul 2019)
+- Built ERP analytics dashboard across 13 business units; boosted client activity by 20%. Automated PIP process - saved 600+ monthly work hours.
+- Architected real-time fraud detection pipeline using Kafka. Awarded Best Performer Q3 2018.
 - Stack: Python, Java, Oracle Cloud HCM, Kafka, ELK Stack, AWS, Flask, PostgreSQL
 
 ## Education
 
-- **MS in Computer Science** — New York University (NYU), Tandon School of Engineering — GPA 3.69 · May 2021
+- **MS in Computer Science** - New York University (NYU), Tandon School of Engineering - GPA 3.69 - May 2021
   - Courses: Data Structures, Big Data, Distributed Systems, Cloud Computing
-- **B.Tech in Electronics & Communication Engineering** — JNTUA, Andhra Pradesh, India — GPA 4.0 · May 2013
+- **B.Tech in Electronics & Communication Engineering** - JNTUA, Andhra Pradesh, India - GPA 4.0 - May 2013
   - Awarded "Best Academic Project" for gesture-controlled Arduino robots coded in C
 
 ## Skills & Technologies
 
-**Languages**: Python, Java, TypeScript, JavaScript, Bash, C++, HTML, CSS
-**Frameworks**: FastAPI, Django, Flask, React, Next.js, Spring Boot, PyTorch, TensorFlow
-**AI/ML**: LLM Orchestration, Generative AI, Presidio PII, Labelbox, OpenTelemetry, Celery, Airflow
+**Languages**: Python, Java, TypeScript, JavaScript, Bash, C++
+**AI/ML Infrastructure & Serving**: vLLM, TensorRT-LLM, AWS Bedrock, OpenAI, Anthropic Claude, SageMaker, LangChain, LangGraph, MCP, FacadeDriver (custom multi-model router)
+**Streaming & Data**: Kafka (4M req/min), RabbitMQ, Airflow, Databricks, Spark SQL, Hive/Trino, PostgreSQL, Elasticsearch, Redis
+**Observability**: OpenTelemetry, Loki, Datadog, Grafana, Prometheus, drift detection
 **Cloud & Infra**: AWS (SageMaker, EC2, S3, SNS, SES), GCP, Azure, Docker, Kubernetes, OpenShift
+**Frameworks**: FastAPI, Django, Flask, React, Next.js, Spring Boot, PyTorch, TensorFlow
 **Databases**: PostgreSQL, MongoDB, MySQL, Redis, Elasticsearch
-**Developer Tools**: Git, Postman, Figma, Grafana, Prometheus, Kafka, Jenkins
 
 ## Certifications
 
-- AWS Solutions Architect — Professional
-- AWS Developer — Associate
-- AWS Machine Learning — Specialty
+- AWS Solutions Architect - Professional
+- AWS Developer - Associate
+- AWS Machine Learning - Specialty
 - Microsoft Azure Data Scientist Associate (DP-100)
+- Google Cloud Professional Data Engineer
 - Oracle Java Certified
 - Oracle Database Certified
 
 ## Notable Projects
 
-- **BPI Virtual Analyst (Airbnb)**: GenAI LLM wizard with 30+ model integrations (GPT-4o, Claude, Gemini, Llama), scaling to 10,000 rows/run for ~55 analysts.
-- **Redpen (Airbnb)**: Large-scale internal data labeling tooling using Flask, Celery, Labelbox, Redis, SQLAlchemy, and Alembic.
-- **Dose Management System (Eli Lilly)**: Full-stack healthcare portal for medication management with Java/Spring Boot and React, deployed on OpenShift.
+- **BPI Virtual Analyst (Airbnb)**: Multi-model GenAI orchestration platform abstracting 30+ foundation models behind FacadeDriver, scaling to 10,000 rows/run for 55+ analysts.
+- **Redpen (Airbnb)**: Airbnb's data-labeling platform UI. Flask, Celery, Labelbox, Redis, SQLAlchemy, Alembic. Serves CS Labs, Luxe Labelbox, and AirCover HALO teams.
+- **Dose Management System (Eli Lilly)**: Full-stack healthcare portal for radioactive isotope distribution under 10-hour decay SLA. Java/Spring Boot, React, OpenShift. 99.9% uptime.
 - **The Eye (HackNYU Winner)**: Computer Vision + NLP application to assist visually impaired individuals.
-- **ML Subsurface Pipeline (Shell)**: ML reusable framework for subsurface applications; refactored Jupyter → Python package (5× faster); deployed on AWS SageMaker; published at SPE ADIPEC Conference.
+- **ML Subsurface Pipeline (Shell)**: ML reusable framework for subsurface applications; refactored Jupyter to Python package (5x faster); deployed on AWS SageMaker; published at SPE ADIPEC 2022.
+- **Synthetic AI Image Detector (SAI)**: Open-source multi-signal detector for AI-generated images. Three signals (frequency-domain DCT, wavelet reconstruction error, PRNU noise residual) with temperature calibration, epistemic + aleatoric uncertainty, and refusal verdicts.
 
 ## Open Source Contributions
 
@@ -112,10 +121,10 @@ Focus areas: LLM cost tracking, eval metrics, provider compatibility, guardrails
 
 ## Recognition
 
-- Airbnb peer appreciation (2026): *"Sai has been an outstanding partner in the deployment of the BPIVA tool... Thanks to Sai's efforts, the BPIVA tool has had a significant impact on reducing non-value-added work."* — Ameet Shinde, Senior Manager BPI, Airbnb
-- Best Performer Q3 2018 — Oracle India
-- Best Academic Project Award — JNTUA (gesture-controlled Arduino robots, C)
-- HackNYU Winner — The Eye (Computer Vision + NLP for visually impaired)
+- Airbnb peer appreciation (2026): *"Sai has been an outstanding partner in the deployment of the BPIVA tool... Thanks to Sai's efforts, the BPIVA tool has had a significant impact on reducing non-value-added work."* - Ameet Shinde, Senior Manager BPI, Airbnb
+- Best Performer Q3 2018 - Oracle India
+- Best Academic Project Award - JNTUA (gesture-controlled Arduino robots, C)
+- HackNYU Winner - The Eye (Computer Vision + NLP for visually impaired)
 - Level 3 Google Foobar Challenge completion (invitation-only, top ~1% of developers)
 
 ## Research & Publications
@@ -126,49 +135,32 @@ Focus areas: LLM cost tracking, eval metrics, provider compatibility, guardrails
 - **Authors**: Ria Ghosh, Rajeev Kumar, Sai Likhith Kanuparthi
 - **Book**: *A Case-Based Study of State Space Models in Health Care: The New Transformers* (Chapter 1)
 - **Publisher**: Cambridge Scholars Publishing
-- **Topic**: Traces the development of State Space Models (SSMs) from control theory and signal processing to modern ML applications. Covers SSM applications in predictive maintenance, financial forecasting, and healthcare.
 - **ResearchGate**: https://www.researchgate.net/publication/398300276_The_Evolution_and_Rise_of_State_Space_Models_in_AI
 
 #### 2. Why Traditional AI Methods Fail in Advanced Anomaly Detection (Dec 2025)
 - **Authors**: Sai Likhith Kanuparthi, Naresh Kumar
 - **Book**: *Harnessing Generative AI to Combat Cyberbullying in Industry: Strategies, Solutions, and Ethics* (Chapter 4, Page 200)
 - **Publisher**: Cambridge Scholars Publishing
-- **Topic**: Reviews the failure modes of classical machine learning and heuristic models in high-dimensional text streams, proving why deep autoencoders and generative moderation are required.
 
 #### 3. Future Trends in AI for Cyberbullying Preventions (Dec 2025)
 - **Authors**: Sai Likhith Kanuparthi, Ria Ghosh, Meetu Malhotra, Naresh Kumar
 - **Book**: *Harnessing Generative AI to Combat Cyberbullying in Industry: Strategies, Solutions, and Ethics* (Chapter 7)
 - **Publisher**: Cambridge Scholars Publishing
-- **Topic**: Proposes next-generation AI moderation frameworks targeting positive reinforcement, agentic defense networks, and proactive intervention strategy.
-
-### Peer-Reviewed Journal Articles
-
-#### 1. FT-IR and GC-MS Metabolomic Fingerprinting of Jasmonic Acid and Salicylic Acid Treated Suspension Cultures of Caralluma fimbriata (2026)
-- **Authors**: Jaswanth Krishna Boddupalli, Vijaya Bhaskar Reddy Pichili, Sai Likhith Kanuparthi, Kiranmai Chadipiralla
-- **Journal**: *Phytomedicine* (Elsevier) · *Under Review*
-- **Topic**: Employs PCA, machine learning categorization, and metabolic profiling to isolate active compounds in JA/SA-elicited plant suspension cultures.
 
 ### Peer-Reviewed Conference Papers
 
-#### 1. Advancing the Metaverse: The Convergence of Digital Twins, AI, and Emerging Technologies (2025)
-- **Authors**: Preetish Kakkar, Shiwam Mittal, Sethuraman Ulaganathan, Tamilarasan Kannadasan, Sai Likhith Kanuparthi
-- **Venue**: 2025 International Conference on Advanced Computing Technologies (ICoACT) · *Accepted / In Press*
-- **Topic**: Synthesizes the architecture requirements for digital twin synchronization, Edge AI data routing, and VR interface streaming under Metaverse frameworks.
-
-#### 2. Role of Artificial Intelligence to address Cyberbullying and Future Scope (Apr 2023)
+#### 1. Role of Artificial Intelligence to address Cyberbullying and Future Scope (Apr 2023)
 - **Authors**: Sai Likhith Kanuparthi, Naresh Kumar
 - **Venue**: IEEE Xplore (Document ID: 11004721)
 - **DOI**: https://doi.org/10.1109/ICoACT57570.2023.10118947
 - **IEEE Xplore**: https://ieeexplore.ieee.org/abstract/document/11004721
-- **Topic**: Analyzes NLP architectures (LSTMs, Transformers) applied to online harassment detection and discusses the transition to real-time generative counters.
 
-#### 3. Full-Stack Machine Learning Development Framework for Energy Industry Applications (Oct 2022)
+#### 2. Full-Stack Machine Learning Development Framework for Energy Industry Applications (Oct 2022)
 - **Authors**: Jie Chen, Changqing Yao, Pandu R. Devarakota, Mohamed Sidahmed, Zexuan Dong, Sai Kanuparthi, Jia Wei
 - **Venue**: Society of Petroleum Engineers (SPE) Abu Dhabi International Petroleum Exhibition and Conference (ADIPEC), Abu Dhabi, UAE
 - **Paper ID**: SPE-210986-MS
 - **DOI**: https://doi.org/10.2118/210986-MS
 - **OnePetro**: https://www.onepetro.org/conference-paper/SPE-210986-MS
-- **Topic**: Reusable, platform-independent ML framework for energy applications supporting local, Docker, and HPC environments to transition from PoC to productization.
 
 ### Patents
 
@@ -179,8 +171,6 @@ Focus areas: LLM cost tracking, eval metrics, provider compatibility, guardrails
 - **Filed**: March 21, 2025
 - **Published**: March 27, 2025 (Publication No. 13/2025)
 - **IPC**: G06N 3/08, G06N 3/045, G06N 3/096, G06N 3/084, G06N 20/00
-- **Topic**: Architectures for lightweight, parameter-efficient adapters enabling models to transfer knowledge dynamically across disparate domains without catastrophic forgetting.
-
 
 ## Speaking & Research Interests
 
@@ -194,3 +184,4 @@ Focus areas: LLM cost tracking, eval metrics, provider compatibility, guardrails
 
 For consulting, advisory, or speaking inquiries: sailikhithcse@gmail.com
 AI-readable profile: https://sailikhith.me/llm.txt
+LLMs.txt standard: https://sailikhith.me/llms.txt
