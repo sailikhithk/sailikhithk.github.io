@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" role="img" aria-label="Multi-agent system architecture - Insight Miner and AI Clustering">
+  <defs>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+    <marker id="arrow3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#18BC9C"/>
+    </marker>
+    <marker id="arrow3-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#48BB78"/>
+    </marker>
+    <linearGradient id="navy3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1526" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0d1526" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="blue3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#18BC9C" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0D1526" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="slate3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="640" fill="#0a0a0a"/>
+  <rect width="1000" height="640" fill="url(#grid3)"/>
+
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" font-weight="700">Multi-Agent System Architecture</text>
+  <text x="500" y="66" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13">Insight Miner (11-dim reasoning) + AI Clustering (semantic embeddings) - the Tool Calling Layer pattern</text>
+
+  <!-- User Query -->
+  <rect x="370" y="90" width="260" height="50" rx="6" fill="url(#navy3)" stroke="#18BC9C" stroke-width="1.5"/>
+  <text x="500" y="115" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="14" font-weight="600">User Query (Plain Language)</text>
+  <text x="500" y="132" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">"Which vendor agreements have uncapped liability?"</text>
+
+  <line x1="500" y1="140" x2="500" y2="170" stroke="#18BC9C" stroke-width="2" marker-end="url(#arrow3)"/>
+
+  <!-- Orchestrator -->
+  <rect x="250" y="170" width="500" height="60" rx="8" fill="url(#blue3)" stroke="#18BC9C" stroke-width="2"/>
+  <text x="500" y="195" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="15" font-weight="700">Agent Orchestrator (Multi-Step Reasoning Loop)</text>
+  <text x="500" y="215" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="11">Tool calling | Agentic memory (semantic, episodic, procedural) | Multi-turn orchestration</text>
+
+  <!-- Arrows to 3 agents -->
+  <line x1="350" y1="230" x2="180" y2="270" stroke="#18BC9C" stroke-width="1.5" marker-end="url(#arrow3)"/>
+  <line x1="500" y1="230" x2="500" y2="270" stroke="#18BC9C" stroke-width="1.5" marker-end="url(#arrow3)"/>
+  <line x1="650" y1="230" x2="820" y2="270" stroke="#18BC9C" stroke-width="1.5" marker-end="url(#arrow3)"/>
+
+  <!-- Agent 1: Insight Miner -->
+  <rect x="60" y="270" width="240" height="120" rx="8" fill="url(#slate3)" stroke="#18BC9C" stroke-width="1.5"/>
+  <text x="180" y="295" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="14" font-weight="600">Insight Miner</text>
+  <text x="180" y="315" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="11">11-dimension reasoning agent</text>
+  <text x="180" y="335" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">- Risk assessment</text>
+  <text x="180" y="350" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">- Obligation extraction</text>
+  <text x="180" y="365" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">- Compliance check</text>
+  <text x="180" y="380" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">- Clause comparison</text>
+
+  <!-- Agent 2: AI Clustering -->
+  <rect x="380" y="270" width="240" height="120" rx="8" fill="url(#slate3)" stroke="#18BC9C" stroke-width="1.5"/>
+  <text x="500" y="295" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="14" font-weight="600">AI Clustering</text>
+  <text x="500" y="315" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="11">Semantic embeddings + clustering</text>
+  <text x="500" y="335" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">- Silhouette scoring</text>
+  <text x="500" y="350" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">- K-means diversity sampling</text>
+  <text x="500" y="365" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">- Pattern detection</text>
+  <text x="500" y="380" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">- Group similar contracts</text>
+
+  <!-- Agent 3: Tool Caller -->
+  <rect x="700" y="270" width="240" height="120" rx="8" fill="url(#slate3)" stroke="#18BC9C" stroke-width="1.5"/>
+  <text x="820" y="295" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="14" font-weight="600">Tool Caller</text>
+  <text x="820" y="315" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="11">Function calling across tools</text>
+  <text x="820" y="335" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">- Gmail / Outlook read</text>
+  <text x="820" y="350" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">- Slack / Teams search</text>
+  <text x="820" y="365" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">- Drive / SharePoint fetch</text>
+  <text x="820" y="380" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">- HubSpot / Notion query</text>
+
+  <!-- Arrows converging -->
+  <line x1="180" y1="390" x2="400" y2="430" stroke="#18BC9C" stroke-width="1.5" marker-end="url(#arrow3)"/>
+  <line x1="500" y1="390" x2="500" y2="430" stroke="#18BC9C" stroke-width="1.5" marker-end="url(#arrow3)"/>
+  <line x1="820" y1="390" x2="600" y2="430" stroke="#18BC9C" stroke-width="1.5" marker-end="url(#arrow3)"/>
+
+  <!-- Agentic Memory -->
+  <rect x="100" y="430" width="340" height="70" rx="8" fill="url(#blue3)" stroke="#18BC9C" stroke-width="1.5"/>
+  <text x="270" y="455" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="13" font-weight="600">Agentic Memory</text>
+  <text x="270" y="475" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Semantic | Episodic | Procedural</text>
+  <text x="270" y="490" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">Multi-turn context retention</text>
+
+  <!-- Eval + Guardrails -->
+  <rect x="560" y="430" width="340" height="70" rx="8" fill="url(#navy3)" stroke="#48BB78" stroke-width="1.5"/>
+  <text x="730" y="455" text-anchor="middle" fill="#48BB78" font-family="Helvetica Neue, Arial" font-size="13" font-weight="600">Guardrails + Per-Action Approval</text>
+  <text x="730" y="475" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Approve | Auto-allow | Block</text>
+  <text x="730" y="490" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">Audit trail | Sensitive actions pause for approval</text>
+
+  <!-- Arrow to output -->
+  <line x1="500" y1="500" x2="500" y2="530" stroke="#48BB78" stroke-width="2" marker-end="url(#arrow3-green)"/>
+
+  <!-- Output -->
+  <rect x="200" y="530" width="600" height="55" rx="8" fill="url(#slate3)" stroke="#48BB78" stroke-width="1.5"/>
+  <text x="500" y="555" text-anchor="middle" fill="#48BB78" font-family="Helvetica Neue, Arial" font-size="14" font-weight="600">Cited Answer with Verified Sources</text>
+  <text x="500" y="572" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">Every value carries a citation | Click to open source with exact passage highlighted</text>
+
+  <!-- Airbnb mapping -->
+  <rect x="60" y="600" width="880" height="30" rx="4" fill="url(#navy3)" stroke="#18BC9C" stroke-width="1"/>
+  <text x="500" y="620" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="11" font-weight="600">Airbnb Tool Calling Layer: Same pattern - 20+ integrations, per-action approval, audit trail, read + write actions</text>
+</svg>

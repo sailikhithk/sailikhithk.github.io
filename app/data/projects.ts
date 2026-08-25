@@ -71,7 +71,7 @@ export const projects: Project[] = [
       { name: "aws-sagemaker", color: "#18BC9C" },
       { name: "mlflow", color: "#aaa" },
     ],
-    image: "/img/images.jpg",
+    image: "/img/Plagiarism.jpg",
   },
   {
     name: "Synthetic AI Image Detector (SAI)",
@@ -84,7 +84,46 @@ export const projects: Project[] = [
       { name: "calibration", color: "#18BC9C" },
       { name: "national-security", color: "#aaa" },
     ],
-    image: "/img/images.jpg",
+    image: "/img/ai-copilots.png",
     github: "https://github.com/sailikhithk/Synthetic-AI-Image-Detector",
+  },
+  {
+    name: "LangChain Contribution (PR #39351)",
+    description:
+      "Added cost tracking and token usage metrics to LangChain's LLM invocation pipeline. Open-source contribution to the most widely used LLM orchestration framework. Helps teams monitor inference spend across model providers.",
+    tags: [
+      { name: "langchain", color: "#18BC9C" },
+      { name: "open-source", color: "#18BC9C" },
+      { name: "llm", color: "#18BC9C" },
+      { name: "cost-tracking", color: "#aaa" },
+    ],
+    image: "/img/airbnb.png",
+    github: "https://github.com/langchain-ai/langchain/pull/39351",
+  },
+  {
+    name: "LiveKit Agents Contribution (PR #6754)",
+    description:
+      "Added ReliabilityObserver to LiveKit Agents framework with 23 test cases. Monitors connection health, auto-reconnects on failure, exposes reliability metrics for voice AI pipelines. Used by real-time voice agent deployments.",
+    tags: [
+      { name: "livekit", color: "#18BC9C" },
+      { name: "open-source", color: "#18BC9C" },
+      { name: "voice-ai", color: "#aaa" },
+      { name: "reliability", color: "#18BC9C" },
+    ],
+    image: "/img/airbnb.png",
+    github: "https://github.com/livekit/agents/pull/6754",
+  },
+  {
+    name: "LiteLLM Contribution (Merged)",
+    description:
+      "Fixed Vertex Gemini token counting bug in LiteLLM proxy. Correct token counts are critical for cost attribution, rate limiting, and context window management across model providers. Merged to main.",
+    tags: [
+      { name: "litellm", color: "#18BC9C" },
+      { name: "open-source", color: "#18BC9C" },
+      { name: "vertex-ai", color: "#aaa" },
+      { name: "bugfix", color: "#18BC9C" },
+    ],
+    image: "/img/airbnb.png",
+    github: "https://github.com/BerriAI/litellm",
   },
 ];

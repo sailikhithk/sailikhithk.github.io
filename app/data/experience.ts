@@ -7,15 +7,15 @@ export const jobs: Job[] = [
     role: "Senior AI Infrastructure & Systems Engineer",
     period: "Sep 2024 - Present",
     location: "San Francisco, CA (Remote)",
-    desc: "Owned end-to-end architecture of BPI Virtual Analyst - a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver, serving 55+ analysts. Scaled from 600 to 10,000 rows/run (40MB uploads, PII-safe). Architected Presidio PII pipeline (30% faster). Led Redpen label export upgrade targeting 80% runtime reduction.",
+    desc: "Owned end-to-end architecture of BPI Virtual Analyst - a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver, serving 128+ users. Scaled from 600 to 10,000 rows/run (40MB uploads, PII-safe). Architected Presidio PII pipeline (30% faster). Led Redpen label export upgrade targeting 80% runtime reduction.",
     stack: "Python · Streamlit · Flask · Celery · Airflow · Labelbox · Presidio · AWS · OTEL",
     overview:
-      "Senior AI Infrastructure & Systems Engineer on the GenAI Platform team. Owns BPI Virtual Analyst and Redpen UI end-to-end, co-develops Redpen backend. Architects production GenAI platforms serving 55+ analysts across the Business Process Insight (BPI) Virtual Analyst and Redpen data-labeling systems.",
+      "Senior AI Infrastructure & Systems Engineer on the GenAI Platform team. Owns BPI Virtual Analyst and Redpen UI end-to-end, co-develops Redpen backend. Architects production GenAI platforms serving 128+ users across the Business Process Insight (BPI) Virtual Analyst and Redpen data-labeling systems.",
     highlights: [
       {
         label: "BPI Virtual Analyst (sole owner)",
         detail:
-          "Customer-facing Python co-pilot orchestrating 30+ LLMs behind a unified FacadeDriver abstraction layer, serving 55+ analysts. Scaled batching and streaming pipelines from 600 to 10,000 rows per run (10K rows, 40MB per run, PII-safe).",
+          "Customer-facing Python co-pilot orchestrating 30+ LLMs behind a unified FacadeDriver abstraction layer, serving 128+ users. Scaled batching and streaming pipelines from 600 to 10,000 rows per run (10K rows, 40MB per run, PII-safe).",
       },
       {
         label: "Evaluation harness and agentic memory",
@@ -54,7 +54,7 @@ export const jobs: Job[] = [
       },
     ],
     metrics: [
-      "55+ analysts served",
+      "128+ users served",
       "30+ LLMs orchestrated",
       "23+ agent versions evaluated",
       "1,690 versioned ground-truth samples",

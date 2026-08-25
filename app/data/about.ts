@@ -4,25 +4,25 @@ export const cards: AboutCard[] = [
   {
     icon: "fa-code",
     title: "AI Infrastructure & LLM Serving",
-    desc: "Own end-to-end architecture of BPI Virtual Analyst at Airbnb - 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver, PII pipelines, data labeling platforms serving 55+ analysts across 4 partner engineering teams.",
+    desc: "Own end-to-end architecture of BPI Virtual Analyst at Airbnb - 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver. 128+ users across 4 teams. 10K rows per run. 50% cost savings via batch inference.",
   },
   {
     icon: "fa-cloud",
-    title: "Streaming & Distributed Observability",
-    desc: "Kafka 4M req/min, OpenTelemetry, Loki, Datadog, Grafana, Docker, Kubernetes, Airflow, OpenShift - production systems at Airbnb, Shell, Southwest Airlines, and Eli Lilly.",
+    title: "Eval Gates & RAG Pipelines",
+    desc: "23-version LLM eval harness with 1,690 ground-truth samples. LLM-as-Judge gates block production at precision < 0.85. End-to-end RAG with vector + hybrid retrieval, reranking, contextual compression. F1 lifted to 0.654 (project-best).",
   },
   {
     icon: "fa-trophy",
-    title: "Certifications & Recognition",
-    desc: "AWS Solutions Architect Professional, AWS Developer, AWS ML Specialty, GCP Data Engineer, Azure Data Scientist, Oracle Java & Database certified. Multiple Airbnb peer appreciations (2026).",
+    title: "Streaming, Observability & Certifications",
+    desc: "Kafka 4M req/min at Southwest. OpenTelemetry, Loki, Datadog at Airbnb. AWS Solutions Architect Professional, AWS ML Specialty, GCP Data Engineer, Azure Data Scientist. 4 publications, 1 patent.",
   },
 ];
 
 export const stats: CareerStat[] = [
-  { value: "8+", label: "Years Experience" },
-  { value: "4M", label: "Req/min (Kafka @ Southwest)" },
+  { value: "9+", label: "Years Experience" },
   { value: "30+", label: "LLM Models Orchestrated" },
-  { value: "55+", label: "Analysts Served @ Airbnb" },
+  { value: "128+", label: "Users Across 4 Teams" },
+  { value: "1,690", label: "Ground-Truth Eval Samples" },
 ];
 
 export const SKILLS: Record<string, Skill> = {

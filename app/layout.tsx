@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s - Sai Likhith Kanuparthi",
   },
   description:
-    "Senior AI Infrastructure & Systems Engineer at Airbnb. I own end-to-end architecture of BPI Virtual Analyst, a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver. Kafka 4M req/min, OTel observability, 8+ years shipping production AI systems. NYU MS Computer Science.",
+    "Senior AI Infrastructure & Systems Engineer at Airbnb. I own end-to-end architecture of BPI Virtual Analyst, a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver. Kafka 4M req/min, OTel observability, 9+ years shipping production AI systems. NYU MS Computer Science.",
   keywords: [
     "Sai Likhith Kanuparthi",
     "Sai Likhith",

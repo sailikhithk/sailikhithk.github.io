@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" role="img" aria-label="RAG pipeline with eval gates - BPI Virtual Analyst pattern">
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#18BC9C"/>
+    </marker>
+    <marker id="arrow2-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#48BB78"/>
+    </marker>
+    <linearGradient id="navy2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1526" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0d1526" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="blue2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#18BC9C" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0D1526" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="slate2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="640" fill="#0a0a0a"/>
+  <rect width="1000" height="640" fill="url(#grid2)"/>
+
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" font-weight="700">RAG Pipeline with Eval Gates</text>
+  <text x="500" y="66" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13">End-to-end retrieval-augmented generation - the BPI Virtual Analyst pattern</text>
+
+  <!-- Stage 1: Ingest -->
+  <rect x="30" y="100" width="140" height="80" rx="8" fill="url(#slate2)" stroke="#18BC9C" stroke-width="1.5"/>
+  <text x="100" y="125" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="13" font-weight="600">1. Ingest</text>
+  <text x="100" y="145" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Google Drive</text>
+  <text x="100" y="160" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">SharePoint</text>
+  <text x="100" y="175" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">PDF / Word upload</text>
+
+  <line x1="170" y1="140" x2="200" y2="140" stroke="#18BC9C" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- Stage 2: Parse -->
+  <rect x="200" y="100" width="140" height="80" rx="8" fill="url(#slate2)" stroke="#18BC9C" stroke-width="1.5"/>
+  <text x="270" y="125" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="13" font-weight="600">2. Parse</text>
+  <text x="270" y="145" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">PDF parsing</text>
+  <text x="270" y="160" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">OCR for scans</text>
+  <text x="270" y="175" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Clause integrity</text>
+
+  <line x1="340" y1="140" x2="370" y2="140" stroke="#18BC9C" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- Stage 3: Chunk -->
+  <rect x="370" y="100" width="140" height="80" rx="8" fill="url(#slate2)" stroke="#18BC9C" stroke-width="1.5"/>
+  <text x="440" y="125" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="13" font-weight="600">3. Chunk</text>
+  <text x="440" y="145" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Document chunking</text>
+  <text x="440" y="160" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Context mgmt</text>
+  <text x="440" y="175" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Token-efficient</text>
+
+  <line x1="510" y1="140" x2="540" y2="140" stroke="#18BC9C" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- Stage 4: Embed -->
+  <rect x="540" y="100" width="140" height="80" rx="8" fill="url(#slate2)" stroke="#18BC9C" stroke-width="1.5"/>
+  <text x="610" y="125" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="13" font-weight="600">4. Embed</text>
+  <text x="610" y="145" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Vector embeddings</text>
+  <text x="610" y="160" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">30+ LLM support</text>
+  <text x="610" y="175" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Per-model policies</text>
+
+  <line x1="680" y1="140" x2="710" y2="140" stroke="#18BC9C" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- Stage 5: Retrieve -->
+  <rect x="710" y="100" width="140" height="80" rx="8" fill="url(#slate2)" stroke="#18BC9C" stroke-width="1.5"/>
+  <text x="780" y="125" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="13" font-weight="600">5. Retrieve</text>
+  <text x="780" y="145" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Vector + hybrid</text>
+  <text x="780" y="160" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Reranking</text>
+  <text x="780" y="175" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Context compress</text>
+
+  <line x1="850" y1="140" x2="880" y2="140" stroke="#18BC9C" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- Stage 6: Generate -->
+  <rect x="880" y="100" width="100" height="80" rx="8" fill="url(#navy2)" stroke="#18BC9C" stroke-width="2"/>
+  <text x="930" y="125" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="13" font-weight="600">6. Answer</text>
+  <text x="930" y="145" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Cited answer</text>
+  <text x="930" y="160" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Filter to</text>
+  <text x="930" y="175" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">contracts</text>
+
+  <!-- Divider -->
+  <line x1="30" y1="210" x2="970" y2="210" stroke="#1e293b" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Section: My Implementation -->
+  <text x="500" y="240" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="16" font-weight="700">What I Built at Airbnb (Same Pipeline, Different Domain)</text>
+
+  <!-- Vector DB -->
+  <rect x="100" y="270" width="200" height="70" rx="8" fill="url(#blue2)" stroke="#18BC9C" stroke-width="1.5"/>
+  <text x="200" y="295" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="13" font-weight="600">Vector Databases</text>
+  <text x="200" y="315" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Pinecone | Weaviate | Chroma</text>
+  <text x="200" y="330" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">EmbeddingsDriver: max-min, k-means diversity</text>
+
+  <!-- EmbeddingsDriver arrow -->
+  <line x1="300" y1="305" x2="370" y2="305" stroke="#18BC9C" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- Retrieval strategies -->
+  <rect x="370" y="270" width="260" height="70" rx="8" fill="url(#blue2)" stroke="#18BC9C" stroke-width="1.5"/>
+  <text x="500" y="295" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="13" font-weight="600">Retrieval Strategies</text>
+  <text x="500" y="315" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Hybrid search | Reranking | Contextual compression</text>
+  <text x="500" y="330" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">Grounding | Token-efficient context selection</text>
+
+  <line x1="630" y1="305" x2="700" y2="305" stroke="#18BC9C" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- Context assembly -->
+  <rect x="700" y="270" width="240" height="70" rx="8" fill="url(#blue2)" stroke="#18BC9C" stroke-width="1.5"/>
+  <text x="820" y="295" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="13" font-weight="600">Context Assembly</text>
+  <text x="820" y="315" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="10">Retrieval-aware assembly</text>
+  <text x="820" y="330" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">30+ LLMs | PII-safe via Presidio (12 entities)</text>
+
+  <!-- Eval gate box -->
+  <rect x="100" y="370" width="800" height="90" rx="8" fill="url(#navy2)" stroke="#48BB78" stroke-width="2"/>
+  <text x="500" y="395" text-anchor="middle" fill="#48BB78" font-family="Helvetica Neue, Arial" font-size="15" font-weight="700">LLM-as-Judge Eval Gate</text>
+  <text x="500" y="415" text-anchor="middle" fill="#e5e5e5" font-family="Helvetica Neue, Arial" font-size="11">23 agent versions | 1,690 ground-truth samples | Precision >= 0.85 | Recall >= 0.80</text>
+  <text x="500" y="435" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">Flip-analysis classifies every label change | Dual-model A/B (Opus vs Sonnet) | Drift detection</text>
+  <text x="500" y="450" text-anchor="middle" fill="#F56565" font-family="Helvetica Neue, Arial" font-size="10" font-weight="600">BLOCKS PRODUCTION if precision or recall drops below threshold</text>
+
+  <!-- Arrow from eval to output -->
+  <line x1="500" y1="460" x2="500" y2="490" stroke="#48BB78" stroke-width="2" marker-end="url(#arrow2-green)"/>
+
+  <!-- Output -->
+  <rect x="250" y="490" width="500" height="60" rx="8" fill="url(#slate2)" stroke="#48BB78" stroke-width="1.5"/>
+  <text x="500" y="515" text-anchor="middle" fill="#48BB78" font-family="Helvetica Neue, Arial" font-size="14" font-weight="600">Cited Output with Verbatim Accuracy</text>
+  <text x="500" y="535" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">10K rows/run | 40MB uploads | F1 = 0.654 (project-best) | 128+ users across 4 teams</text>
+
+  <!-- Airbnb mapping -->
+  <rect x="60" y="575" width="880" height="50" rx="6" fill="url(#navy2)" stroke="#18BC9C" stroke-width="1"/>
+  <text x="500" y="595" text-anchor="middle" fill="#18BC9C" font-family="Helvetica Neue, Arial" font-size="12" font-weight="600">Airbnb BPI Virtual Analyst: Same pipeline pattern</text>
+  <text x="500" y="612" text-anchor="middle" fill="#888888" font-family="Helvetica Neue, Arial" font-size="10">42,000+ documents across 395 users | Citations on every value | Current Terms view rolls up amendments</text>
+</svg>

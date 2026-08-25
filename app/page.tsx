@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import AboutAndTechStack from "./components/AboutAndTechStack";
 import Recognition from "./components/Recognition";
 import Experience from "./components/Experience";
+import SystemDesign from "./components/SystemDesign";
 import Education from "./components/Education";
 import Publications from "./components/Publications";
 import Certifications from "./components/Certifications";
@@ -18,6 +19,7 @@ export default function Home() {
       <AboutAndTechStack />
       <Recognition />
       <Experience />
+      <SystemDesign />
       <Publications />
       <Certifications />
       <Education />

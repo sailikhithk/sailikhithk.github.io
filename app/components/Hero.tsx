@@ -4,11 +4,11 @@ import Image from "next/image";
 import { FlipWords } from "@/app/components/ui/FlipWords";
 
 const ROLES = [
-  "Senior AI Infrastructure & Systems Engineer",
-  "LLM Serving Runtimes & Distributed Observability",
-  "Enterprise Agentic Platforms @ Airbnb",
-  "Kafka 4M req/min | OTel | vLLM | Bedrock",
-  "8+ Years in Production AI Systems",
+  "30+ LLMs behind one FacadeDriver",
+  "Eval gates that block production",
+  "RAG pipelines at 10K rows per run",
+  "1,690 ground-truth eval samples",
+  "128+ users across 4 teams @ Airbnb",
 ];
 
 const socialLinks = [
@@ -102,12 +102,10 @@ export default function Hero() {
               color: "#ddd",
             }}
           >
-            I own end-to-end architecture of BPI Virtual Analyst at Airbnb - a
-            multi-model GenAI orchestration platform abstracting 30+ foundation
-            models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind
-            FacadeDriver. 8+ years shipping production AI systems across LLM
-            serving, Kafka streaming, distributed observability, and cloud
-            infrastructure.
+            I build multi-model LLM orchestration platforms with eval gates
+            that block production when accuracy drops. 30+ models, 128+ users,
+            1,690 ground-truth samples. Senior AI Infrastructure Engineer at
+            Airbnb. 9+ years shipping production AI.
           </p>
         </motion.div>
 
@@ -131,6 +129,42 @@ export default function Hero() {
               />
             </a>
           ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.6 }}
+          className="mt-6"
+        >
+          <span
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              padding: "6px 16px",
+              background: "rgba(24, 188, 156, 0.12)",
+              border: "1px solid var(--teal)",
+              borderRadius: "999px",
+              fontSize: "0.8rem",
+              color: "var(--teal)",
+              fontWeight: 600,
+              fontFamily: "var(--font-montserrat), sans-serif",
+              letterSpacing: "0.03em",
+            }}
+          >
+            <span
+              style={{
+                width: "8px",
+                height: "8px",
+                borderRadius: "50%",
+                background: "var(--teal)",
+                display: "inline-block",
+                animation: "pulse 2s infinite",
+              }}
+            />
+            Open to MTS Applied AI roles
+          </span>
         </motion.div>
       </div>
     </header>
