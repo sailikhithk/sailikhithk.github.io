@@ -20,10 +20,10 @@
   <text x="64" y="37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#58a6ff">BerriAI / litellm</text>
 
   <!-- PR Status Badge (Purple Merged) -->
-  <g transform="translate(475, 18)">
-    <rect width="105" height="28" rx="14" fill="#8957e5"/>
+  <g transform="translate(445, 18)">
+    <rect width="135" height="28" rx="14" fill="#8957e5"/>
     <circle cx="16" cy="14" r="4" fill="#fff"/>
-    <text x="26" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#fff"># Merged</text>
+    <text x="26" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#fff">#36981 Merged</text>
   </g>
 
   <!-- PR Title -->

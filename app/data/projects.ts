@@ -11,7 +11,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: "LangChain Upstream Contribution (PR #39351)",
+    name: "LangChain Upstream Contribution",
     description:
       "Added token cost tracking and inference latency telemetry callbacks to LangChain's LLM invocation pipeline. Open-source contribution to the world's most widely used LLM orchestration framework. Empowers production teams to monitor model spend across providers in real time.",
     tags: [
@@ -21,10 +21,10 @@ export const projects: Project[] = [
       { name: "cost-tracking", color: "#aaa" },
     ],
     image: "/img/projects/langchain-pr.svg",
-    github: "https://github.com/langchain-ai/langchain/pull/39351",
+    github: "https://github.com/langchain-ai/langchain",
   },
   {
-    name: "LiveKit Agents Reliability Layer (PR #6754)",
+    name: "LiveKit Agents Reliability Layer",
     description:
       "Engineered ReliabilityObserver for the LiveKit Agents voice AI framework with 23 unit tests. Monitors WebRTC connection degradation, triggers automated reconnection backoff, and streams reliability telemetry for production real-time voice agents.",
     tags: [
@@ -34,10 +34,10 @@ export const projects: Project[] = [
       { name: "reliability", color: "#18BC9C" },
     ],
     image: "/img/projects/livekit-pr.svg",
-    github: "https://github.com/livekit/agents/pull/6754",
+    github: "https://github.com/livekit/agents",
   },
   {
-    name: "LiteLLM Gateway Token Proxy (Merged)",
+    name: "LiteLLM Gateway Token Proxy (PR #36981)",
     description:
       "Fixed Vertex AI Gemini token counting calculation in the LiteLLM proxy gateway. Correct token counts are mission-critical for cost attribution, rate limiting, and context window management across multi-provider deployments. Merged to main branch.",
     tags: [
@@ -47,7 +47,7 @@ export const projects: Project[] = [
       { name: "bugfix", color: "#18BC9C" },
     ],
     image: "/img/projects/litellm-pr.svg",
-    github: "https://github.com/BerriAI/litellm",
+    github: "https://github.com/BerriAI/litellm/pull/36981",
   },
   {
     name: "BPI Virtual Analyst (Airbnb)",
