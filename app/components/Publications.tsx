@@ -260,7 +260,7 @@ export default function Publications() {
               )}
               </div>
 
-              {/* Thumbnail (right side, larger) */}
+              {/* Thumbnail (right side, clean white document preview) */}
               {pub.thumbnail && (
                 <div
                   style={{
@@ -269,10 +269,11 @@ export default function Publications() {
                     height: "260px",
                     borderRadius: "8px",
                     overflow: "hidden",
-                    border: "1px solid rgba(255,255,255,0.12)",
-                    background: "rgba(0,0,0,0.3)",
+                    border: "1px solid rgba(255,255,255,0.25)",
+                    background: "#ffffff",
                     position: "relative",
-                    boxShadow: "0 4px 16px rgba(0,0,0,0.4)",
+                    boxShadow: "0 6px 20px rgba(0,0,0,0.35)",
+                    padding: "4px",
                   }}
                 >
                   <Image
@@ -280,7 +281,8 @@ export default function Publications() {
                     alt={pub.title}
                     fill
                     style={{
-                      objectFit: "cover",
+                      objectFit: "contain",
+                      borderRadius: "6px",
                     }}
                     sizes="200px"
                   />
