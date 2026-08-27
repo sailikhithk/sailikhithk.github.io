@@ -27,7 +27,7 @@
     "react-tilt": "^1.0.2",
     "satellite.js": "^6.0.2",
     "three": "^0.184.0",
-    "zod": "^4.3.6"
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.2",
