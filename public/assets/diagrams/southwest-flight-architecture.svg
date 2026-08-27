@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" role="img" aria-label="Southwest Airlines Real-Time Flight Pipeline Architecture">
+  <defs>
+    <pattern id="grid-sw" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+    <marker id="arrow-sw" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#b3b3b3"/>
+    </marker>
+    <linearGradient id="coral-sw" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E50914" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#B20710" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="gray-sw" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f2f2f" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1f1f1f" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="dark-sw" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0f0f" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="640" fill="#0b0b0b"/>
+  <rect width="1000" height="640" fill="url(#grid-sw)"/>
+
+  <!-- Title -->
+  <text x="500" y="38" text-anchor="middle" fill="#e5e5e5" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700">Real-time Flight Pipeline — Architecture</text>
+  <text x="500" y="64" text-anchor="middle" fill="#b3b3b3" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Event-driven Kafka streaming, telemetry ingestion, and flight anomaly detection</text>
+
+  <!-- Layer 1: Ground Telemetry -->
+  <g id="layer1-sw">
+    <text x="500" y="100" text-anchor="middle" fill="#E50914" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="0.08em">LAYER 1 — GROUND TELEMETRY &amp; FLIGHT-OPS INGESTION</text>
+    
+    <rect x="65" y="118" width="265" height="68" rx="8" fill="url(#coral-sw)" stroke="#E50914" stroke-width="1.5"/>
+    <text x="197.5" y="148" text-anchor="middle" fill="#fff" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">Elastic Flat Files (EFFs)</text>
+    <text x="197.5" y="168" text-anchor="middle" fill="#b3b3b3" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Ground station telemetry dumps</text>
+
+    <rect x="365" y="118" width="270" height="68" rx="8" fill="url(#coral-sw)" stroke="#E50914" stroke-width="1.5"/>
+    <text x="500" y="148" text-anchor="middle" fill="#fff" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">ACARS &amp; ADS-B Messages</text>
+    <text x="500" y="168" text-anchor="middle" fill="#b3b3b3" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">In-flight positional &amp; phase pings</text>
+
+    <rect x="670" y="118" width="265" height="68" rx="8" fill="url(#coral-sw)" stroke="#E50914" stroke-width="1.5"/>
+    <text x="802.5" y="148" text-anchor="middle" fill="#fff" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">RabbitMQ Edge Gate</text>
+    <text x="802.5" y="168" text-anchor="middle" fill="#b3b3b3" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Buffer burst ground traffic</text>
+  </g>
+
+  <!-- Arrows to layer 2 -->
+  <line x1="197.5" y1="186" x2="330" y2="245" stroke="#b3b3b3" stroke-width="1.5" marker-end="url(#arrow-sw)" opacity="0.6"/>
+  <line x1="500" y1="186" x2="500" y2="245" stroke="#b3b3b3" stroke-width="1.5" marker-end="url(#arrow-sw)" opacity="0.6"/>
+  <line x1="802.5" y1="186" x2="670" y2="245" stroke="#b3b3b3" stroke-width="1.5" marker-end="url(#arrow-sw)" opacity="0.6"/>
+
+  <!-- Layer 2: Kafka Distributed Cluster -->
+  <g id="layer2-sw">
+    <text x="500" y="235" text-anchor="middle" fill="#E50914" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="0.08em">LAYER 2 — DISTRIBUTED EVENT LOG &amp; STREAM BUFFER</text>
+    
+    <rect x="120" y="255" width="760" height="72" rx="8" fill="url(#gray-sw)" stroke="#5a5a5a" stroke-width="1.5"/>
+    <text x="500" y="286" text-anchor="middle" fill="#fff" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600">Apache Kafka Distributed Cluster (Topic: flight.events.v1)</text>
+    <text x="500" y="306" text-anchor="middle" fill="#b3b3b3" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Keyed by Tail Number &amp; Flight ID · 3x Replication · Sub-second latency</text>
+  </g>
+
+  <!-- Arrows to layer 3 -->
+  <line x1="300" y1="327" x2="300" y2="385" stroke="#b3b3b3" stroke-width="1.5" marker-end="url(#arrow-sw)" opacity="0.6"/>
+  <line x1="700" y1="327" x2="700" y2="385" stroke="#b3b3b3" stroke-width="1.5" marker-end="url(#arrow-sw)" opacity="0.6"/>
+
+  <!-- Layer 3: Stream Processing & State Machine -->
+  <g id="layer3-sw">
+    <text x="500" y="375" text-anchor="middle" fill="#E50914" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="0.08em">LAYER 3 — KAFKA STREAMS &amp; ANOMALY DETECTION ENGINE</text>
+    
+    <rect x="65" y="395" width="265" height="70" rx="8" fill="url(#dark-sw)" stroke="#3a3a3a" stroke-width="1.5"/>
+    <text x="197.5" y="426" text-anchor="middle" fill="#fff" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Java / Spring Stream Processor</text>
+    <text x="197.5" y="446" text-anchor="middle" fill="#b3b3b3" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">EFF parsing &amp; schema validation</text>
+
+    <rect x="365" y="395" width="270" height="70" rx="8" fill="url(#dark-sw)" stroke="#3a3a3a" stroke-width="1.5"/>
+    <text x="500" y="426" text-anchor="middle" fill="#fff" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Flight State Machine (RocksDB)</text>
+    <text x="500" y="446" text-anchor="middle" fill="#b3b3b3" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Windowed state: Gate → Taxi → Cruise</text>
+
+    <rect x="670" y="395" width="265" height="70" rx="8" fill="url(#dark-sw)" stroke="#3a3a3a" stroke-width="1.5"/>
+    <text x="802.5" y="426" text-anchor="middle" fill="#fff" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Anomaly &amp; Deviation Detector</text>
+    <text x="802.5" y="446" text-anchor="middle" fill="#b3b3b3" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Instant alerts on sensor drift</text>
+  </g>
+
+  <!-- Arrows to layer 4 -->
+  <line x1="500" y1="465" x2="500" y2="520" stroke="#b3b3b3" stroke-width="1.5" marker-end="url(#arrow-sw)" opacity="0.6"/>
+
+  <!-- Layer 4: Storage Sinks & Ops Dashboard -->
+  <g id="layer4-sw">
+    <text x="500" y="510" text-anchor="middle" fill="#E50914" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="0.08em">LAYER 4 — PERSISTENCE SINKS &amp; FLIGHT-OPS DISPATCH DASHBOARD</text>
+    
+    <rect x="65" y="530" width="410" height="72" rx="8" fill="#141414" stroke="#E50914" stroke-width="1.5"/>
+    <text x="270" y="560" text-anchor="middle" fill="#fff" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">AWS S3 Parquet Lakehouse Sink</text>
+    <text x="270" y="580" text-anchor="middle" fill="#b3b3b3" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Long-term audit archive · Athena &amp; Spark queryable</text>
+
+    <rect x="525" y="530" width="410" height="72" rx="8" fill="#141414" stroke="#E50914" stroke-width="1.5"/>
+    <text x="730" y="560" text-anchor="middle" fill="#fff" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Real-Time Dispatch Alerting (MTTR 45→12m)</text>
+    <text x="730" y="580" text-anchor="middle" fill="#b3b3b3" font-family="Netflix Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Operations control center · Instant incident triage</text>
+  </g>
+</svg>

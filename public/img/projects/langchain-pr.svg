@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="langchainGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1C3C3C"/>
+      <stop offset="100%" stop-color="#2D5A5A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="600" height="380" rx="16" fill="url(#bg)" stroke="#30363d" stroke-width="2"/>
+
+  <!-- Top Bar -->
+  <rect x="0" y="0" width="600" height="64" rx="16" fill="#161b22"/>
+  <rect x="0" y="48" width="600" height="16" fill="#161b22"/>
+  <line x1="0" y1="64" x2="600" y2="64" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Repo Icon & Name -->
+  <circle cx="36" cy="32" r="16" fill="#1C3C3C" stroke="#2D5A5A" stroke-width="1.5"/>
+  <text x="36" y="37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="bold" fill="#18BC9C" text-anchor="middle">🦜</text>
+  <text x="64" y="37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#58a6ff">langchain-ai / langchain</text>
+
+  <!-- PR Status Badge -->
+  <g transform="translate(475, 18)">
+    <rect width="105" height="28" rx="14" fill="#238636"/>
+    <circle cx="16" cy="14" r="4" fill="#fff"/>
+    <text x="26" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#fff">PR #39351</text>
+  </g>
+
+  <!-- PR Title -->
+  <text x="24" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="bold" fill="#f0f6fc">Add Token Usage &amp; Cost Telemetry Callbacks</text>
+  <text x="24" y="124" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#8b949e">by <tspan fill="#f0f6fc" font-weight="600">sailikhithk</tspan> • into <tspan fill="#8b949e">master</tspan> • 4 files changed • +142 -8</text>
+
+  <!-- Code Block Preview -->
+  <rect x="24" y="145" width="552" height="175" rx="8" fill="#090d13" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Code Lines -->
+  <text x="40" y="175" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#7ee787">+ class CostTrackingCallbackHandler(BaseCallbackHandler):</text>
+  <text x="40" y="198" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#7ee787">+     def on_llm_end(self, response: LLMResult, **kwargs) -&gt; None:</text>
+  <text x="40" y="221" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#7ee787">+         token_usage = response.llm_output.get("token_usage", {})</text>
+  <text x="40" y="244" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#7ee787">+         cost_usd = calculate_model_cost(model=self.model, usage=token_usage)</text>
+  <text x="40" y="267" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#7ee787">+         self.telemetry_sink.record(cost_usd, latency_ms=self.elapsed)</text>
+  <text x="40" y="295" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#8b949e">      # Export to OpenTelemetry &amp; Datadog sinks</text>
+
+  <!-- Footer Tags -->
+  <g transform="translate(24, 338)">
+    <rect width="105" height="24" rx="6" fill="#1f242c" stroke="#30363d"/>
+    <text x="52" y="16" font-family="-apple-system, sans-serif" font-size="11" fill="#58a6ff" text-anchor="middle">★ 100k+ Stars</text>
+  </g>
+  <g transform="translate(138, 338)">
+    <rect width="115" height="24" rx="6" fill="#1f242c" stroke="#30363d"/>
+    <text x="57" y="16" font-family="-apple-system, sans-serif" font-size="11" fill="#7ee787" text-anchor="middle">✓ CI Tests Passing</text>
+  </g>
+  <g transform="translate(262, 338)">
+    <rect width="135" height="24" rx="6" fill="#1f242c" stroke="#30363d"/>
+    <text x="67" y="16" font-family="-apple-system, sans-serif" font-size="11" fill="#d2a8ff" text-anchor="middle">LLMOps Telemetry</text>
+  </g>
+</svg>

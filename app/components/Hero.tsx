@@ -49,9 +49,9 @@ export default function Hero() {
     >
       <div className="section-inner" style={{ textAlign: "center" }}>
         <motion.div
-          initial={{ opacity: 0, y: -30 }}
+          initial={{ opacity: 0, y: -15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.3 }}
         >
           <Image
             src="/img/circle-cropped.png"
@@ -65,9 +65,9 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
+          transition={{ duration: 0.3 }}
         >
           <span
             className="block uppercase font-bold"
@@ -104,15 +104,15 @@ export default function Hero() {
           >
             I build multi-model LLM orchestration platforms with eval gates
             that block production when accuracy drops. 30+ models, 128+ users,
-            1,690 ground-truth samples. Senior AI Infrastructure Engineer at
-            Airbnb. 9+ years shipping production AI.
+            1,690 ground-truth samples. Senior AI Infrastructure & Systems Engineer
+            at Airbnb. 9+ years shipping production AI.
           </p>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.4 }}
+          transition={{ duration: 0.3 }}
           className="flex items-center justify-center gap-6 mt-8"
         >
           {socialLinks.map(({ href, icon, label }) => (
@@ -134,7 +134,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.6 }}
+          transition={{ duration: 0.3 }}
           className="mt-6"
         >
           <span
@@ -163,7 +163,7 @@ export default function Hero() {
                 animation: "pulse 2s infinite",
               }}
             />
-            Open to MTS Applied AI roles
+            Open to Senior / Staff AI Infrastructure & Platform Roles
           </span>
         </motion.div>
       </div>

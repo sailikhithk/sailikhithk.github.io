@@ -3,6 +3,13 @@ export interface JobHighlight {
   detail: string;
 }
 
+export interface TechnicalSolution {
+  title: string;
+  desc: string;
+  codeSnippet?: string;
+  filename?: string;
+}
+
 export interface Job {
   company: string;
   logo: string | null;
@@ -16,6 +23,10 @@ export interface Job {
   metrics: string[];
   recognition?: string[];
   stackList: string[];
+  diagram?: string;
+  problemStatement?: string;
+  solutions?: TechnicalSolution[];
+  quote?: { text: string; author: string };
 }
 
 export interface Project {

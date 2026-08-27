@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgLiteLLM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#181424"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="600" height="380" rx="16" fill="url(#bgLiteLLM)" stroke="#30363d" stroke-width="2"/>
+
+  <!-- Top Bar -->
+  <rect x="0" y="0" width="600" height="64" rx="16" fill="#161b22"/>
+  <rect x="0" y="48" width="600" height="16" fill="#161b22"/>
+  <line x1="0" y1="64" x2="600" y2="64" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Repo Icon & Name -->
+  <circle cx="36" cy="32" r="16" fill="#321b4a" stroke="#5d328c" stroke-width="1.5"/>
+  <text x="36" y="37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="bold" fill="#a855f7" text-anchor="middle">⚡</text>
+  <text x="64" y="37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#58a6ff">BerriAI / litellm</text>
+
+  <!-- PR Status Badge (Purple Merged) -->
+  <g transform="translate(475, 18)">
+    <rect width="105" height="28" rx="14" fill="#8957e5"/>
+    <circle cx="16" cy="14" r="4" fill="#fff"/>
+    <text x="26" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#fff"># Merged</text>
+  </g>
+
+  <!-- PR Title -->
+  <text x="24" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="bold" fill="#f0f6fc">Fix Vertex AI Gemini Token Counting Bug</text>
+  <text x="24" y="124" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#8b949e">by <tspan fill="#f0f6fc" font-weight="600">sailikhithk</tspan> • merged into <tspan fill="#8b949e">main</tspan> • 2 files changed</text>
+
+  <!-- Code Block Preview -->
+  <rect x="24" y="145" width="552" height="175" rx="8" fill="#090d13" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Code Lines -->
+  <text x="40" y="175" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#ff7b72">- total_tokens = len(raw_response.candidates[0].content)</text>
+  <text x="40" y="200" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#7ee787">+ usage_metadata = raw_response.usage_metadata</text>
+  <text x="40" y="225" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#7ee787">+ prompt_tokens = usage_metadata.prompt_token_count</text>
+  <text x="40" y="250" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#7ee787">+ completion_tokens = usage_metadata.candidates_token_count</text>
+  <text x="40" y="275" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#7ee787">+ return Usage(prompt_tokens=prompt_tokens, total_tokens=prompt_tokens + completion_tokens)</text>
+  <text x="40" y="302" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#8b949e">      # Resolves proxy token attribution errors across Gemini 1.5 Pro</text>
+
+  <!-- Footer Tags -->
+  <g transform="translate(24, 338)">
+    <rect width="100" height="24" rx="6" fill="#1f242c" stroke="#30363d"/>
+    <text x="50" y="16" font-family="-apple-system, sans-serif" font-size="11" fill="#58a6ff" text-anchor="middle">★ 25k+ Stars</text>
+  </g>
+  <g transform="translate(132, 338)">
+    <rect width="115" height="24" rx="6" fill="#1f242c" stroke="#30363d"/>
+    <text x="57" y="16" font-family="-apple-system, sans-serif" font-size="11" fill="#7ee787" text-anchor="middle">✓ Merged to Main</text>
+  </g>
+  <g transform="translate(256, 338)">
+    <rect width="140" height="24" rx="6" fill="#1f242c" stroke="#30363d"/>
+    <text x="70" y="16" font-family="-apple-system, sans-serif" font-size="11" fill="#d2a8ff" text-anchor="middle">LLM Gateway Proxy</text>
+  </g>
+</svg>
