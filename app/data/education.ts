@@ -47,8 +47,7 @@ export const degrees: Degree[] = [
       },
       {
         label: "Cloud Computing",
-        detail:
-          "Deployed containerized microservices on AWS (EKS, Lambda, S3) with Terraform IaC",
+        detail: "Deployed containerized microservices on AWS (EKS, Lambda, S3) with Terraform IaC",
       },
     ],
     coursework: [

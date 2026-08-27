@@ -55,24 +55,21 @@ export const SKILLS: Record<string, Skill> = {
     label: "Next.js",
     color: "#ffffff",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-    shortDescription:
-      "App Router, Server Components - this portfolio is Next.js 16.",
+    shortDescription: "App Router, Server Components - this portfolio is Next.js 16.",
   },
   tailwind: {
     name: "tailwind",
     label: "Tailwind CSS",
     color: "#38bdf8",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
-    shortDescription:
-      "Utility-first CSS used across React frontends for rapid UI development.",
+    shortDescription: "Utility-first CSS used across React frontends for rapid UI development.",
   },
   nodejs: {
     name: "nodejs",
     label: "Node.js",
     color: "#6cc24a",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    shortDescription:
-      "Backend APIs and tooling - paired with Express for REST service layers.",
+    shortDescription: "Backend APIs and tooling - paired with Express for REST service layers.",
   },
   express: {
     name: "express",
@@ -95,8 +92,7 @@ export const SKILLS: Record<string, Skill> = {
     label: "MongoDB",
     color: "#4ea94b",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-    shortDescription:
-      "NoSQL document storage for flexible schema use cases in rapid prototyping.",
+    shortDescription: "NoSQL document storage for flexible schema use cases in rapid prototyping.",
   },
   git: {
     name: "git",
@@ -111,48 +107,42 @@ export const SKILLS: Record<string, Skill> = {
     label: "GitHub",
     color: "#eeeeee",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-    shortDescription:
-      "GitHub Actions CI/CD pipelines at Eli Lilly DMS and Southwest Airlines.",
+    shortDescription: "GitHub Actions CI/CD pipelines at Eli Lilly DMS and Southwest Airlines.",
   },
   prettier: {
     name: "prettier",
     label: "Kubernetes / OCP",
     color: "#326ce5",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
-    shortDescription:
-      "OCP OpenShift at Eli Lilly DMS - production deployments across dev/QA/prod.",
+    shortDescription: "OCP OpenShift at Eli Lilly DMS - production deployments across dev/QA/prod.",
   },
   npm: {
     name: "npm",
     label: "NPM",
     color: "#cc3534",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
-    shortDescription:
-      "Package management for Node/React projects - dependency auditing, scripts.",
+    shortDescription: "Package management for Node/React projects - dependency auditing, scripts.",
   },
   firebase: {
     name: "firebase",
     label: "Firebase",
     color: "#ffca28",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-    shortDescription:
-      "Realtime database and auth for rapid prototyping and side projects.",
+    shortDescription: "Realtime database and auth for rapid prototyping and side projects.",
   },
   wordpress: {
     name: "wordpress",
     label: "WordPress",
     color: "#21759b",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
-    shortDescription:
-      "CMS-based client sites and content platforms during freelance engagements.",
+    shortDescription: "CMS-based client sites and content platforms during freelance engagements.",
   },
   linux: {
     name: "linux",
     label: "Linux",
     color: "#f5c518",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
-    shortDescription:
-      "Ubuntu/CentOS servers - shell scripting, service management, cron jobs.",
+    shortDescription: "Ubuntu/CentOS servers - shell scripting, service management, cron jobs.",
   },
   docker: {
     name: "docker",
@@ -167,16 +157,14 @@ export const SKILLS: Record<string, Skill> = {
     label: "Nginx",
     color: "#009900",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
-    shortDescription:
-      "Reverse proxy and load balancing - API gateway configuration at Shell PLC.",
+    shortDescription: "Reverse proxy and load balancing - API gateway configuration at Shell PLC.",
   },
   aws: {
     name: "aws",
     label: "AWS",
     color: "#ff9900",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
-    shortDescription:
-      "SageMaker, S3, SNS, SES, EC2 - certified Solutions Architect & Developer.",
+    shortDescription: "SageMaker, S3, SNS, SES, EC2 - certified Solutions Architect & Developer.",
   },
   gcp: {
     name: "gcp",
@@ -199,16 +187,14 @@ export const SKILLS: Record<string, Skill> = {
     label: "Vercel",
     color: "#eeeeee",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
-    shortDescription:
-      "Zero-config deployments for Next.js apps - this portfolio deploys here.",
+    shortDescription: "Zero-config deployments for Next.js apps - this portfolio deploys here.",
   },
   vue: {
     name: "vue",
     label: "Java / Spring Boot",
     color: "#6db33f",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
-    shortDescription:
-      "Spring Boot 3.2 at Eli Lilly DMS - REST APIs, JPA, Flyway migrations.",
+    shortDescription: "Spring Boot 3.2 at Eli Lilly DMS - REST APIs, JPA, Flyway migrations.",
   },
   html: {
     name: "html",

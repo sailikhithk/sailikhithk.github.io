@@ -102,10 +102,9 @@ export default function Hero() {
               color: "#ddd",
             }}
           >
-            I build multi-model LLM orchestration platforms with eval gates
-            that block production when accuracy drops. 30+ models, 128+ users,
-            1,690 ground-truth samples. Senior AI Infrastructure & Systems Engineer
-            at Airbnb. 9+ years shipping production AI.
+            I build multi-model LLM orchestration platforms with eval gates that block production
+            when accuracy drops. 30+ models, 128+ users, 1,690 ground-truth samples. Senior AI
+            Infrastructure & Systems Engineer at Airbnb. 9+ years shipping production AI.
           </p>
         </motion.div>
 
@@ -123,10 +122,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               aria-label={label}
             >
-              <i
-                className={`fa ${icon}`}
-                style={{ color: "var(--text)", fontSize: "32px" }}
-              />
+              <i className={`fa ${icon}`} style={{ color: "var(--text)", fontSize: "32px" }} />
             </a>
           ))}
         </motion.div>

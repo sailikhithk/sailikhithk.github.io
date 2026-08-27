@@ -130,9 +130,7 @@ export default function Navbar() {
             <a
               key={link.id}
               href={
-                link.id === "medium"
-                  ? "https://medium.com/sailikhithkanuparthi"
-                  : `#${link.id}`
+                link.id === "medium" ? "https://medium.com/sailikhithkanuparthi" : `#${link.id}`
               }
               target={link.id === "medium" ? "_blank" : undefined}
               rel={link.id === "medium" ? "noopener noreferrer" : undefined}

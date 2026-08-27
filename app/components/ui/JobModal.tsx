@@ -50,7 +50,9 @@ export function JobModal({ job, onClose }: JobModalProps) {
               />
             )}
             <div>
-              <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", flexWrap: "wrap" }}>
+              <div
+                style={{ display: "flex", alignItems: "center", gap: "0.75rem", flexWrap: "wrap" }}
+              >
                 <h2
                   style={{
                     fontFamily: "var(--font-montserrat), sans-serif",
@@ -193,7 +195,14 @@ export function JobModal({ job, onClose }: JobModalProps) {
               {/* Architecture Diagram */}
               {job.diagram && (
                 <div>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.5rem" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      marginBottom: "0.5rem",
+                    }}
+                  >
                     <span
                       style={{
                         fontSize: "0.75rem",
@@ -291,7 +300,9 @@ export function JobModal({ job, onClose }: JobModalProps) {
               </div>
 
               {/* Overview text */}
-              <p style={{ color: "var(--muted)", fontSize: "0.88rem", lineHeight: 1.65, margin: 0 }}>
+              <p
+                style={{ color: "var(--muted)", fontSize: "0.88rem", lineHeight: 1.65, margin: 0 }}
+              >
                 {job.overview}
               </p>
             </div>
@@ -329,7 +340,14 @@ export function JobModal({ job, onClose }: JobModalProps) {
                       >
                         {sol.title}
                       </h4>
-                      <p style={{ color: "var(--muted)", fontSize: "0.82rem", lineHeight: 1.5, margin: "0.3rem 0 0" }}>
+                      <p
+                        style={{
+                          color: "var(--muted)",
+                          fontSize: "0.82rem",
+                          lineHeight: 1.5,
+                          margin: "0.3rem 0 0",
+                        }}
+                      >
                         {sol.desc}
                       </p>
                     </div>
@@ -347,7 +365,13 @@ export function JobModal({ job, onClose }: JobModalProps) {
                               borderBottom: "1px solid rgba(255,255,255,0.06)",
                             }}
                           >
-                            <span style={{ fontSize: "0.72rem", color: "#94a3b8", fontFamily: "monospace" }}>
+                            <span
+                              style={{
+                                fontSize: "0.72rem",
+                                color: "#94a3b8",
+                                fontFamily: "monospace",
+                              }}
+                            >
                               {sol.filename}
                             </span>
                             <button
@@ -372,7 +396,8 @@ export function JobModal({ job, onClose }: JobModalProps) {
                             fontSize: "0.78rem",
                             lineHeight: 1.5,
                             color: "#38bdf8",
-                            fontFamily: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+                            fontFamily:
+                              "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
                             overflowX: "auto",
                           }}
                         >
@@ -414,10 +439,24 @@ export function JobModal({ job, onClose }: JobModalProps) {
                         padding: "0.75rem 1rem",
                       }}
                     >
-                      <strong style={{ color: "#f8fafc", fontSize: "0.84rem", display: "block", marginBottom: "0.2rem" }}>
+                      <strong
+                        style={{
+                          color: "#f8fafc",
+                          fontSize: "0.84rem",
+                          display: "block",
+                          marginBottom: "0.2rem",
+                        }}
+                      >
                         {h.label}
                       </strong>
-                      <p style={{ color: "var(--muted)", fontSize: "0.8rem", lineHeight: 1.5, margin: 0 }}>
+                      <p
+                        style={{
+                          color: "var(--muted)",
+                          fontSize: "0.8rem",
+                          lineHeight: 1.5,
+                          margin: 0,
+                        }}
+                      >
                         {h.detail}
                       </p>
                     </div>

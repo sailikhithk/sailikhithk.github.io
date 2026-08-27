@@ -17,21 +17,26 @@ const diagrams: Diagram[] = [
     title: "FacadeDriver: Multi-Model LLM Orchestration",
     subtitle: "30+ foundation models with routing, retry, fallback, and eval-gated accuracy",
     src: "/assets/diagrams/facadedriver-architecture.svg",
-    mapping: "Production at Airbnb: 128+ users across 4 teams, 10K rows per run, 50% cost savings via batch inference",
+    mapping:
+      "Production at Airbnb: 128+ users across 4 teams, 10K rows per run, 50% cost savings via batch inference",
   },
   {
     id: "rag",
     title: "RAG Pipeline with Eval Gates",
-    subtitle: "End-to-end retrieval-augmented generation: ingest, parse, chunk, embed, retrieve, answer",
+    subtitle:
+      "End-to-end retrieval-augmented generation: ingest, parse, chunk, embed, retrieve, answer",
     src: "/assets/diagrams/rag-pipeline.svg",
-    mapping: "Production at Airbnb: 40MB uploads, PII-safe (Presidio, 12 entity types), LLM-as-Judge gate blocks production at precision < 0.85",
+    mapping:
+      "Production at Airbnb: 40MB uploads, PII-safe (Presidio, 12 entity types), LLM-as-Judge gate blocks production at precision < 0.85",
   },
   {
     id: "multi-agent",
     title: "Multi-Agent System Architecture",
-    subtitle: "Insight Miner (11-dim reasoning) + AI Clustering + Tool Caller with agentic memory and guardrails",
+    subtitle:
+      "Insight Miner (11-dim reasoning) + AI Clustering + Tool Caller with agentic memory and guardrails",
     src: "/assets/diagrams/multi-agent-architecture.svg",
-    mapping: "Production at Airbnb: 23 agent versions evaluated, 1,690 ground-truth samples, F1 lifted to 0.654 (project-best)",
+    mapping:
+      "Production at Airbnb: 23 agent versions evaluated, 1,690 ground-truth samples, F1 lifted to 0.654 (project-best)",
   },
 ];
 

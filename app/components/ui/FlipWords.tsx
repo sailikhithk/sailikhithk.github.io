@@ -8,11 +8,7 @@ interface FlipWordsProps {
   className?: string;
 }
 
-export function FlipWords({
-  words,
-  duration = 3000,
-  className,
-}: FlipWordsProps) {
+export function FlipWords({ words, duration = 3000, className }: FlipWordsProps) {
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [isAnimating, setIsAnimating] = useState(false);
 

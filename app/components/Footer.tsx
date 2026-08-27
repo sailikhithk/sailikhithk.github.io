@@ -1,7 +1,3 @@
-"use client";
-
-import { useState } from "react";
-
 export default function Footer() {
   const links = [
     { href: "https://airbnb.sailikhith.me", label: "Airbnb Portfolio" },
@@ -49,8 +45,7 @@ export default function Footer() {
         ))}
       </nav>
       <p style={{ color: "#555", fontSize: "0.8rem", margin: 0 }}>
-        &copy; {new Date().getFullYear()} Sai Likhith Kanuparthi. All rights
-        reserved.
+        &copy; {new Date().getFullYear()} Sai Likhith Kanuparthi. All rights reserved.
       </p>
     </footer>
   );

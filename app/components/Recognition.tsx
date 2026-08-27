@@ -79,7 +79,7 @@ export default function Recognition() {
                   userSelect: "none",
                 }}
               >
-                "
+                &ldquo;
               </span>
 
               <p
@@ -92,12 +92,10 @@ export default function Recognition() {
                   position: "relative",
                 }}
               >
-                "{item.quote}"
+                &ldquo;{item.quote}&rdquo;
               </p>
 
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "1rem" }}
-              >
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
                 <div
                   style={{
                     width: "48px",
@@ -111,10 +109,7 @@ export default function Recognition() {
                     flexShrink: 0,
                   }}
                 >
-                  <i
-                    className="fa fa-user"
-                    style={{ color: "var(--teal)", fontSize: "1.1rem" }}
-                  />
+                  <i className="fa fa-user" style={{ color: "var(--teal)", fontSize: "1.1rem" }} />
                 </div>
                 <div>
                   <p
@@ -181,8 +176,7 @@ export default function Recognition() {
                 border: "none",
                 padding: 0,
                 cursor: "pointer",
-                background:
-                  i === index ? "var(--teal)" : "rgba(255,255,255,0.3)",
+                background: i === index ? "var(--teal)" : "rgba(255,255,255,0.3)",
                 transition: "background 0.2s",
               }}
             />

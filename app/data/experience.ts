@@ -193,9 +193,7 @@ $$ LANGUAGE plpgsql;`,
       "21 CFR Part 11 regulatory compliance",
       "10-hour radioactive isotope SLA window",
     ],
-    recognition: [
-      "Direct client recognition for zero-defect production release of DMS 2.0",
-    ],
+    recognition: ["Direct client recognition for zero-defect production release of DMS 2.0"],
     stackList: [
       "Java 21",
       "Spring Boot 3.2",
@@ -293,7 +291,8 @@ $$ LANGUAGE plpgsql;`,
     period: "Jun 2021 - Dec 2022",
     location: "Houston, TX (Remote)",
     desc: "Owned API service handling 17M pageviews/month at 94% cache efficiency. Cleared 200+ bottlenecks; app 5x faster after refactor. Improved NLP accuracy 86% to 94%. Deployed ML models on AWS SageMaker. Published at SPE ADIPEC 2022 Conference (SPE-210986-MS).",
-    stack: "Python · PySpark · Azure Databricks · AWS SageMaker · MLFlow · Flask · Docker · Jenkins",
+    stack:
+      "Python · PySpark · Azure Databricks · AWS SageMaker · MLFlow · Flask · Docker · Jenkins",
     diagram: "/assets/diagrams/shell-subsurface-architecture.svg",
     overview:
       "Built and operated a high-throughput API-driven publishing service and deployed classical-ML models in production. Published research at SPE ADIPEC 2022 (SPE-210986-MS).",

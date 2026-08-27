@@ -27,7 +27,7 @@ export async function POST(req: Request) {
     if (isRateLimited(ip)) {
       return Response.json(
         { error: "Too many requests. Please try again later." },
-        { status: 429 },
+        { status: 429 }
       );
     }
 
@@ -39,10 +39,7 @@ export async function POST(req: Request) {
 
     const RESEND_API_KEY = process.env.RESEND_API_KEY;
     if (!RESEND_API_KEY) {
-      return Response.json(
-        { error: "Email service not configured" },
-        { status: 503 },
-      );
+      return Response.json({ error: "Email service not configured" }, { status: 503 });
     }
 
     const res = await fetch("https://api.resend.com/emails", {

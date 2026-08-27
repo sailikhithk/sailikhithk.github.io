@@ -69,7 +69,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Sai Likhith Kanuparthi - Senior AI Infrastructure & Systems Engineer",
-    description: "Senior AI Infrastructure & Systems Engineer at Airbnb. Owns end-to-end architecture of BPI Virtual Analyst (30+ foundation models, FacadeDriver). Kafka 4M req/min, OTel, vLLM. NYU MS CS. Ex-Eli Lilly, Southwest, Shell, Oracle.",
+    description:
+      "Senior AI Infrastructure & Systems Engineer at Airbnb. Owns end-to-end architecture of BPI Virtual Analyst (30+ foundation models, FacadeDriver). Kafka 4M req/min, OTel, vLLM. NYU MS CS. Ex-Eli Lilly, Southwest, Shell, Oracle.",
     url: "https://sailikhith.me",
     siteName: "Sai Likhith Kanuparthi",
     type: "profile",
@@ -86,7 +87,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Sai Likhith Kanuparthi - Senior AI Infrastructure & Systems Engineer @ Airbnb",
-    description: "Owns BPI Virtual Analyst (30+ foundation models, FacadeDriver). Kafka 4M req/min, OTel, vLLM. NYU MS CS.",
+    description:
+      "Owns BPI Virtual Analyst (30+ foundation models, FacadeDriver). Kafka 4M req/min, OTel, vLLM. NYU MS CS.",
     images: ["/og-image.png"],
     creator: "@codewithsai",
   },
@@ -103,11 +105,7 @@ export const metadata: Metadata = {
   category: "technology",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${montserrat.variable} ${lato.variable}`}>
       <head>
@@ -127,24 +125,25 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": "Sai Likhith Kanuparthi",
-              "alternateName": ["Sai Likhith", "sailikhithk", "Sai Kanuparthi"],
-              "url": "https://sailikhith.me",
-              "image": "https://sailikhith.me/img/circle-cropped.png",
-              "email": "mailto:sailikhithcse@gmail.com",
-              "jobTitle": "Senior AI Infrastructure & Systems Engineer",
-              "description": "Senior AI Infrastructure & Systems Engineer at Airbnb. Owns end-to-end architecture of BPI Virtual Analyst, a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver. Kafka 4M req/min, OTel observability.",
-              "nationality": {
+              name: "Sai Likhith Kanuparthi",
+              alternateName: ["Sai Likhith", "sailikhithk", "Sai Kanuparthi"],
+              url: "https://sailikhith.me",
+              image: "https://sailikhith.me/img/circle-cropped.png",
+              email: "mailto:sailikhithcse@gmail.com",
+              jobTitle: "Senior AI Infrastructure & Systems Engineer",
+              description:
+                "Senior AI Infrastructure & Systems Engineer at Airbnb. Owns end-to-end architecture of BPI Virtual Analyst, a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver. Kafka 4M req/min, OTel observability.",
+              nationality: {
                 "@type": "Country",
-                "name": "United States"
+                name: "United States",
               },
-              "address": {
+              address: {
                 "@type": "PostalAddress",
-                "addressLocality": "San Francisco",
-                "addressRegion": "CA",
-                "addressCountry": "United States"
+                addressLocality: "San Francisco",
+                addressRegion: "CA",
+                addressCountry: "United States",
               },
-              "knowsAbout": [
+              knowsAbout: [
                 "AI Infrastructure",
                 "Foundation Model Orchestration",
                 "Multi-tenant ML Platforms",
@@ -184,10 +183,10 @@ export default function RootLayout({
                 "AWS",
                 "GCP",
                 "Vercel",
-                "Docker"
+                "Docker",
               ],
-              "knowsLanguage": ["English", "Telugu", "Hindi"],
-              "sameAs": [
+              knowsLanguage: ["English", "Telugu", "Hindi"],
+              sameAs: [
                 "https://www.linkedin.com/in/sailikhithk",
                 "https://github.com/sailikhithk",
                 "https://huggingface.co/sailikhithk",
@@ -198,52 +197,54 @@ export default function RootLayout({
                 "https://www.hackerrank.com/sailikhithcse",
                 "https://www.researchgate.net/profile/Sai-Likhith-Kanuparthi",
                 "https://sailikhith.me",
-                "https://airbnb.sailikhith.me"
+                "https://airbnb.sailikhith.me",
               ],
-              "worksFor": {
+              worksFor: {
                 "@type": "Organization",
-                "name": "Airbnb"
+                name: "Airbnb",
               },
-              "alumniOf": [
+              alumniOf: [
                 {
                   "@type": "EducationalOrganization",
-                  "name": "New York University",
-                  "department": "Computer Science"
+                  name: "New York University",
+                  department: "Computer Science",
                 },
                 {
                   "@type": "EducationalOrganization",
-                  "name": "JNTUA",
-                  "department": "Electronics and Communication Engineering"
-                }
+                  name: "JNTUA",
+                  department: "Electronics and Communication Engineering",
+                },
               ],
-              "workExperience": [
+              workExperience: [
                 {
                   "@type": "Organization",
-                  "name": "Airbnb",
-                  "description": "Senior AI Infrastructure & Systems Engineer (GenAI Platform - BPI Virtual Analyst, FacadeDriver, 30+ LLM orchestration)"
+                  name: "Airbnb",
+                  description:
+                    "Senior AI Infrastructure & Systems Engineer (GenAI Platform - BPI Virtual Analyst, FacadeDriver, 30+ LLM orchestration)",
                 },
                 {
                   "@type": "Organization",
-                  "name": "Eli Lilly",
-                  "description": "Senior Software Engineer (Contractor) - Dose Management Platform (21 CFR Part 11)"
+                  name: "Eli Lilly",
+                  description:
+                    "Senior Software Engineer (Contractor) - Dose Management Platform (21 CFR Part 11)",
                 },
                 {
                   "@type": "Organization",
-                  "name": "Southwest Airlines",
-                  "description": "Senior Software Engineer (Contractor) - Backend & Data Platform"
+                  name: "Southwest Airlines",
+                  description: "Senior Software Engineer (Contractor) - Backend & Data Platform",
                 },
                 {
                   "@type": "Organization",
-                  "name": "Shell",
-                  "description": "Senior Software Engineer (Contractor) - Backend & Data Science"
+                  name: "Shell",
+                  description: "Senior Software Engineer (Contractor) - Backend & Data Science",
                 },
                 {
                   "@type": "Organization",
-                  "name": "Oracle",
-                  "description": "Software Engineer, ERP Analytics & Data Engineering"
-                }
-              ]
-            })
+                  name: "Oracle",
+                  description: "Software Engineer, ERP Analytics & Data Engineering",
+                },
+              ],
+            }),
           }}
         />
         <script
@@ -252,15 +253,16 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "Sai Likhith Kanuparthi",
-              "url": "https://sailikhith.me",
-              "description": "Senior AI Infrastructure & Systems Engineer at Airbnb. Owns end-to-end architecture of BPI Virtual Analyst, a multi-model GenAI orchestration platform abstracting 30+ foundation models behind FacadeDriver.",
-              "author": {
+              name: "Sai Likhith Kanuparthi",
+              url: "https://sailikhith.me",
+              description:
+                "Senior AI Infrastructure & Systems Engineer at Airbnb. Owns end-to-end architecture of BPI Virtual Analyst, a multi-model GenAI orchestration platform abstracting 30+ foundation models behind FacadeDriver.",
+              author: {
                 "@type": "Person",
-                "name": "Sai Likhith Kanuparthi",
-                "url": "https://sailikhith.me"
-              }
-            })
+                name: "Sai Likhith Kanuparthi",
+                url: "https://sailikhith.me",
+              },
+            }),
           }}
         />
         <script
@@ -278,24 +280,23 @@ export default function RootLayout({
                         ? "Chapter"
                         : "ScholarlyArticle",
                 name: pub.title,
-                author: pub.authors
-                  .split(",")
-                  .map((a) => ({
-                    "@type": "Person",
-                    name: a.trim(),
-                  })),
+                author: pub.authors.split(",").map((a) => ({
+                  "@type": "Person",
+                  name: a.trim(),
+                })),
                 datePublished: pub.year,
                 publisher: pub.publisher
                   ? { "@type": "Organization", name: pub.publisher }
                   : undefined,
                 isPartOf:
-                  pub.type === "book-chapter"
-                    ? { "@type": "Book", name: pub.venue }
-                    : undefined,
+                  pub.type === "book-chapter" ? { "@type": "Book", name: pub.venue } : undefined,
                 url: pub.links[0]?.url,
-                keywords: pub.topic.split(/[,.]/).map((k) => k.trim()).slice(0, 5),
+                keywords: pub.topic
+                  .split(/[,.]/)
+                  .map((k) => k.trim())
+                  .slice(0, 5),
               }))
-            )
+            ),
           }}
         />
       </head>

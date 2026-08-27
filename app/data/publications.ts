@@ -16,8 +16,7 @@ export interface Publication {
 export const publications: Publication[] = [
   {
     type: "patent",
-    title:
-      "Modular Deep Learning Architecture for Cross-Domain Transfer and Incremental Learning",
+    title: "Modular Deep Learning Architecture for Cross-Domain Transfer and Incremental Learning",
     venue: "Indian Patent Office — Application No. 202541026299",
     year: "2025",
     authors: "Sai Likhith Kanuparthi, Sai Yasaswini Majety (Inventors)",
@@ -36,8 +35,7 @@ export const publications: Publication[] = [
   },
   {
     type: "conference",
-    title:
-      "Full-Stack Machine Learning Development Framework for Energy Industry Applications",
+    title: "Full-Stack Machine Learning Development Framework for Energy Industry Applications",
     venue: "SPE ADIPEC 2022 (Abu Dhabi) — SPE-210986-MS",
     publisher: "Society of Petroleum Engineers",
     year: "2022",
@@ -86,8 +84,7 @@ export const publications: Publication[] = [
   {
     type: "book-chapter",
     title: "The Evolution and Rise of State Space Models in AI",
-    venue:
-      "A Case-Based Study of State Space Models in Health Care: The New Transformers (Ch. 1)",
+    venue: "A Case-Based Study of State Space Models in Health Care: The New Transformers (Ch. 1)",
     publisher: "Cambridge Scholars Publishing",
     year: "2025",
     authors: "Ria Ghosh, Rajeev Kumar, Sai Likhith Kanuparthi",
@@ -140,8 +137,7 @@ export const publications: Publication[] = [
   {
     type: "book-chapter",
     title: "Why Traditional AI Methods Fail in Advanced Anomaly Detection",
-    venue:
-      "Harnessing Generative AI to Combat Cyberbullying in Industry (Ch. 4, p. 200)",
+    venue: "Harnessing Generative AI to Combat Cyberbullying in Industry (Ch. 4, p. 200)",
     publisher: "Cambridge Scholars Publishing",
     year: "2025",
     authors: "Sai Likhith Kanuparthi, Naresh Kumar",

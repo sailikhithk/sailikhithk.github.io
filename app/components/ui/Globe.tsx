@@ -1,20 +1,26 @@
 "use client";
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  useMemo,
-  useCallback,
-} from "react";
+import React, { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import Globe from "react-globe.gl";
+import type { GlobeMethods } from "react-globe.gl";
 import * as satellite from "satellite.js";
 
 const EARTH_RADIUS_KM = 6371; // km
 const TIME_STEP = 3 * 1000; // per frame
 
+interface ParsedSat {
+  satrec: satellite.SatRec;
+  name: string;
+}
+
+interface SatWithCoords extends ParsedSat {
+  lat: number;
+  lng: number;
+  alt: number;
+}
+
 export default function GlobeSatellites() {
-  const globeEl = useRef<any>(null);
-  const [satData, setSatData] = useState<any[]>();
+  const globeEl = useRef<GlobeMethods | undefined>(undefined);
+  const [satData, setSatData] = useState<ParsedSat[]>();
   const [time, setTime] = useState(new Date());
 
   // Time ticker
@@ -38,7 +44,7 @@ export default function GlobeSatellites() {
           .filter((d) => d)
           .map((tle) => tle.split("\n"));
 
-        const parsedSatData = tleData
+        const parsedSatData: ParsedSat[] = tleData
           .map(([name, ...tle]) => ({
             satrec: satellite.twoline2satrec(tle[0], tle[1]),
             name: name.trim().replace(/^0 /, ""),
@@ -53,12 +59,12 @@ export default function GlobeSatellites() {
   // Set initial point of view to North America
   useEffect(() => {
     if (globeEl.current) {
-      globeEl.current.pointOfView(
-        { lat: 39.8, lng: -98.5, altitude: 2.2 },
-        1000,
-      );
-      globeEl.current.controls().autoRotate = true;
-      globeEl.current.controls().autoRotateSpeed = 0.5;
+      globeEl.current.pointOfView({ lat: 39.8, lng: -98.5, altitude: 2.2 }, 1000);
+      const controls = globeEl.current.controls();
+      if (controls) {
+        controls.autoRotate = true;
+        controls.autoRotateSpeed = 0.5;
+      }
     }
   }, []);
 
@@ -67,28 +73,22 @@ export default function GlobeSatellites() {
 
     // Update satellite positions
     const gmst = satellite.gstime(time);
-    return [
-      satData
-        .map((d) => {
-          const eci = satellite.propagate(d.satrec, time);
-          if (eci?.position) {
-            const gdPos = satellite.eciToGeodetic(
-              eci.position as satellite.EciVec3<number>,
-              gmst,
-            );
-            const lat = satellite.radiansToDegrees(gdPos.latitude);
-            const lng = satellite.radiansToDegrees(gdPos.longitude);
-            const alt = gdPos.height / EARTH_RADIUS_KM;
-            return { ...d, lat, lng, alt };
-          } else {
-            d.lat = NaN;
-            d.lng = NaN;
-            d.alt = NaN;
-          }
-          return d;
-        })
-        .filter((d) => !isNaN(d.lat) && !isNaN(d.lng) && !isNaN(d.alt)),
-    ];
+    const validSats: SatWithCoords[] = [];
+
+    for (const d of satData) {
+      const eci = satellite.propagate(d.satrec, time);
+      if (eci?.position) {
+        const gdPos = satellite.eciToGeodetic(eci.position as satellite.EciVec3<number>, gmst);
+        validSats.push({
+          ...d,
+          lat: satellite.radiansToDegrees(gdPos.latitude),
+          lng: satellite.radiansToDegrees(gdPos.longitude),
+          alt: gdPos.height / EARTH_RADIUS_KM,
+        });
+      }
+    }
+
+    return [validSats];
   }, [satData, time]);
 
   return (
@@ -112,9 +112,12 @@ export default function GlobeSatellites() {
         particleLng="lng"
         particleAltitude="alt"
         particlesColor={useCallback(() => "palegreen", [])}
+        showAtmosphere={true}
+        atmosphereColor="rgba(24, 188, 156, 0.4)"
+        atmosphereAltitude={0.15}
         backgroundColor="rgba(0,0,0,0)"
-        width={800}
-        height={800}
+        width={480}
+        height={480}
       />
     </div>
   );

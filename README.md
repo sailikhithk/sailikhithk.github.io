@@ -1,54 +1,70 @@
-# sailikhithk-portfolio-v2
+# sailikhith.me — Senior AI Infrastructure Portfolio
 
-Personal portfolio of **Sai Likhith Kanuparthi** — Senior Software Engineer, ML Infrastructure & AI Engineering at Airbnb.
+[![Production CI](https://github.com/sailikhithk/sailikhithk.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/sailikhithk/sailikhithk.github.io/actions/workflows/ci.yml)
+[![Next.js](https://img.shields.io/badge/Next.js-16.2.12-black?logo=next.js)](https://nextjs.org/)
+[![Turbopack](https://img.shields.io/badge/Engine-Turbopack-000000?logo=vercel)](https://turbo.build/pack)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
+[![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
+[![Husky](https://img.shields.io/badge/git_hooks-husky-40b5a4.svg)](https://typicode.github.io/husky/)
+[![Commitlint](https://img.shields.io/badge/commits-conventional-fe5196.svg)](https://commitlint.js.org/)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed-Vercel-000000?logo=vercel)](https://sailikhith.me)
 
-> Live: `https://sailikhithk.github.io` · Deployed on Vercel
+Production portfolio of **Sai Likhith Kanuparthi** — Senior AI Infrastructure & Systems Engineer (GenAI Platforms, Multi-Model Routing & LLMOps at Scale).
+
+> **Live Production Domain:** [https://sailikhith.me](https://sailikhith.me) (Mirrored at `https://sailikhithk.github.io`)
 
 ---
 
 ## Tech Stack
 
 ### Runtime
-| Package | Version | Role |
-|---|---|---|
-| Next.js | 16.2.4 | Framework — App Router, Turbopack dev, SSR/SSG |
-| React | 19.2.4 | UI rendering |
-| TypeScript | ^5 | Type safety across all components and data files |
+
+| Package    | Version | Role                                             |
+| ---------- | ------- | ------------------------------------------------ |
+| Next.js    | 16.2.4  | Framework — App Router, Turbopack dev, SSR/SSG   |
+| React      | 19.2.4  | UI rendering                                     |
+| TypeScript | ^5      | Type safety across all components and data files |
 
 ### 3D / Visualization
-| Package | Version | Role |
-|---|---|---|
-| `@splinetool/react-spline` | ^4.1.0 | Embeds the interactive 3D keyboard scene |
-| `@splinetool/runtime` | ^1.12.88 | Spline event system (`mouseHover`, `keyDown`, `keyUp`), scene graph API, `setVariable()` |
-| `react-globe.gl` | ^2.37.1 | WebGL Earth globe with satellite particle overlay |
-| `three` | ^0.184.0 | Three.js — underlying renderer for react-globe.gl (types only in this project) |
-| `satellite.js` | ^7.0.0 | SGP4/SDP4 orbital mechanics — propagates TLE data to lat/lng/alt |
+
+| Package                    | Version  | Role                                                                                     |
+| -------------------------- | -------- | ---------------------------------------------------------------------------------------- |
+| `@splinetool/react-spline` | ^4.1.0   | Embeds the interactive 3D keyboard scene                                                 |
+| `@splinetool/runtime`      | ^1.12.88 | Spline event system (`mouseHover`, `keyDown`, `keyUp`), scene graph API, `setVariable()` |
+| `react-globe.gl`           | ^2.37.1  | WebGL Earth globe with satellite particle overlay                                        |
+| `three`                    | ^0.184.0 | Three.js — underlying renderer for react-globe.gl (types only in this project)           |
+| `satellite.js`             | ^7.0.0   | SGP4/SDP4 orbital mechanics — propagates TLE data to lat/lng/alt                         |
 
 ### Animation
-| Package | Version | Role |
-|---|---|---|
+
+| Package         | Version  | Role                                                                        |
+| --------------- | -------- | --------------------------------------------------------------------------- |
 | `framer-motion` | ^12.38.0 | Scroll-triggered reveals, page-load entrance, `AnimatePresence` transitions |
-| `gsap` | ^3.15.0 | Keycap waterfall reveal — direct mutation of Spline scene object transforms |
+| `gsap`          | ^3.15.0  | Keycap waterfall reveal — direct mutation of Spline scene object transforms |
 
 ### UI
-| Package | Version | Role |
-|---|---|---|
-| `react-tilt` | ^1.0.2 | Mouse-parallax tilt on project cards |
-| Tailwind CSS | ^4 | Utility classes (minimal — most styles are CSS-in-JS inline for theming control) |
-| Font Awesome 4.7 | CDN | Icon set (social links, about section icons) |
-| Google Fonts | `next/font` | Montserrat (headings/nav), Lato (body) |
+
+| Package          | Version     | Role                                                                             |
+| ---------------- | ----------- | -------------------------------------------------------------------------------- |
+| `react-tilt`     | ^1.0.2      | Mouse-parallax tilt on project cards                                             |
+| Tailwind CSS     | ^4          | Utility classes (minimal — most styles are CSS-in-JS inline for theming control) |
+| Font Awesome 4.7 | CDN         | Icon set (social links, about section icons)                                     |
+| Google Fonts     | `next/font` | Montserrat (headings/nav), Lato (body)                                           |
 
 ### Validation
-| Package | Version | Role |
-|---|---|---|
-| `zod` | ^4.3.6 | Schema validation on contact form API route |
+
+| Package | Version | Role                                        |
+| ------- | ------- | ------------------------------------------- |
+| `zod`   | ^4.3.6  | Schema validation on contact form API route |
 
 ### Dev Tools
-| Tool | Role |
-|---|---|
-| ESLint 9 + `eslint-config-next` | Linting |
-| Prettier 3 | Formatting — `app/**/*.{ts,tsx,css,json}` |
-| `@tailwindcss/postcss` | Tailwind v4 PostCSS integration |
+
+| Tool                            | Role                                      |
+| ------------------------------- | ----------------------------------------- |
+| ESLint 9 + `eslint-config-next` | Linting                                   |
+| Prettier 3                      | Formatting — `app/**/*.{ts,tsx,css,json}` |
+| `@tailwindcss/postcss`          | Tailwind v4 PostCSS integration           |
 
 ---
 
@@ -70,6 +86,7 @@ page.tsx (RSC)
 ```
 
 **Key decisions:**
+
 - `Globe` uses `dynamic(() => import(...), { ssr: false })` — prevents Three.js crashing during SSR
 - `Spline` uses `React.lazy()` + `<Suspense>` — defers the 3D bundle until the section is visible
 - All content lives in `app/data/` — no CMS, no external API calls for content
@@ -130,25 +147,23 @@ All tokens defined in `globals.css` as CSS custom properties. Components referen
 
 ```css
 :root {
-  --bg:          #091227                    /* deep navy — all section backgrounds */
-  --teal:        #18BC9C                    /* accent — links, dividers, stats, borders */
-  --text:        #ffffff                    /* primary text */
-  --muted:       #aaaaaa                    /* secondary text, descriptions */
-  --card-bg:     rgba(255,255,255,0.05)     /* frosted glass card fill */
-  --card-border: rgba(255,255,255,0.08)     /* glass card border */
-  --section-py:  6rem 0                     /* section vertical padding */
-  --inner-px:    0 5rem                     /* section horizontal inset */
+  --bg: #091227 /* deep navy — all section backgrounds */ --teal: #18bc9c
+    /* accent — links, dividers, stats, borders */ --text: #ffffff /* primary text */
+    --muted: #aaaaaa /* secondary text, descriptions */ --card-bg: rgba(255, 255, 255, 0.05)
+    /* frosted glass card fill */ --card-border: rgba(255, 255, 255, 0.08) /* glass card border */
+    --section-py: 6rem 0 /* section vertical padding */ --inner-px: 0 5rem
+    /* section horizontal inset */;
 }
 ```
 
 ### Typography
 
-| Role | Font | Weights | Applied via |
-|---|---|---|---|
-| Headings, nav, labels | Montserrat | 400, 700 | `var(--font-montserrat)`, uppercase |
-| Body, descriptions | Lato | 300, 400, 700 | `var(--font-lato)`, default |
-| Base size | — | — | `html { font-size: 20px }` — all `rem` scale from here |
-| Responsive headings | — | — | `clamp(1.5rem, 4vw, 3rem)` |
+| Role                  | Font       | Weights       | Applied via                                            |
+| --------------------- | ---------- | ------------- | ------------------------------------------------------ |
+| Headings, nav, labels | Montserrat | 400, 700      | `var(--font-montserrat)`, uppercase                    |
+| Body, descriptions    | Lato       | 300, 400, 700 | `var(--font-lato)`, default                            |
+| Base size             | —          | —             | `html { font-size: 20px }` — all `rem` scale from here |
+| Responsive headings   | —          | —             | `clamp(1.5rem, 4vw, 3rem)`                             |
 
 ### Layout Classes
 
@@ -192,6 +207,7 @@ rAF loop: setTime(t => t + 3000ms) per frame  (accelerated time)
 ```
 
 **Config:**
+
 - Initial POV: North America center `{ lat: 39.8, lng: -98.5, altitude: 2.2 }`
 - `autoRotate: true`, speed: `0.5`
 - Globe texture: Blue Marble (`earth-blue-marble.jpg` via unpkg)
@@ -234,17 +250,18 @@ When the Spline scene loads, all keyboard keys cascade down with a bounce animat
 
 **Spline event bridge (bilateral communication):**
 
-| Event | Direction | Action |
-|---|---|---|
-| `mouseHover` on keycap | Spline → React | Lookup `SKILLS[e.target.name]` → `setSelectedSkill()` → render info card |
-| `mouseHover` on body/platform | Spline → React | Clear `selectedSkill`, hide info card |
-| `keyDown` on keycap | Spline → React | Set `selectedSkill` + call `splineApp.setVariable("heading", skill.label)` + `setVariable("desc", ...)` |
-| `keyUp` | Spline → React | Play release sound + clear Spline variables |
-| `selectedSkill` state change | React → Spline | `splineApp.setVariable("heading", ...)` — updates text inside the 3D scene |
+| Event                         | Direction      | Action                                                                                                  |
+| ----------------------------- | -------------- | ------------------------------------------------------------------------------------------------------- |
+| `mouseHover` on keycap        | Spline → React | Lookup `SKILLS[e.target.name]` → `setSelectedSkill()` → render info card                                |
+| `mouseHover` on body/platform | Spline → React | Clear `selectedSkill`, hide info card                                                                   |
+| `keyDown` on keycap           | Spline → React | Set `selectedSkill` + call `splineApp.setVariable("heading", skill.label)` + `setVariable("desc", ...)` |
+| `keyUp`                       | Spline → React | Play release sound + clear Spline variables                                                             |
+| `selectedSkill` state change  | React → Spline | `splineApp.setVariable("heading", ...)` — updates text inside the 3D scene                              |
 
 **`SKILLS` map:** `Record<string, Skill>` keyed by Spline object name. The key (e.g. `"docker"`, `"aws"`) must exactly match the object name in the Spline scene. 24 skills defined.
 
 **Keycap sound system (`useKeycapSounds`):**
+
 - Creates two `HTMLAudioElement` instances on mount (`press.mp3` vol 0.4, `release.mp3` vol 0.3)
 - Browser autoplay policy: audio unlocked on first `click | keydown | touchstart` via `{ once: true }` listener
 - `playPress()` / `playRelease()` reset `currentTime = 0` before playing — allows rapid repeated plays
@@ -307,18 +324,18 @@ Each card:
 ```typescript
 interface Job {
   company: string;
-  logo: string | null;            // null → fallback fa-database icon
+  logo: string | null; // null → fallback fa-database icon
   role: string;
   period: string;
   desc: string;
-  stack: string;                  // comma-separated tech string
+  stack: string; // comma-separated tech string
 }
 
 interface Project {
   name: string;
   description: string;
   tags: { name: string; color: string }[];
-  image: string;                  // path under /public/img/
+  image: string; // path under /public/img/
   github?: string;
   deploy?: string;
 }
@@ -330,15 +347,22 @@ interface Recognition {
 }
 
 interface Skill {
-  name: string;                   // must match Spline object name exactly
+  name: string; // must match Spline object name exactly
   label: string;
-  color: string;                  // hex — used for card border + label text
-  icon: string;                   // devicons CDN URL
+  color: string; // hex — used for card border + label text
+  icon: string; // devicons CDN URL
   shortDescription: string;
 }
 
-interface AboutCard  { icon: string; title: string; desc: string; }
-interface CareerStat { value: string; label: string; }
+interface AboutCard {
+  icon: string;
+  title: string;
+  desc: string;
+}
+interface CareerStat {
+  value: string;
+  label: string;
+}
 ```
 
 ---
@@ -346,50 +370,54 @@ interface CareerStat { value: string; label: string; }
 ## Content Data
 
 ### Experience (6 companies)
-| Company | Role | Period |
-|---|---|---|
-| Airbnb | Senior Software Engineer, ML Infrastructure & AI Engineering (GenAI Platform) | Sep 2024 – Present |
-| Eli Lilly | Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11) | Feb 2024 – Aug 2024 |
-| Southwest Airlines | Senior Software Engineer (Contractor) — Backend & Data Platform | Jan 2023 – Jan 2024 |
-| Shell PLC | Senior Software Engineer (Contractor) — Backend & Data Science | Jun 2021 – Dec 2022 |
-| Oracle India | Software Engineer, ERP Analytics & Data Engineering | Aug 2017 – Jul 2019 |
-| BSNL | Python Developer | Dec 2016 – Apr 2017 |
+
+| Company            | Role                                                                              | Period              |
+| ------------------ | --------------------------------------------------------------------------------- | ------------------- |
+| Airbnb             | Senior Software Engineer, ML Infrastructure & AI Engineering (GenAI Platform)     | Sep 2024 – Present  |
+| Eli Lilly          | Senior Software Engineer (Contractor) — Dose Management Platform (21 CFR Part 11) | Feb 2024 – Aug 2024 |
+| Southwest Airlines | Senior Software Engineer (Contractor) — Backend & Data Platform                   | Jan 2023 – Jan 2024 |
+| Shell PLC          | Senior Software Engineer (Contractor) — Backend & Data Science                    | Jun 2021 – Dec 2022 |
+| Oracle India       | Software Engineer, ERP Analytics & Data Engineering                               | Aug 2017 – Jul 2019 |
+| BSNL               | Python Developer                                                                  | Dec 2016 – Apr 2017 |
 
 ### Projects (9)
+
 Claude Code Ecosystem · AI Interview Copilots · Redpen (Airbnb) · BPI Virtual Analyst (Airbnb) · Dose Management System (Eli Lilly) · RomeoAI · ML Subsurface Pipeline (Shell) · COVID-19 Dashboard · ERP Analytics (Oracle)
 
 ### Career Stats
+
 `7+` Years Experience · `10K` Rows/Run at Airbnb · `30+` LLM Models Integrated · `17M` Pageviews/Month (Shell)
 
 ### Skills on Keyboard (24 keys)
+
 JavaScript · TypeScript · React · Next.js · Tailwind · Node.js · Express · PostgreSQL · MongoDB · Git · GitHub · Kubernetes/OCP · NPM · Firebase · WordPress · Linux · Docker · Nginx · AWS · Google Cloud · Python · Vercel · Java/Spring Boot · HTML5 · CSS3
 
 ---
 
 ## Sections Summary
 
-| Section | Component | ID | Animation strategy |
-|---|---|---|---|
-| Navigation | `Navbar` | — | Scroll-shrink via state |
-| Hero | `Hero` | `#page-top` | Framer Motion entrance: 3 staggered divs (0s, 0.2s, 0.4s) |
-| About & Skills | `AboutAndTechStack` | `#about` | GSAP waterfall + Framer useInView side-stagger |
-| Recognition | `Recognition` | `#recognition` | AnimatePresence slide carousel |
-| Work Experience | `Experience` | `#experience` | Framer useInView vertical stagger (0.1s/item) |
-| Education | `Education` | `#education` | None — RSC, static |
-| Projects | `Projects` | `#portfolio` | useInView-gated render + Framer stagger + react-tilt |
-| Contact | `Contact` | `#contact` | Framer whileInView left/right slide + satellite globe |
-| Footer | `Footer` | — | None — RSC |
+| Section         | Component           | ID             | Animation strategy                                        |
+| --------------- | ------------------- | -------------- | --------------------------------------------------------- |
+| Navigation      | `Navbar`            | —              | Scroll-shrink via state                                   |
+| Hero            | `Hero`              | `#page-top`    | Framer Motion entrance: 3 staggered divs (0s, 0.2s, 0.4s) |
+| About & Skills  | `AboutAndTechStack` | `#about`       | GSAP waterfall + Framer useInView side-stagger            |
+| Recognition     | `Recognition`       | `#recognition` | AnimatePresence slide carousel                            |
+| Work Experience | `Experience`        | `#experience`  | Framer useInView vertical stagger (0.1s/item)             |
+| Education       | `Education`         | `#education`   | None — RSC, static                                        |
+| Projects        | `Projects`          | `#portfolio`   | useInView-gated render + Framer stagger + react-tilt      |
+| Contact         | `Contact`           | `#contact`     | Framer whileInView left/right slide + satellite globe     |
+| Footer          | `Footer`            | —              | None — RSC                                                |
 
 ---
 
 ## Known Issues & Warnings
 
-| Warning | Root cause | Fix |
-|---|---|---|
-| `Spline Runtime only accepts .splinecode files` | `assets/skills-keyboard.spline` is a Spline **editor** file, not an exported runtime file | Export from Spline app → "Code Export" → download `.splinecode` → update `scene` prop |
-| `Multiple instances of Three.js` | `react-globe.gl` bundles its own Three.js internally, creating a second instance alongside the `three` package | Add alias in `next.config.ts`: `config.resolve.alias['three'] = require.resolve('three')` |
-| `Image width/height modified` — `/img/nyu.png` | `Education.tsx` sets `height` style but no `width: "auto"` counterpart | Add `width: "auto"` to the `style` prop on that `<Image>` |
-| Mobile hamburger invisible | `<button>` has `display: none` hardcoded, no responsive breakpoint override | Add `@media (max-width: 768px) { .navbar-toggle { display: block } .navbar-links { display: none } }` |
+| Warning                                         | Root cause                                                                                                     | Fix                                                                                                   |
+| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `Spline Runtime only accepts .splinecode files` | `assets/skills-keyboard.spline` is a Spline **editor** file, not an exported runtime file                      | Export from Spline app → "Code Export" → download `.splinecode` → update `scene` prop                 |
+| `Multiple instances of Three.js`                | `react-globe.gl` bundles its own Three.js internally, creating a second instance alongside the `three` package | Add alias in `next.config.ts`: `config.resolve.alias['three'] = require.resolve('three')`             |
+| `Image width/height modified` — `/img/nyu.png`  | `Education.tsx` sets `height` style but no `width: "auto"` counterpart                                         | Add `width: "auto"` to the `style` prop on that `<Image>`                                             |
+| Mobile hamburger invisible                      | `<button>` has `display: none` hardcoded, no responsive breakpoint override                                    | Add `@media (max-width: 768px) { .navbar-toggle { display: block } .navbar-links { display: none } }` |
 
 ---
 
@@ -406,6 +434,7 @@ npm run format:check # Prettier check (CI)
 ```
 
 **Environment variables** (contact form only):
+
 ```bash
 # .env.local
 RESEND_API_KEY=re_...
@@ -415,15 +444,15 @@ RESEND_API_KEY=re_...
 
 ## Content Update Cheatsheet
 
-| What to update | File |
-|---|---|
-| Work history | `app/data/experience.ts` → `jobs[]` |
-| Projects | `app/data/projects.ts` → `projects[]` |
-| Testimonials | `app/data/recognition.ts` → `recognitions[]` |
-| About cards / career stats | `app/data/about.ts` → `cards[]`, `stats[]` |
-| Skills keyboard | `app/data/about.ts` → `SKILLS{}` (key must match Spline object name) |
-| Education | `app/components/Education.tsx` → `degrees[]` |
-| Nav links | `app/components/Navbar.tsx` → `navLinks[]` |
-| Social links (Hero) | `app/components/Hero.tsx` → `socialLinks[]` |
-| Social links (Contact) | `app/components/Contact.tsx` → `socialLinks[]` |
-| SEO metadata | `app/layout.tsx` → `metadata` export |
+| What to update             | File                                                                 |
+| -------------------------- | -------------------------------------------------------------------- |
+| Work history               | `app/data/experience.ts` → `jobs[]`                                  |
+| Projects                   | `app/data/projects.ts` → `projects[]`                                |
+| Testimonials               | `app/data/recognition.ts` → `recognitions[]`                         |
+| About cards / career stats | `app/data/about.ts` → `cards[]`, `stats[]`                           |
+| Skills keyboard            | `app/data/about.ts` → `SKILLS{}` (key must match Spline object name) |
+| Education                  | `app/components/Education.tsx` → `degrees[]`                         |
+| Nav links                  | `app/components/Navbar.tsx` → `navLinks[]`                           |
+| Social links (Hero)        | `app/components/Hero.tsx` → `socialLinks[]`                          |
+| Social links (Contact)     | `app/components/Contact.tsx` → `socialLinks[]`                       |
+| SEO metadata               | `app/layout.tsx` → `metadata` export                                 |

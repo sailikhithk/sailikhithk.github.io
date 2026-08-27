@@ -82,7 +82,7 @@ export default function AboutAndTechStack() {
         gsap.fromTo(
           k.position,
           { y: 200 },
-          { y: 50, duration: 0.5, delay: 0.1, ease: "bounce.out" },
+          { y: 50, duration: 0.5, delay: 0.1, ease: "bounce.out" }
         );
       });
   };
@@ -156,11 +156,7 @@ export default function AboutAndTechStack() {
   };
 
   return (
-    <section
-      id="about"
-      className="section-wrapper"
-      style={{ padding: "2.5rem 0 1.5rem" }}
-    >
+    <section id="about" className="section-wrapper" style={{ padding: "2.5rem 0 1.5rem" }}>
       <div className="section-inner">
         {/* Heading */}
         <div style={{ textAlign: "center", marginBottom: "1.25rem" }}>
@@ -196,9 +192,7 @@ export default function AboutAndTechStack() {
           }}
         >
           {/* LEFT — About cards */}
-          <div
-            style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
-          >
+          <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
             {cards.map((card, i) => (
               <motion.div
                 key={card.title}
@@ -355,9 +349,7 @@ export default function AboutAndTechStack() {
               >
                 Tech Stack
               </h3>
-              <div
-                style={{ width: "100%", height: "38vh", marginTop: "-0.5rem" }}
-              >
+              <div style={{ width: "100%", height: "38vh", marginTop: "-0.5rem" }}>
                 <Suspense
                   fallback={
                     <div
@@ -382,9 +374,7 @@ export default function AboutAndTechStack() {
           </div>
 
           {/* RIGHT — Stats */}
-          <div
-            style={{ display: "flex", flexDirection: "column", gap: "2.5rem" }}
-          >
+          <div style={{ display: "flex", flexDirection: "column", gap: "2.5rem" }}>
             {stats.map((s, i) => (
               <motion.div
                 key={s.label}

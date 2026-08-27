@@ -54,12 +54,8 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 gap: "0.5rem",
                 transition: "background 0.3s",
               }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.background = "rgba(0,0,0,0.45)")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.background = "rgba(0,0,0,0)")
-              }
+              onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(0,0,0,0.45)")}
+              onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(0,0,0,0)")}
             >
               {project.github && (
                 <a
@@ -78,10 +74,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                     justifyContent: "center",
                   }}
                 >
-                  <i
-                    className="fa fa-github"
-                    style={{ color: "#fff", fontSize: "16px" }}
-                  />
+                  <i className="fa fa-github" style={{ color: "#fff", fontSize: "16px" }} />
                 </a>
               )}
               {project.deploy && (
@@ -217,10 +210,7 @@ function ProjectListRow({ project }: { project: Project }) {
         }}
       >
         {project.tags.slice(0, 3).map((t) => (
-          <span
-            key={t.name}
-            style={{ color: t.color, fontSize: "0.72rem", fontWeight: 600 }}
-          >
+          <span key={t.name} style={{ color: t.color, fontSize: "0.72rem", fontWeight: 600 }}>
             #{t.name}
           </span>
         ))}
@@ -257,8 +247,8 @@ export default function Projects() {
             marginBottom: "1.5rem",
           }}
         >
-          Real-world projects showcasing skills across GenAI, ML infrastructure,
-          full-stack development, and cloud platforms.
+          Real-world projects showcasing skills across GenAI, ML infrastructure, full-stack
+          development, and cloud platforms.
         </p>
 
         {/* View toggle */}
@@ -278,10 +268,8 @@ export default function Projects() {
                 padding: "0.35rem 1rem",
                 borderRadius: "99px",
                 border: "1px solid",
-                borderColor:
-                  view === v ? "var(--teal)" : "rgba(255,255,255,0.15)",
-                background:
-                  view === v ? "rgba(24,188,156,0.12)" : "transparent",
+                borderColor: view === v ? "var(--teal)" : "rgba(255,255,255,0.15)",
+                background: view === v ? "rgba(24,188,156,0.12)" : "transparent",
                 color: view === v ? "var(--teal)" : "var(--muted)",
                 fontSize: "0.8rem",
                 fontWeight: 600,

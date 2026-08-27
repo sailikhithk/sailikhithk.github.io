@@ -9,12 +9,7 @@ interface ModalProps {
   maxWidth?: string;
 }
 
-export function Modal({
-  open,
-  onClose,
-  children,
-  maxWidth = "780px",
-}: ModalProps) {
+export function Modal({ open, onClose, children, maxWidth = "780px" }: ModalProps) {
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {

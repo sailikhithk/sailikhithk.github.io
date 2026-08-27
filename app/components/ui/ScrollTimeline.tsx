@@ -25,10 +25,7 @@ export function ScrollTimeline({ jobs }: { jobs: Job[] }) {
   const lineOpacity = useTransform(scrollYProgress, [0, 0.05], [0, 1]);
 
   return (
-    <div
-      ref={containerRef}
-      style={{ position: "relative", paddingBottom: "2rem" }}
-    >
+    <div ref={containerRef} style={{ position: "relative", paddingBottom: "2rem" }}>
       {/* Vertical track */}
       <div
         ref={lineRef}

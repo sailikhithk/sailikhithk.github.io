@@ -47,11 +47,7 @@ const labelStyle: React.CSSProperties = {
 
 export default function Contact() {
   return (
-    <section
-      id="contact"
-      className="section-wrapper"
-      style={{ paddingBottom: "2rem" }}
-    >
+    <section id="contact" className="section-wrapper" style={{ paddingBottom: "2rem" }}>
       <div className="section-inner">
         <SectionHeading title="Get In Touch" subtitle="Contact" />
 
@@ -91,9 +87,8 @@ export default function Contact() {
                 margin: "0 0 2.5rem",
               }}
             >
-              I&apos;m currently open to new opportunities. Whether you have a
-              question, a project idea, or just want to say hi — my inbox is
-              always open.
+              I&apos;m currently open to new opportunities. Whether you have a question, a project
+              idea, or just want to say hi — my inbox is always open.
             </p>
 
             <div style={{ marginBottom: "1.75rem" }}>

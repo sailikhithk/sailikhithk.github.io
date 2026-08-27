@@ -10,11 +10,7 @@ export default function Education() {
   const [activeDegree, setActiveDegree] = useState<Degree | null>(null);
 
   return (
-    <section
-      id="education"
-      className="section-wrapper"
-      style={{ color: "var(--text)" }}
-    >
+    <section id="education" className="section-wrapper" style={{ color: "var(--text)" }}>
       <div className="section-inner">
         <SectionHeading title="Education" divider="light" />
 
@@ -123,22 +119,18 @@ export default function Education() {
                 style={{
                   flex: 1,
                   cursor: "pointer",
-                  transition:
-                    "border-color 0.2s, transform 0.2s, box-shadow 0.2s",
+                  transition: "border-color 0.2s, transform 0.2s, box-shadow 0.2s",
                   border: "1px solid var(--card-border)",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor =
-                    "rgba(24,188,156,0.5)";
+                  e.currentTarget.style.borderColor = "rgba(24,188,156,0.5)";
                   e.currentTarget.style.transform = "translateY(-2px)";
-                  e.currentTarget.style.boxShadow =
-                    "0 8px 32px rgba(24,188,156,0.12)";
+                  e.currentTarget.style.boxShadow = "0 8px 32px rgba(24,188,156,0.12)";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = "var(--card-border)";
                   e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow =
-                    "0 4px 24px rgba(0,0,0,0.3)";
+                  e.currentTarget.style.boxShadow = "0 4px 24px rgba(0,0,0,0.3)";
                 }}
               >
                 <p
@@ -227,10 +219,7 @@ export default function Education() {
                     gap: "0.4rem",
                   }}
                 >
-                  <i
-                    className="fa fa-plus-circle"
-                    style={{ fontSize: "0.8rem" }}
-                  />
+                  <i className="fa fa-plus-circle" style={{ fontSize: "0.8rem" }} />
                   View details
                 </p>
               </motion.div>
@@ -239,10 +228,7 @@ export default function Education() {
         </div>
       </div>
 
-      <EducationModal
-        degree={activeDegree}
-        onClose={() => setActiveDegree(null)}
-      />
+      <EducationModal degree={activeDegree} onClose={() => setActiveDegree(null)} />
     </section>
   );
 }
