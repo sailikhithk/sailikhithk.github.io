@@ -4,10 +4,10 @@ import AboutAndTechStack from "./components/AboutAndTechStack";
 import Recognition from "./components/Recognition";
 import Experience from "./components/Experience";
 import SystemDesign from "./components/SystemDesign";
-import Education from "./components/Education";
+import Projects from "./components/Projects";
 import Publications from "./components/Publications";
 import Certifications from "./components/Certifications";
-import Projects from "./components/Projects";
+import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -20,10 +20,10 @@ export default function Home() {
       <Recognition />
       <Experience />
       <SystemDesign />
+      <Projects />
       <Publications />
       <Certifications />
       <Education />
-      <Projects />
       <Contact />
       <Footer />
     </>
