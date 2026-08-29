@@ -98,7 +98,7 @@ export const projects: Project[] = [
       { name: "image-forensics", color: "#aaa" },
       { name: "calibration", color: "#18BC9C" },
     ],
-    image: "/img/ai-copilots.png",
+    image: "/img/projects/oss-synth-detector.png",
     github: "https://github.com/sailikhithk/Synthetic-AI-Image-Detector",
   },
   {
