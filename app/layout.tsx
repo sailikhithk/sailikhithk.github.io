@@ -102,6 +102,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "googlec73bbb451bfd6893",
+  },
   category: "technology",
 };
 
@@ -114,7 +117,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="manifest" href="/manifest.webmanifest" />
         <meta name="theme-color" content="#18BC9C" />
         <meta name="author" content="Sai Likhith Kanuparthi" />
-        <meta name="google-site-verification" content="" />
+        <meta name="google-site-verification" content="googlec73bbb451bfd6893" />
+        <meta name="google-site-verification" content="c73bbb451bfd6893" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
