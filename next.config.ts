@@ -12,6 +12,14 @@ const nextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: "/googlec73bbb451bfd6893.html",
+        destination: "/googlec73bbb451bfd6893",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
