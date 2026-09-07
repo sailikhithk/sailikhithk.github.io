@@ -6,10 +6,10 @@
 ## Identity
 
 - **Full Name**: Sai Likhith Kanuparthi
-- **Role**: Senior AI Infrastructure & Systems Engineer
-- **Employer**: Airbnb (San Francisco, CA)
+- **Role**: Senior AI Reliability & Systems Engineer
+- **Employer**: Airbnb (San Francisco, CA - Remote)
 - **Email**: sailikhithcse@gmail.com
-- **Location**: San Francisco, California, USA
+- **Location**: Houston, Texas, USA
 
 ## Online Profiles
 
@@ -21,23 +21,24 @@
 - **Medium**: https://medium.com/@sailikhith
 - **DEV.to**: https://dev.to/sailikhithk
 - **ResearchGate**: https://www.researchgate.net/profile/Sai-Likhith-Kanuparthi
+- **ORCID**: https://orcid.org/0009-0004-7422-7846
+- **Semantic Scholar**: https://www.semanticscholar.org/author/2362923743
 - **LeetCode**: https://leetcode.com/sailikhith
 - **HackerRank**: https://www.hackerrank.com/sailikhithcse
-- **Twitter / X**: https://twitter.com/codewithsai
 - **Blog**: https://sailikhithk.com
 - **AI-Readable Profile**: https://sailikhith.me/llm.txt
 - **LLMs.txt Standard**: https://sailikhith.me/llms.txt
 
 ## Summary
 
-Sai Likhith Kanuparthi is a Senior AI Infrastructure & Systems Engineer at Airbnb in San Francisco. He owns end-to-end architecture of BPI Virtual Analyst, a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver with routing, retry, fallback, and graceful degradation. The platform serves 55+ analysts across 4 partner engineering teams, processing 10K rows per run and 40MB uploads with PII-safe inference.
+Sai Likhith Kanuparthi builds the reliability layer for production AI in regulated industries. He owns end-to-end architecture of BPI Virtual Analyst at Airbnb, a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver with routing, retry, fallback, and graceful degradation. The platform serves 128+ users across 4 partner engineering teams, processing 10K rows per run and 40MB uploads with PII-safe inference. His open-source work spans multi-model orchestration (FacadeDriver), eval-driven deployment (23+ agent versions, 1,690 ground-truth samples), synthetic image detection (SAI, 6 signals with uncertainty quantification), and 21 CFR Part 11 compliance (LIMS-OMI). Shipped in pharma (Eli Lilly), finance (Kafka 4M req/min fraud detection at Southwest Airlines), and healthcare (Alzheimer's QSAR drug discovery).
 
-He has 8+ years of experience shipping production AI systems across LLM serving, Kafka streaming (4M req/min at Southwest Airlines), distributed observability (OpenTelemetry, Loki, Datadog, Grafana), backend APIs, cloud data pipelines, and full-stack applications. He is a published AI researcher with papers at SPE ADIPEC 2022 (SPE-210986-MS), IEEE Xplore, and Cambridge Scholars Publishing (2 book chapters, 2025).
+He has 7+ years of experience shipping production AI systems across LLM serving, Kafka streaming (4M req/min at Southwest Airlines), distributed observability (OpenTelemetry, Loki, Datadog, Grafana), backend APIs, cloud data pipelines, and full-stack applications. He is a published AI researcher with papers at SPE ADIPEC 2022 (SPE-210986-MS), IEEE Xplore, and Cambridge Scholars Publishing (2 book chapters, 2025).
 
 ## Work Experience
 
-### Airbnb - Senior AI Infrastructure & Systems Engineer (Sep 2024 - Present)
-- Owned end-to-end architecture of BPI Virtual Analyst: a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver, serving 55+ analysts across 4 partner engineering teams.
+### Airbnb - Senior AI Reliability & Systems Engineer (Sep 2024 - Present)
+- Owned end-to-end architecture of BPI Virtual Analyst: a multi-model GenAI orchestration platform abstracting 30+ foundation models (AWS Bedrock, OpenAI, Anthropic Claude, vLLM) behind FacadeDriver, serving 128+ users across 4 partner engineering teams.
 - Scaled batching and streaming pipelines from 600 to 10,000 rows per run (40MB uploads, PII-safe).
 - Architected Presidio PII pipeline (30% faster detection across 12 entity types). Led Redpen label export upgrade targeting 80% runtime reduction.
 - Built reproducible eval harness: 23+ agent versions against 1,690 versioned ground-truth samples with dual-model A/B and flip-analysis.
@@ -95,12 +96,16 @@ He has 8+ years of experience shipping production AI systems across LLM serving,
 
 ## Notable Projects
 
-- **BPI Virtual Analyst (Airbnb)**: Multi-model GenAI orchestration platform abstracting 30+ foundation models behind FacadeDriver, scaling to 10,000 rows/run for 55+ analysts.
+- **BPI Virtual Analyst (Airbnb)**: Multi-model GenAI orchestration platform abstracting 30+ foundation models behind FacadeDriver, scaling to 10,000 rows/run for 128+ users.
 - **Redpen (Airbnb)**: Airbnb's data-labeling platform UI. Flask, Celery, Labelbox, Redis, SQLAlchemy, Alembic. Serves CS Labs, Luxe Labelbox, and AirCover HALO teams.
 - **Dose Management System (Eli Lilly)**: Full-stack healthcare portal for radioactive isotope distribution under 10-hour decay SLA. Java/Spring Boot, React, OpenShift. 99.9% uptime.
 - **The Eye (HackNYU Winner)**: Computer Vision + NLP application to assist visually impaired individuals.
 - **ML Subsurface Pipeline (Shell)**: ML reusable framework for subsurface applications; refactored Jupyter to Python package (5x faster); deployed on AWS SageMaker; published at SPE ADIPEC 2022.
-- **Synthetic AI Image Detector (SAI)**: Open-source multi-signal detector for AI-generated images. Three signals (frequency-domain DCT, wavelet reconstruction error, PRNU noise residual) with temperature calibration, epistemic + aleatoric uncertainty, and refusal verdicts.
+- **Synthetic AI Image Detector (SAI)**: Open-source 6-signal detector for AI-generated images. Frequency-domain DCT, wavelet reconstruction error, JPEG-aware PRNU noise residual, semantic content-aware analysis, metadata fingerprinting (EXIF/IPTC/FBMD), and cross-image batch consistency. Temperature calibration, epistemic + aleatoric uncertainty, refusal verdicts, and detect-batch CLI for carousel analysis.
+- **FacadeDriver**: Model-agnostic orchestration layer for multi-LLM production systems. Routing, retry, fallback chains, per-model circuit breakers, per-request telemetry. 30+ model integrations. Sync and async APIs. FastAPI server mode.
+- **eval-infra-for-agents**: Field guide to building production-grade evaluation infrastructure for LLM agent systems. Based on Airbnb BPI Virtual Analyst eval harness (23+ agent versions, 1,690 ground-truth samples, LLM-as-Judge gates).
+- **llm-production-engineering**: Field notes from building AI systems in production since 2019. Cost tracking, eval-driven deployment, capacity planning, observability, incident playbooks, and engine tradeoff decision frameworks.
+- **LIMS-OMI**: 21 CFR Part 11 compliance collaboration platform for cross-hub laboratory task management. Electronic signatures with re-authentication, SLA tracking, document warehousing, audit trails. React + TypeScript.
 
 ## Open Source Contributions
 
